@@ -1,207 +1,280 @@
-// Critter Camp Overlay UI (categories -> slide-out -> critter card)
-// Robust version: never fails silently, shows on-screen error if something is missing.
+/* CritterCampRCT Hover-Only UI
+   - Overlay appears ONLY when mouse is over Twitch video player area
+   - Hover category -> panel opens
+   - Hover critter -> info card shows
+   - Leaving areas auto-closes with small delay to prevent flicker
+*/
 
-const DATA_URL = "../data/critter-data.json";
-const POLL_MS = 2 * 60 * 1000;
+const DATA_URL = "./data/critter-data.json";
 
+// --- CONFIG (tweak later if you want) ---
+const HIDE_DELAY_MS = 450;   // delay before hiding overlay when leaving video
+const PANEL_CLOSE_DELAY_MS = 350;
+const CARD_HIDE_DELAY_MS = 250;
+const REFRESH_MS = 60 * 60 * 1000; // 60 minutes
+
+// Category definitions (icon shown on the left rail)
+const CATEGORIES = [
+  { id: "mammals", label: "Mammals", icon: "🦌" },
+  { id: "birds", label: "Birds", icon: "🦅" },
+  { id: "night", label: "Night Critters", icon: "🦝" },
+  { id: "water", label: "Water Critters", icon: "🐟" },
+  { id: "amphib_reptile", label: "Amphib & Reptile", icon: "🐸" },
+  { id: "insects", label: "Insects", icon: "🦋" },
+];
+
+// --- DOM ---
+const root = document.getElementById("ccRoot");
 const catRail = document.getElementById("catRail");
 const panel = document.getElementById("panel");
 const panelTitle = document.getElementById("panelTitle");
-const panelClose = document.getElementById("panelClose");
-const critterGrid = document.getElementById("critterGrid");
+const grid = document.getElementById("critterGrid");
 
 const card = document.getElementById("card");
-const cardClose = document.getElementById("cardClose");
-
 const cIcon = document.getElementById("cIcon");
 const cName = document.getElementById("cName");
 const cSummary = document.getElementById("cSummary");
 const cFact = document.getElementById("cFact");
 
-const status = document.getElementById("status");
+const statusEl = document.getElementById("status");
 
-let data = { lastUpdated: "", critters: [] };
-let activeCategory = null;
-let activeCritterId = null;
+// --- STATE ---
+let critters = [];
+let byCategory = new Map();
+let activeCategoryId = null;
+let hideOverlayTimer = null;
+let closePanelTimer = null;
+let hideCardTimer = null;
 
-const CATEGORY_ORDER = ["mammals", "birds", "night", "water", "amphib_reptile", "insects"];
-
-const CATEGORY_META = {
-  mammals: { tip: "Mammals", icon: "🦌" },
-  birds: { tip: "Birds", icon: "🐦" },
-  night: { tip: "Night Critters", icon: "🦝" }, // per your request
-  water: { tip: "Water Critters", icon: "🐟" },
-  amphib_reptile: { tip: "Amphibians/Reptiles", icon: "🐸" },
-  insects: { tip: "Insects", icon: "🦋" }
-};
-
-function showStatus(msg) {
-  if (status) status.textContent = msg || "";
+// --- Helpers ---
+function setStatus(msg) {
+  if (!statusEl) return;
+  statusEl.style.display = "block";
+  statusEl.textContent = msg;
 }
 
-function showError(msg) {
-  console.error(msg);
-  showStatus(`ERROR: ${msg}`);
+function clearTimer(t) {
+  if (t) clearTimeout(t);
+  return null;
 }
 
-function mustExist(el, name) {
-  if (!el) {
-    showError(`Missing element in viewer.html: #${name}`);
-    return false;
-  }
-  return true;
+function showRoot() {
+  root.classList.remove("hidden");
 }
 
-// Close buttons
-if (panelClose) panelClose.addEventListener("click", () => closePanel());
-if (cardClose) cardClose.addEventListener("click", () => card.classList.add("hidden"));
-
-function closePanel() {
-  if (panel) panel.classList.add("closed");
-  activeCategory = null;
+function hideRoot() {
+  root.classList.add("hidden");
+  // Also close sub-UI so it doesn't flash next time
+  closePanel(true);
+  hideCard(true);
 }
 
-function openPanel(catKey) {
-  activeCategory = catKey;
-  if (panelTitle) panelTitle.textContent = CATEGORY_META[catKey]?.tip || "Category";
-  if (panel) panel.classList.remove("closed");
-  renderCritterGrid();
+function openPanel() {
+  panel.classList.remove("closed");
 }
-
-function renderCategoryRail() {
-  if (!mustExist(catRail, "catRail")) return;
-
-  catRail.innerHTML = "";
-
-  CATEGORY_ORDER.forEach((key) => {
-    const meta = CATEGORY_META[key];
-    const btn = document.createElement("button");
-    btn.className = "catBtn";
-    btn.setAttribute("data-tip", meta.tip);
-
-    const ico = document.createElement("div");
-    ico.className = "catIcon";
-    ico.textContent = meta.icon;
-
-    btn.appendChild(ico);
-
-    btn.addEventListener("click", () => {
-      const isOpen = panel && !panel.classList.contains("closed");
-      if (activeCategory === key && isOpen) closePanel();
-      else openPanel(key);
-    });
-
-    catRail.appendChild(btn);
-  });
-}
-
-function renderCritterGrid() {
-  if (!mustExist(critterGrid, "critterGrid")) return;
-
-  critterGrid.innerHTML = "";
-
-  const list = (data.critters || []).filter((c) => c.category === activeCategory);
-
-  if (!list.length) {
-    // No critters in that category (or category mismatch)
-    const note = document.createElement("div");
-    note.style.color = "rgba(255,255,255,0.7)";
-    note.style.fontSize = "12px";
-    note.textContent = "No critters found for this category.";
-    critterGrid.appendChild(note);
+function closePanel(force = false) {
+  closePanelTimer = clearTimer(closePanelTimer);
+  if (force) {
+    panel.classList.add("closed");
     return;
   }
-
-  list.forEach((c) => {
-    const btn = document.createElement("button");
-    btn.className = "critterBtn";
-    btn.setAttribute("data-tip", c.name || c.id || "Critter");
-
-    const ico = document.createElement("div");
-    ico.className = "ico";
-    // Support both "icon" and older "emoji" field, just in case
-    ico.textContent = c.icon || c.emoji || "🐾";
-
-    btn.appendChild(ico);
-
-    btn.addEventListener("click", () => openCritter(c.id));
-
-    critterGrid.appendChild(btn);
-  });
+  closePanelTimer = setTimeout(() => {
+    panel.classList.add("closed");
+  }, PANEL_CLOSE_DELAY_MS);
 }
 
-function openCritter(id) {
-  activeCritterId = id;
+function showCard(critter) {
+  hideCardTimer = clearTimer(hideCardTimer);
 
-  // Validate required elements for the card
-  if (!mustExist(cIcon, "cIcon")) return;
-  if (!mustExist(cName, "cName")) return;
-  if (!mustExist(cSummary, "cSummary")) return;
-  if (!mustExist(cFact, "cFact")) return;
-  if (!mustExist(card, "card")) return;
-
-  const c = (data.critters || []).find((x) => x.id === id);
-  if (!c) {
-    showError(`Critter not found for id: ${id}`);
-    return;
-  }
-
-  cIcon.textContent = c.icon || c.emoji || "🐾";
-  cName.textContent = c.name || "";
-  cSummary.textContent = c.summary || "(No summary yet)";
-  cFact.textContent = c.fact || "Fact is loading… (run workflow or wait for next refresh)";
+  cIcon.textContent = critter.icon || "🦌";
+  cName.textContent = critter.name || "Critter";
+  cSummary.textContent = critter.summary || "";
+  cFact.textContent = critter.fact || "";
 
   card.classList.remove("hidden");
 }
-
-async function fetchData() {
-  const url = `${DATA_URL}?t=${Date.now()}`;
-  const res = await fetch(url, { cache: "no-store" });
-  if (!res.ok) throw new Error(`Data fetch failed (${res.status})`);
-  const json = await res.json();
-
-  data = {
-    lastUpdated: json.lastUpdated || "",
-    critters: Array.isArray(json.critters) ? json.critters : []
-  };
-
-  showStatus(data.lastUpdated ? `Facts refreshed: ${data.lastUpdated}` : "Facts: not refreshed yet");
+function hideCard(force = false) {
+  hideCardTimer = clearTimer(hideCardTimer);
+  if (force) {
+    card.classList.add("hidden");
+    return;
+  }
+  hideCardTimer = setTimeout(() => {
+    card.classList.add("hidden");
+  }, CARD_HIDE_DELAY_MS);
 }
 
-async function start() {
-  renderCategoryRail();
+function normalizeData(list) {
+  byCategory = new Map();
+  for (const c of list) {
+    const cat = c.category || "mammals";
+    if (!byCategory.has(cat)) byCategory.set(cat, []);
+    byCategory.get(cat).push(c);
+  }
+}
+
+function renderCategories() {
+  catRail.innerHTML = "";
+  for (const cat of CATEGORIES) {
+    const btn = document.createElement("div");
+    btn.className = "catBtn";
+    btn.setAttribute("data-tip", cat.label);
+
+    const ico = document.createElement("div");
+    ico.className = "catIcon";
+    ico.textContent = cat.icon;
+
+    btn.appendChild(ico);
+
+    // Hover category -> open panel and show critters
+    btn.addEventListener("mouseenter", () => {
+      activeCategoryId = cat.id;
+      panelTitle.textContent = cat.label.toUpperCase();
+      renderCritterGrid(cat.id);
+      openPanel();
+      hideCard(true); // reset card when switching categories
+    });
+
+    // If you leave the category rail, we don't instantly close.
+    // Panel will close when leaving panel area too.
+    btn.addEventListener("mouseleave", () => {
+      // do nothing; panel handles delayed close
+    });
+
+    catRail.appendChild(btn);
+  }
+}
+
+function renderCritterGrid(categoryId) {
+  const list = byCategory.get(categoryId) || [];
+  grid.innerHTML = "";
+
+  for (const c of list) {
+    const b = document.createElement("div");
+    b.className = "critterBtn";
+    b.setAttribute("data-tip", c.name || "Critter");
+
+    const ico = document.createElement("div");
+    ico.className = "ico";
+    ico.textContent = c.icon || "🦌";
+    b.appendChild(ico);
+
+    // Hover critter -> show card
+    b.addEventListener("mouseenter", () => {
+      showCard(c);
+    });
+    b.addEventListener("mouseleave", () => {
+      hideCard(false);
+    });
+
+    grid.appendChild(b);
+  }
+}
+
+async function loadData() {
+  const res = await fetch(DATA_URL, { cache: "no-store" });
+  const json = await res.json();
+  critters = Array.isArray(json) ? json : (json.critters || []);
+  normalizeData(critters);
+}
+
+// --- Twitch video hover detection ---
+function isOverTwitchVideo(event) {
+  // Use elementFromPoint so it works even if overlay is on top
+  const el = document.elementFromPoint(event.clientX, event.clientY);
+  if (!el) return false;
+
+  // Twitch uses a video element + containers. We accept if:
+  // - hovering over a <video>
+  // - or any ancestor matches common player containers
+  const isVideo = el.tagName === "VIDEO";
+  const playerAncestor =
+    el.closest('video') ||
+    el.closest('[data-a-target="player-overlay-click-handler"]') ||
+    el.closest('[data-a-target="player-overlay"]') ||
+    el.closest('[data-a-target="player-theatre-mode-button"]') ||
+    el.closest('[data-a-target="player-controls"]') ||
+    el.closest('[data-a-target="video-player"]') ||
+    el.closest('.video-player') ||
+    el.closest('.player-video') ||
+    el.closest('[class*="video-player"]');
+
+  // We specifically do NOT want chat. If the hovered element is inside chat, reject.
+  const inChat =
+    el.closest('[data-a-target="chat-room-component-layout"]') ||
+    el.closest('[data-a-target="right-column-chat-bar"]') ||
+    el.closest('[class*="chat"]');
+
+  if (inChat) return false;
+
+  return Boolean(isVideo || playerAncestor);
+}
+
+function hookHoverVisibility() {
+  document.addEventListener("mousemove", (e) => {
+    const overVideo = isOverTwitchVideo(e);
+
+    if (overVideo) {
+      hideOverlayTimer = clearTimer(hideOverlayTimer);
+      showRoot();
+    } else {
+      hideOverlayTimer = clearTimer(hideOverlayTimer);
+      hideOverlayTimer = setTimeout(() => {
+        hideRoot();
+      }, HIDE_DELAY_MS);
+    }
+  });
+
+  // Panel open/close behavior: close when leaving both rail + panel
+  panel.addEventListener("mouseenter", () => {
+    closePanelTimer = clearTimer(closePanelTimer);
+  });
+  panel.addEventListener("mouseleave", () => {
+    closePanel(false);
+    hideCard(false);
+  });
+
+  catRail.addEventListener("mouseenter", () => {
+    closePanelTimer = clearTimer(closePanelTimer);
+  });
+  catRail.addEventListener("mouseleave", () => {
+    closePanel(false);
+    hideCard(false);
+  });
+
+  // Card stays while you are over the card itself
+  card.addEventListener("mouseenter", () => {
+    hideCardTimer = clearTimer(hideCardTimer);
+  });
+  card.addEventListener("mouseleave", () => {
+    hideCard(false);
+  });
+}
+
+// --- Init ---
+(async function init() {
+  renderCategories();
+  hookHoverVisibility();
 
   try {
-    await fetchData();
-  } catch (e) {
-    showError(e.message || String(e));
+    await loadData();
+    setStatus(`Facts refreshed.`);
+  } catch (err) {
+    setStatus(`ERROR loading data.`);
+    console.error(err);
   }
 
+  // Auto refresh data every hour
   setInterval(async () => {
     try {
-      await fetchData();
-
-      // If panel open, keep list synced
-      if (activeCategory && panel && !panel.classList.contains("closed")) {
-        renderCritterGrid();
-      }
-
-      // If card open, refresh the fact automatically
-      if (activeCritterId && card && !card.classList.contains("hidden")) {
-        const c = (data.critters || []).find((x) => x.id === activeCritterId);
-        if (c) {
-          if (cFact) cFact.textContent = c.fact || cFact.textContent;
-          if (cSummary) cSummary.textContent = c.summary || cSummary.textContent;
-          if (cName) cName.textContent = c.name || cName.textContent;
-          if (cIcon) cIcon.textContent = c.icon || c.emoji || cIcon.textContent;
-        }
-      }
-    } catch (e) {
-      showError(e.message || String(e));
+      await loadData();
+      setStatus(`Facts refreshed: ${new Date().toISOString()}`);
+      // If a category is open, re-render it so new facts show
+      if (activeCategoryId) renderCritterGrid(activeCategoryId);
+    } catch (err) {
+      setStatus(`ERROR refreshing data.`);
+      console.error(err);
     }
-  }, POLL_MS);
-}
-
-start();
-
+  }, REFRESH_MS);
+})();
 
