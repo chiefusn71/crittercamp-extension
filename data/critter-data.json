@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-18T22:00:03Z",
+  "lastUpdated": "2026-02-18T23:04:11Z",
   "critters": [
     {
       "id": "whitetail_deer",
@@ -7,7 +7,7 @@
       "category": "mammals",
       "icon": "🦌",
       "summary": "Common woodland browser often seen near fields and feeders.",
-      "fact": "White-tailed deer use their fluffy white tails to signal danger to other deer nearby."
+      "fact": "White-tailed deer flash their tail to signal danger, warning other deer nearby of potential threats."
     },
     {
       "id": "black_bear",
@@ -15,7 +15,7 @@
       "category": "mammals",
       "icon": "🐻",
       "summary": "Largest forest mammal in Michigan woodlands.",
-      "fact": "Black bears have an excellent sense of smell, even better than bloodhounds, to find food!"
+      "fact": "Black bears have an excellent sense of smell, even better than bloodhounds!"
     },
     {
       "id": "coyote",
@@ -23,7 +23,7 @@
       "category": "mammals",
       "icon": "🐕",
       "summary": "Adaptable predator common in rural areas.",
-      "fact": "Coyotes can adapt to urban areas, often hunting small animals and scavenging near human habitats."
+      "fact": "Coyotes can communicate using howls, yips, and barks to coordinate with their pack during hunts."
     },
     {
       "id": "red_fox",
@@ -31,7 +31,7 @@
       "category": "mammals",
       "icon": "🦊",
       "summary": "Solitary hunter active in open woods and fields.",
-      "fact": "Red foxes use their bushy tails for balance and warmth during cold weather."
+      "fact": "Red foxes can rotate their ears 180 degrees to better locate sounds and hunt prey efficiently!"
     },
     {
       "id": "gray_fox",
@@ -39,7 +39,7 @@
       "category": "mammals",
       "icon": "🦊",
       "summary": "Smaller fox species able to climb trees.",
-      "fact": "Gray foxes are unique foxes that can climb trees to escape predators or hunt birds."
+      "fact": "Gray foxes are one of the few canids that can climb trees to escape predators or hunt."
     },
     {
       "id": "bobcat",
@@ -47,7 +47,7 @@
       "category": "mammals",
       "icon": "🐈",
       "summary": "Elusive woodland feline predator.",
-      "fact": "Bobcats use their sharp hearing and vision to hunt mostly at dawn and dusk."
+      "fact": "Bobcats use their sharp vision and hearing to hunt mostly at dawn and dusk, making them skilled predators!"
     },
     {
       "id": "porcupine",
@@ -55,7 +55,7 @@
       "category": "mammals",
       "icon": "🦔",
       "summary": "Slow-moving rodent protected by quills.",
-      "fact": "Porcupines have quills that detach easily, helping protect them from predators by causing sharp pain and irritation."
+      "fact": "Porcupines' quills detach easily to protect them from predators, but quills aren’t actually poisonous!"
     },
     {
       "id": "beaver",
@@ -63,7 +63,7 @@
       "category": "mammals",
       "icon": "🦫",
       "summary": "Dam-building wetland engineer.",
-      "fact": "Beavers build dams using sticks and mud to create ponds that protect their homes from predators."
+      "fact": "Beavers build dams using branches and mud to create ponds that protect their homes from predators."
     },
     {
       "id": "muskrat",
@@ -71,7 +71,7 @@
       "category": "mammals",
       "icon": "🦫",
       "summary": "Small aquatic rodent near ponds and streams.",
-      "fact": "Muskrats build dome-shaped lodges using mud and vegetation, often visible above water in wetlands."
+      "fact": "Muskrats build dome-shaped homes called lodges using plants, creating cozy shelters in wetlands and ponds."
     },
     {
       "id": "mink",
@@ -79,7 +79,7 @@
       "category": "mammals",
       "icon": "🐾",
       "summary": "Semi-aquatic predator along shorelines.",
-      "fact": "Minks are excellent swimmers, often hunting underwater to catch fish, crustaceans, and small mammals."
+      "fact": "Minks have waterproof fur that keeps them warm while swimming in cold water."
     },
     {
       "id": "fisher",
@@ -87,7 +87,7 @@
       "category": "mammals",
       "icon": "🐾",
       "summary": "Forest carnivore related to weasels.",
-      "fact": "Fishers are agile forest predators known for hunting porcupines, one of few predators that can do this!"
+      "fact": "Fishers are skilled climbers and can even hunt porcupines by flipping them over!"
     },
     {
       "id": "river_otter",
@@ -95,7 +95,7 @@
       "category": "mammals",
       "icon": "🦦",
       "summary": "Playful aquatic predator found near rivers.",
-      "fact": "River otters can close their ears and nostrils underwater to swim and hunt with ease!"
+      "fact": "River otters can hold their breath underwater for up to 8 minutes while hunting fish!"
     },
     {
       "id": "gray_squirrel",
@@ -103,7 +103,7 @@
       "category": "mammals",
       "icon": "🐿️",
       "summary": "Tree squirrel common at feeders.",
-      "fact": "Eastern Gray Squirrels can remember hundreds of buried nuts using spatial memory and scent!"
+      "fact": "Eastern Gray Squirrels can find hidden nuts buried months earlier by using spatial memory and smell!"
     },
     {
       "id": "red_squirrel",
@@ -111,7 +111,7 @@
       "category": "mammals",
       "icon": "🐿️",
       "summary": "Small territorial woodland squirrel.",
-      "fact": "American Red Squirrels fiercely defend their pinecone caches to survive harsh winters."
+      "fact": "American Red Squirrels fiercely defend their food caches to survive harsh winters in North America."
     },
     {
       "id": "chipmunk",
@@ -119,7 +119,7 @@
       "category": "mammals",
       "icon": "🐿️",
       "summary": "Ground squirrel known for cheek pouches.",
-      "fact": "Chipmunks have striped backs and use cheek pouches to carry food for storage in their burrows."
+      "fact": "Chipmunks have cheek pouches to carry food back to their burrows for storage and snacking later!"
     },
     {
       "id": "snowshoe_hare",
@@ -127,7 +127,7 @@
       "category": "mammals",
       "icon": "🐇",
       "summary": "Forest rabbit with seasonal coat change.",
-      "fact": "Snowshoe hares change fur color seasonally, shifting white in winter and brown in summer for camouflage."
+      "fact": "Snowshoe hares change fur color from brown in summer to white in winter for camouflage."
     },
     {
       "id": "cottontail",
@@ -135,7 +135,7 @@
       "category": "mammals",
       "icon": "🐇",
       "summary": "Common backyard rabbit species.",
-      "fact": "Eastern Cottontails communicate danger by thumping their hind feet on the ground loudly."
+      "fact": "Eastern Cottontails have strong hind legs that help them leap up to 10 feet to escape predators."
     },
     {
       "id": "raccoon",
@@ -143,7 +143,7 @@
       "category": "night",
       "icon": "🦝",
       "summary": "Nocturnal omnivore with dexterous paws.",
-      "fact": "Raccoons have incredibly nimble front paws, almost like hands, which help them open jars and doors!"
+      "fact": "Raccoons have highly sensitive front paws, helping them identify food by touch in water or darkness!"
     },
     {
       "id": "opossum",
@@ -151,7 +151,7 @@
       "category": "night",
       "icon": "🐀",
       "summary": "North America's only marsupial.",
-      "fact": "Opossums play dead as a defense, releasing a foul smell to fool predators!"
+      "fact": "Opossums play dead as a defense, releasing a harmless spray that smells like decay to fool predators!"
     },
     {
       "id": "skunk",
@@ -159,7 +159,7 @@
       "category": "night",
       "icon": "🦨",
       "summary": "Night forager known for defensive spray.",
-      "fact": "Striped skunks can spray a smelly liquid up to 10 feet to defend themselves from predators!"
+      "fact": "Striped skunks can accurately spray a foul-smelling liquid up to 10 feet to defend themselves."
     },
     {
       "id": "flying_squirrel",
@@ -167,7 +167,7 @@
       "category": "night",
       "icon": "🐿️",
       "summary": "Gliding nocturnal tree squirrel.",
-      "fact": "Flying squirrels can glide up to 150 feet using skin flaps between their legs!"
+      "fact": "Flying squirrels glide using a flap of skin called a patagium, stretching between their legs."
     },
     {
       "id": "little_brown_bat",
@@ -175,7 +175,7 @@
       "category": "night",
       "icon": "🦇",
       "summary": "Common insect-eating bat species.",
-      "fact": "Little Brown Bats can catch insects mid-air using echolocation, helping control mosquito populations naturally!"
+      "fact": "Little Brown Bats use echolocation to catch insects mid-flight, making them night’s tiny, noisy hunters!"
     },
     {
       "id": "big_brown_bat",
@@ -183,7 +183,7 @@
       "category": "night",
       "icon": "🦇",
       "summary": "Large bat active near structures.",
-      "fact": "Big Brown Bats use echolocation to catch insects, helping control pests naturally!"
+      "fact": "Big Brown Bats use echolocation to catch insects, making them natural pest controllers in the wild."
     },
     {
       "id": "barred_owl",
@@ -191,7 +191,7 @@
       "category": "night",
       "icon": "🦉",
       "summary": "Woodland owl known for 'who cooks for you' call.",
-      "fact": "Barred Owls have distinctive hoots that sound like “Who cooks for you? Who cooks for you all?”"
+      "fact": "Barred Owls hoot “Who cooks for you?”—a unique call that helps them find mates and mark territory!"
     },
     {
       "id": "great_horned_owl",
@@ -199,7 +199,7 @@
       "category": "night",
       "icon": "🦉",
       "summary": "Large powerful nocturnal raptor.",
-      "fact": "Great Horned Owls have ear tufts that help them blend into trees, not actual ears."
+      "fact": "Great Horned Owls can rotate their heads up to 270 degrees to spot prey without moving their bodies."
     },
     {
       "id": "bluejay",
@@ -207,7 +207,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Bold feeder visitor with loud calls.",
-      "fact": "Blue Jays can mimic hawk calls to scare away predators and protect their nests."
+      "fact": "Blue Jays can mimic hawk calls to scare away other birds and protect their territory."
     },
     {
       "id": "cardinal",
@@ -215,7 +215,7 @@
       "category": "birds",
       "icon": "🐦‍⬛",
       "summary": "Bright red year-round songbird.",
-      "fact": "Northern Cardinals are one of the few birds where males and females sing to communicate."
+      "fact": "Male Northern Cardinals are bright red, while females are a warm brown with red accents."
     },
     {
       "id": "chickadee",
@@ -223,7 +223,7 @@
       "category": "birds",
       "icon": "🐤",
       "summary": "Small energetic feeder regular.",
-      "fact": "Black-capped Chickadees can remember thousands of hiding spots for their food throughout winter!"
+      "fact": "Black-capped Chickadees can remember hundreds of hiding spots for their food throughout the year!"
     },
     {
       "id": "titmouse",
@@ -231,7 +231,7 @@
       "category": "birds",
       "icon": "🐤",
       "summary": "Curious small woodland songbird.",
-      "fact": "Tufted Titmice use their crest to signal mood, raising it when alarmed or excited."
+      "fact": "Tufted Titmice use their crest to communicate mood, raising it when excited or agitated."
     },
     {
       "id": "nuthatch",
@@ -239,7 +239,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Tree climber often moving headfirst down bark.",
-      "fact": "White-breasted Nuthatches walk headfirst down tree trunks to find hidden insects and seeds."
+      "fact": "White-breasted Nuthatches can climb down trees headfirst, unlike most birds that only go upward!"
     },
     {
       "id": "downy_woodpecker",
@@ -247,7 +247,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Small woodpecker common at feeders.",
-      "fact": "Downy Woodpeckers use their tiny bills to tap trees, searching for hidden insects to eat."
+      "fact": "Downy Woodpeckers use their small beaks to drill tiny holes in trees for insects."
     },
     {
       "id": "hairy_woodpecker",
@@ -255,7 +255,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Larger look-alike of the downy.",
-      "fact": "Hairy Woodpeckers drum on trees to find insects and communicate with other woodpeckers nearby."
+      "fact": "Hairy Woodpeckers use their long tongues to extract insects hidden deep inside tree bark."
     },
     {
       "id": "pileated_woodpecker",
@@ -263,7 +263,7 @@
       "category": "birds",
       "icon": "🪵",
       "summary": "Large crested forest woodpecker.",
-      "fact": "Pileated Woodpeckers create large, rectangular holes to find insects deep inside trees."
+      "fact": "Pileated Woodpeckers can chisel holes as large as a dinner plate to find insects!"
     },
     {
       "id": "red_bellied_woodpecker",
@@ -271,7 +271,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Common woodland woodpecker species.",
-      "fact": "Red-bellied Woodpeckers have strong bills that help them drum on trees to find insects."
+      "fact": "Red-bellied Woodpeckers use their strong beaks to drum on trees, marking territory and finding food!"
     },
     {
       "id": "mourning_dove",
@@ -279,7 +279,7 @@
       "category": "birds",
       "icon": "🕊️",
       "summary": "Gentle ground-feeding dove.",
-      "fact": "Mourning Doves can fly up to 55 miles per hour, making them one of the fastest birds!"
+      "fact": "Mourning Doves are named for their soft, sad cooing that sounds like gentle mourning."
     },
     {
       "id": "goldfinch",
@@ -287,7 +287,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Bright yellow seasonal finch.",
-      "fact": "American Goldfinches molt twice a year, changing from bright yellow in summer to duller brown in winter!"
+      "fact": "American Goldfinches molt twice a year, shifting from bright yellow summer to duller winter plumage!"
     },
     {
       "id": "junco",
@@ -295,7 +295,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Winter feeder bird.",
-      "fact": "Dark-eyed Juncos are often called \"snowbirds\" because they appear in winter across much of North America."
+      "fact": "Dark-eyed Juncos are often called \"snowbirds\" because they appear nationwide during winter migrations."
     },
     {
       "id": "house_finch",
@@ -303,7 +303,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Small social seed-eater.",
-      "fact": "House Finches sing complex songs learned from neighbors, making each bird’s tune uniquely creative!"
+      "fact": "House Finches are one of the few birds where males' red feathers come from their diet!"
     },
     {
       "id": "purple_finch",
@@ -311,7 +311,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Rosy-colored woodland finch.",
-      "fact": "Purple Finches have a sweet, raspberry-like song that brightens North American spring mornings."
+      "fact": "Purple Finches are known for their sweet, warbling songs that fill North American forests in spring!"
     },
     {
       "id": "wild_turkey",
@@ -319,7 +319,7 @@
       "category": "birds",
       "icon": "🦃",
       "summary": "Large ground bird common in Michigan.",
-      "fact": "Wild turkeys can run up to 20 miles per hour and fly short distances at 55 miles per hour!"
+      "fact": "Wild turkeys can fly up to 55 miles per hour for short distances!"
     },
     {
       "id": "ruffed_grouse",
@@ -327,7 +327,7 @@
       "category": "birds",
       "icon": "🐓",
       "summary": "Forest bird known for drumming display.",
-      "fact": "Ruffed Grouse create a unique drumming sound by rapidly beating air with their wings to attract mates!"
+      "fact": "Ruffed Grouse use their wings like drums, creating a rhythmic sound called drumming to attract mates."
     },
     {
       "id": "sandhill_crane",
@@ -335,7 +335,7 @@
       "category": "birds",
       "icon": "🕊️",
       "summary": "Tall wetland bird with loud call.",
-      "fact": "Sandhill Cranes perform loud, trumpeting calls that can be heard over two miles away!"
+      "fact": "Sandhill Cranes perform intricate, graceful dances to strengthen pair bonds and communicate with each other."
     },
     {
       "id": "crow",
@@ -343,7 +343,7 @@
       "category": "birds",
       "icon": "🐦‍⬛",
       "summary": "Highly intelligent black bird.",
-      "fact": "American Crows can recognize human faces and remember if they are friendly or threatening."
+      "fact": "American Crows use tools like sticks to grab hard-to-reach insects for food."
     },
     {
       "id": "raven",
@@ -351,7 +351,7 @@
       "category": "birds",
       "icon": "🐦‍⬛",
       "summary": "Large intelligent corvid species.",
-      "fact": "Common Ravens can mimic sounds from their environment, including human speech and animal calls."
+      "fact": "Common Ravens are one of the smartest birds, known for using tools and solving complex puzzles!"
     },
     {
       "id": "red_tailed_hawk",
@@ -359,7 +359,7 @@
       "category": "birds",
       "icon": "🦅",
       "summary": "Common soaring raptor.",
-      "fact": "Red-tailed Hawks have incredible eyesight, allowing them to spot prey from over a mile away!"
+      "fact": "Red-tailed Hawks use their keen eyesight to spot prey from over a mile away!"
     },
     {
       "id": "coopers_hawk",
@@ -367,7 +367,7 @@
       "category": "birds",
       "icon": "🦅",
       "summary": "Fast woodland hunting hawk.",
-      "fact": "Cooper’s Hawks use surprise attacks, flying through dense trees to catch birds mid-air with sharp agility."
+      "fact": "Cooper’s Hawks are agile flyers, able to weave through trees to catch birds and small mammals!"
     },
     {
       "id": "mallard",
@@ -375,7 +375,7 @@
       "category": "water",
       "icon": "🦆",
       "summary": "Common freshwater duck.",
-      "fact": "Mallard ducks are known for their vibrant green heads and are one of the most common wild ducks worldwide!"
+      "fact": "Mallard ducks are the ancestors of most domestic duck breeds worldwide!"
     },
     {
       "id": "wood_duck",
@@ -383,7 +383,7 @@
       "category": "water",
       "icon": "🦆",
       "summary": "Colorful duck nesting in tree cavities.",
-      "fact": "Wood Ducks are one of the few ducks with colorful, iridescent plumage and bright red eyes!"
+      "fact": "Wood Ducks are expert nesters, often laying eggs in old tree cavities near water."
     },
     {
       "id": "canada_goose",
@@ -391,7 +391,7 @@
       "category": "water",
       "icon": "🪿",
       "summary": "Migratory waterfowl species.",
-      "fact": "Canada Geese can fly over 1,500 miles during migration without stopping to rest!"
+      "fact": "Canada Geese can fly thousands of miles during migration, using a distinctive V-formation to conserve energy."
     },
     {
       "id": "great_blue_heron",
@@ -399,7 +399,7 @@
       "category": "water",
       "icon": "🦤",
       "summary": "Large fish-eating wading bird.",
-      "fact": "Great Blue Herons can stand motionless for minutes, patiently waiting to catch fish with their sharp beaks!"
+      "fact": "Great Blue Herons can stand still for long periods, patiently waiting to catch fish with their sharp beaks."
     },
     {
       "id": "painted_turtle",
@@ -407,7 +407,7 @@
       "category": "water",
       "icon": "🐢",
       "summary": "Common basking turtle.",
-      "fact": "Painted turtles can live over 50 years and are known for their brightly colored shells!"
+      "fact": "Painted turtles can live over 30 years and have brightly colored shells with red, yellow, and black patterns."
     },
     {
       "id": "snapping_turtle",
@@ -415,7 +415,7 @@
       "category": "water",
       "icon": "🐢",
       "summary": "Large aquatic turtle.",
-      "fact": "Snapping turtles can live over 40 years and have powerful jaws to defend themselves underwater!"
+      "fact": "Snapping turtles have powerful jaws and can snap shut in less than 0.1 seconds!"
     },
     {
       "id": "bluegill",
@@ -423,7 +423,7 @@
       "category": "water",
       "icon": "🐟",
       "summary": "Common freshwater panfish.",
-      "fact": "Bluegill use their colorful cheeks to attract mates during spring spawning season."
+      "fact": "Bluegill can quickly change color to blend into their surroundings and avoid predators."
     },
     {
       "id": "largemouth_bass",
@@ -431,7 +431,7 @@
       "category": "water",
       "icon": "🐟",
       "summary": "Popular freshwater predator fish.",
-      "fact": "Largemouth bass have a unique jaw that extends beyond their eye for catching bigger prey!"
+      "fact": "Largemouth bass can grow over 2 feet long and are popular for sport fishing worldwide!"
     },
     {
       "id": "yellow_perch",
@@ -439,7 +439,7 @@
       "category": "water",
       "icon": "🐟",
       "summary": "Schooling freshwater fish.",
-      "fact": "Yellow perch have sharp spines on their fins for protection against predators in freshwater habitats."
+      "fact": "Yellow Perch have bright yellow bodies with vertical dark stripes, making them easy to identify in lakes!"
     },
     {
       "id": "northern_pike",
@@ -447,7 +447,7 @@
       "category": "water",
       "icon": "🐟",
       "summary": "Fast ambush predator fish.",
-      "fact": "Northern Pike have sharp teeth and can strike prey faster than a human eye can follow!"
+      "fact": "Northern Pike have sharp teeth and can grow over 4 feet long, making them fierce freshwater predators!"
     },
     {
       "id": "spring_peeper",
@@ -455,7 +455,7 @@
       "category": "amphib_reptile",
       "icon": "🐸",
       "summary": "Tiny frog with loud spring calls.",
-      "fact": "Spring Peepers are tiny frogs known for their loud, high-pitched calls during early spring nights!"
+      "fact": "Spring Peepers are tiny frogs known for their loud, high-pitched peeping calls during early spring nights."
     },
     {
       "id": "bullfrog",
@@ -463,7 +463,7 @@
       "category": "amphib_reptile",
       "icon": "🐸",
       "summary": "Large pond frog.",
-      "fact": "American Bullfrogs can grow up to 8 inches long, making them one of North America's largest frogs!"
+      "fact": "American Bullfrogs can grow up to 8 inches and are known for their deep, loud croaks!"
     },
     {
       "id": "green_frog",
@@ -471,7 +471,7 @@
       "category": "amphib_reptile",
       "icon": "🐸",
       "summary": "Common shoreline frog.",
-      "fact": "Green frogs can jump over 20 times their body length to escape predators quickly!"
+      "fact": "Green frogs can jump over 20 times their body length to escape predators!"
     },
     {
       "id": "leopard_frog",
@@ -479,7 +479,7 @@
       "category": "amphib_reptile",
       "icon": "🐸",
       "summary": "Spotted frog near wetlands.",
-      "fact": "Leopard frogs can jump over 20 times their body length in a single leap!"
+      "fact": "Leopard frogs can jump over 10 times their body length to escape predators quickly!"
     },
     {
       "id": "garter_snake",
@@ -487,7 +487,7 @@
       "category": "amphib_reptile",
       "icon": "🐍",
       "summary": "Common harmless snake.",
-      "fact": "Garter snakes can swim and are often found near water hunting amphibians and small fish."
+      "fact": "Garter snakes can live both on land and in water, making them excellent swimmers!"
     },
     {
       "id": "water_snake",
@@ -495,7 +495,7 @@
       "category": "amphib_reptile",
       "icon": "🐍",
       "summary": "Semi-aquatic snake species.",
-      "fact": "Water snakes can hold their breath underwater for up to an hour while hunting or resting."
+      "fact": "Water snakes can hold their breath underwater for up to 30 minutes while hunting or hiding."
     },
     {
       "id": "milk_snake",
@@ -503,7 +503,7 @@
       "category": "amphib_reptile",
       "icon": "🐍",
       "summary": "Non-venomous woodland snake.",
-      "fact": "Eastern Milk Snakes mimic venomous snakes’ patterns to protect themselves from predators."
+      "fact": "Eastern Milk Snakes mimic venomous copperheads with similar colors to deter predators."
     },
     {
       "id": "monarch",
@@ -511,7 +511,7 @@
       "category": "insects",
       "icon": "🦋",
       "summary": "Migratory butterfly species.",
-      "fact": "Monarch butterflies migrate up to 3,000 miles, traveling from North America to central Mexico every year!"
+      "fact": "Monarch butterflies migrate up to 3,000 miles to find warmer winter habitats."
     },
     {
       "id": "swallowtail",
@@ -519,7 +519,7 @@
       "category": "insects",
       "icon": "🦋",
       "summary": "Large colorful butterfly.",
-      "fact": "Swallowtail butterflies have tail-like wing extensions that help confuse predators and protect their vital body parts."
+      "fact": "Swallowtail butterflies can mimic toxic species to avoid predators, using bright colors as a natural warning."
     },
     {
       "id": "dragonfly",
@@ -527,7 +527,7 @@
       "category": "insects",
       "icon": "🪲",
       "summary": "Fast aerial insect predator.",
-      "fact": "Dragonflies can fly in six directions: up, down, forward, backward, and side to side!"
+      "fact": "Dragonflies can fly up to 30 miles per hour, making them some of the fastest insects!"
     },
     {
       "id": "damselfly",
@@ -535,7 +535,7 @@
       "category": "insects",
       "icon": "🪲",
       "summary": "Slender cousin of dragonflies.",
-      "fact": "Damselflies fold their wings along their body when resting, unlike dragonflies that keep wings spread."
+      "fact": "Damselflies fold their wings over their bodies, unlike dragonflies that keep wings spread out while resting."
     },
     {
       "id": "firefly",
@@ -543,7 +543,7 @@
       "category": "insects",
       "icon": "✨",
       "summary": "Bioluminescent summer insect.",
-      "fact": "Fireflies use bioluminescence to attract mates and communicate through unique light patterns."
+      "fact": "Fireflies use bioluminescence to attract mates, producing light through a chemical reaction in their abdomens."
     },
     {
       "id": "honeybee",
@@ -551,7 +551,7 @@
       "category": "insects",
       "icon": "🐝",
       "summary": "Important pollinator species.",
-      "fact": "Honeybees communicate by dancing, using a “waggle dance” to share flower locations with hive mates!"
+      "fact": "Honeybees communicate by dancing to share the location of flowers with their hive mates."
     },
     {
       "id": "bumblebee",
@@ -559,7 +559,7 @@
       "category": "insects",
       "icon": "🐝",
       "summary": "Cold-tolerant pollinator.",
-      "fact": "Bumblebees can vibrate their flight muscles to buzz-pollinate flowers, helping release pollen efficiently."
+      "fact": "Bumblebees can fly in cooler temperatures than most bees, helping pollinate early spring flowers."
     },
     {
       "id": "grasshopper",
@@ -567,7 +567,7 @@
       "category": "insects",
       "icon": "🦗",
       "summary": "Common jumping insect.",
-      "fact": "Grasshoppers can jump over 20 times their own body length using powerful back legs!"
+      "fact": "Grasshoppers can jump over 20 times their own body length using powerful hind legs!"
     }
   ]
 }
