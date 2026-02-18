@@ -1,51 +1,45 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>Critter Camp Overlay</title>
-  </head>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CritterCampRCT Overlay</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- Root overlay container -->
+  <div id="ccRoot" class="hidden">
+    <!-- Category rail -->
+    <div id="catRail" aria-label="Critter categories"></div>
 
-  <body>
-    <div id="app">
-      <!-- Category rail (icons only) -->
-      <div id="catRail" aria-label="Critter categories"></div>
-
-      <!-- Slide-out critter picker -->
-      <div id="panel" class="panel closed" aria-label="Critter list">
-        <div class="panelHeader">
-          <div class="panelTitle" id="panelTitle">Category</div>
-          <button id="panelClose" class="iconBtn" aria-label="Close panel">×</button>
-        </div>
-        <div id="critterGrid" class="grid" aria-label="Critter icons"></div>
+    <!-- Slide-out category panel -->
+    <div id="panel" class="closed" aria-label="Category panel">
+      <div id="panelHeader">
+        <div id="panelTitle">CATEGORY</div>
       </div>
-
-      <!-- Critter info card -->
-      <div id="card" class="card hidden" aria-label="Critter info">
-        <button id="cardClose" class="iconBtn" aria-label="Close card">×</button>
-        <div class="cardTop">
-          <div class="bigIcon" id="cIcon">🐾</div>
-          <div class="cardNames">
-            <div class="name" id="cName">Critter</div>
-          </div>
-        </div>
-
-        <div class="block">
-          <div class="label">Summary</div>
-          <div class="text" id="cSummary"></div>
-        </div>
-
-        <div class="block">
-          <div class="label">Fun Fact</div>
-          <div class="fact" id="cFact"></div>
-        </div>
-      </div>
-
-      <!-- tiny status (optional) -->
-      <div id="status" class="status"></div>
+      <div id="critterGrid"></div>
     </div>
 
-    <script src="./viewer.js"></script>
-  </body>
+    <!-- Critter info card -->
+    <div id="card" class="hidden" aria-label="Critter info">
+      <div id="cardTop">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <div id="cIcon">🦌</div>
+          <div id="cName">Critter</div>
+        </div>
+      </div>
+
+      <div class="cardLabel">Summary</div>
+      <div id="cSummary"></div>
+
+      <div class="cardLabel">Fun Fact</div>
+      <div id="cFact"></div>
+    </div>
+  </div>
+
+  <div id="status" style="display:none;"></div>
+
+  <script src="./viewer.js"></script>
+</body>
 </html>
+
