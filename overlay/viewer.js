@@ -1,96 +1,165 @@
-// Critter Camp Extension Overlay
-// Fetches critter data from GitHub Pages JSON and refreshes automatically.
+// Critter Camp Overlay UI (categories -> slide-out -> critter card)
+// Data pulled from GitHub Pages JSON, refreshed automatically.
 
 const DATA_URL = "../data/critter-data.json";
+const POLL_MS = 2 * 60 * 1000; // refresh UI often; data updates hourly via workflow
 
-// How often the overlay checks for new data (2 minutes)
-const POLL_MS = 2 * 60 * 1000;
+const catRail = document.getElementById("catRail");
+const panel = document.getElementById("panel");
+const panelTitle = document.getElementById("panelTitle");
+const panelClose = document.getElementById("panelClose");
+const critterGrid = document.getElementById("critterGrid");
 
-let state = { critters: [], lastUpdated: "" };
-
-const rail = document.getElementById("rail");
 const card = document.getElementById("card");
-const closeBtn = document.getElementById("close");
-
+const cardClose = document.getElementById("cardClose");
+const cIcon = document.getElementById("cIcon");
 const cName = document.getElementById("cName");
-const cTag = document.getElementById("cTag");
-const cBio = document.getElementById("cBio");
+const cSummary = document.getElementById("cSummary");
 const cFact = document.getElementById("cFact");
-const cSeen = document.getElementById("cSeen");
-const updated = document.getElementById("updated");
 
-closeBtn.addEventListener("click", () => card.classList.add("hidden"));
+const status = document.getElementById("status");
 
-function renderRail() {
-  rail.innerHTML = "";
+let data = { lastUpdated: "", critters: [] };
+let activeCategory = null;
 
-  (state.critters || []).forEach((c) => {
+const CATEGORY_ORDER = [
+  "mammals",
+  "birds",
+  "night",
+  "amphib_reptile",
+  "water",
+  "insects"
+];
+
+const CATEGORY_META = {
+  mammals: { tip: "Mammals", icon: "🦌" },
+  birds: { tip: "Birds", icon: "🐦" },
+  night: { tip: "Night Critters", icon: "🦝" },          // per your request
+  water: { tip: "Water Critters", icon: "🐟" },
+  amphib_reptile: { tip: "Amphibians/Reptiles", icon: "🐸" },
+  insects: { tip: "Insects", icon: "🦋" }
+};
+
+panelClose.addEventListener("click", () => closePanel());
+cardClose.addEventListener("click", () => card.classList.add("hidden"));
+
+function closePanel() {
+  panel.classList.add("closed");
+  activeCategory = null;
+}
+
+function openPanel(catKey) {
+  activeCategory = catKey;
+  panelTitle.textContent = CATEGORY_META[catKey]?.tip || "Category";
+  panel.classList.remove("closed");
+  renderCritterGrid();
+}
+
+function renderCategoryRail() {
+  catRail.innerHTML = "";
+
+  CATEGORY_ORDER.forEach((key) => {
+    const meta = CATEGORY_META[key];
     const btn = document.createElement("button");
-    btn.className = "critterBtn";
+    btn.className = "catBtn";
+    btn.setAttribute("data-tip", meta.tip);
 
-    // Button label priority: buttonLabel > shortName > first word of name > id
-    const label =
-      c.buttonLabel ||
-      c.shortName ||
-      (c.name ? c.name.split(" ")[0] : "") ||
-      c.id ||
-      "Critter";
+    const ico = document.createElement("div");
+    ico.className = "catIcon";
+    ico.textContent = meta.icon;
 
-    btn.textContent = String(label).slice(0, 12);
-    btn.title = c.name || c.id || "Critter";
+    btn.appendChild(ico);
 
-    btn.addEventListener("click", () => openCard(c.id));
-    rail.appendChild(btn);
+    btn.addEventListener("click", () => {
+      // toggle behavior
+      if (activeCategory === key && !panel.classList.contains("closed")) {
+        closePanel();
+      } else {
+        openPanel(key);
+      }
+    });
+
+    catRail.appendChild(btn);
   });
 }
 
-function openCard(id) {
-  const c = (state.critters || []).find((x) => x.id === id);
+function renderCritterGrid() {
+  critterGrid.innerHTML = "";
+
+  const list = (data.critters || []).filter(c => c.category === activeCategory);
+
+  list.forEach((c) => {
+    const btn = document.createElement("button");
+    btn.className = "critterBtn";
+    btn.setAttribute("data-tip", c.name || c.id);
+
+    const ico = document.createElement("div");
+    ico.className = "ico";
+    ico.textContent = c.icon || "🐾";
+
+    btn.appendChild(ico);
+
+    btn.addEventListener("click", () => {
+      openCritter(c.id);
+    });
+
+    critterGrid.appendChild(btn);
+  });
+}
+
+function openCritter(id) {
+  const c = (data.critters || []).find(x => x.id === id);
   if (!c) return;
 
+  cIcon.textContent = c.icon || "🐾";
   cName.textContent = c.name || "";
-  cTag.textContent = c.tag || "";
-  cBio.textContent = c.bio || "";
-  cFact.textContent = c.funFact || "";
-  cSeen.textContent = c.lastSeen || "Unknown";
+  cSummary.textContent = c.summary || "";
+  cFact.textContent = c.fact || "…";
 
-  updated.textContent = state.lastUpdated ? `Updated: ${state.lastUpdated}` : "";
   card.classList.remove("hidden");
 }
 
 async function fetchData() {
-  // cache-buster avoids stale JSON
-  const url = `${DATA_URL}?t=${Date.now()}`;
-
+  const url = `${DATA_URL}?t=${Date.now()}`; // cache-buster
   const res = await fetch(url, { cache: "no-store" });
-  if (!res.ok) throw new Error(`Failed to load critter data (${res.status})`);
-
+  if (!res.ok) throw new Error(`Data fetch failed (${res.status})`);
   const json = await res.json();
 
-  state = {
-    critters: Array.isArray(json.critters) ? json.critters : [],
-    lastUpdated: json.lastUpdated || ""
+  data = {
+    lastUpdated: json.lastUpdated || "",
+    critters: Array.isArray(json.critters) ? json.critters : []
   };
 
-  renderRail();
+  status.textContent = data.lastUpdated ? `Facts refreshed: ${data.lastUpdated}` : "";
 }
 
 async function start() {
-  // initial load
+  renderCategoryRail();
+
   try {
     await fetchData();
   } catch (e) {
-    console.error("Initial data load failed:", e);
+    console.error(e);
   }
 
-  // periodic refresh
   setInterval(async () => {
     try {
       await fetchData();
+      // If panel open, keep it in sync
+      if (activeCategory && !panel.classList.contains("closed")) {
+        renderCritterGrid();
+      }
+      // If card open, keep fact updated without needing a re-click
+      if (!card.classList.contains("hidden")) {
+        const currentName = cName.textContent;
+        const found = (data.critters || []).find(x => x.name === currentName);
+        if (found) cFact.textContent = found.fact || cFact.textContent;
+      }
     } catch (e) {
-      console.error("Periodic data refresh failed:", e);
+      console.error(e);
     }
   }, POLL_MS);
 }
 
 start();
+
