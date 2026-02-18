@@ -1,5 +1,10 @@
+// Critter Camp Extension Overlay
+// Fetches critter data from GitHub Pages JSON and refreshes automatically.
+
 const DATA_URL = "../data/critter-data.json";
-const POLL_MS = 10 * 60 * 1000; // 10 min
+
+// How often the overlay checks for new data (2 minutes)
+const POLL_MS = 2 * 60 * 1000;
 
 let state = { critters: [], lastUpdated: "" };
 
@@ -18,18 +23,29 @@ closeBtn.addEventListener("click", () => card.classList.add("hidden"));
 
 function renderRail() {
   rail.innerHTML = "";
-  state.critters.forEach((c) => {
+
+  (state.critters || []).forEach((c) => {
     const btn = document.createElement("button");
     btn.className = "critterBtn";
-    btn.textContent = (c.buttonLabel || c.name || "Critter").slice(0, 10);
-    btn.title = c.name || c.id;
+
+    // Button label priority: buttonLabel > shortName > first word of name > id
+    const label =
+      c.buttonLabel ||
+      c.shortName ||
+      (c.name ? c.name.split(" ")[0] : "") ||
+      c.id ||
+      "Critter";
+
+    btn.textContent = String(label).slice(0, 12);
+    btn.title = c.name || c.id || "Critter";
+
     btn.addEventListener("click", () => openCard(c.id));
     rail.appendChild(btn);
   });
 }
 
 function openCard(id) {
-  const c = state.critters.find((x) => x.id === id);
+  const c = (state.critters || []).find((x) => x.id === id);
   if (!c) return;
 
   cName.textContent = c.name || "";
@@ -37,15 +53,18 @@ function openCard(id) {
   cBio.textContent = c.bio || "";
   cFact.textContent = c.funFact || "";
   cSeen.textContent = c.lastSeen || "Unknown";
-  updated.textContent = state.lastUpdated ? `Updated: ${state.lastUpdated}` : "";
 
+  updated.textContent = state.lastUpdated ? `Updated: ${state.lastUpdated}` : "";
   card.classList.remove("hidden");
 }
 
 async function fetchData() {
-  const url = `${DATA_URL}?t=${Date.now()}`; // cache-buster
-  const res = await fetch(url);
-  if (!res.ok) throw new Error("Failed to load critter data");
+  // cache-buster avoids stale JSON
+  const url = `${DATA_URL}?t=${Date.now()}`;
+
+  const res = await fetch(url, { cache: "no-store" });
+  if (!res.ok) throw new Error(`Failed to load critter data (${res.status})`);
+
   const json = await res.json();
 
   state = {
@@ -57,10 +76,20 @@ async function fetchData() {
 }
 
 async function start() {
-  try { await fetchData(); } catch (e) { console.error(e); }
+  // initial load
+  try {
+    await fetchData();
+  } catch (e) {
+    console.error("Initial data load failed:", e);
+  }
 
+  // periodic refresh
   setInterval(async () => {
-    try { await fetchData(); } catch (e) { console.error(e); }
+    try {
+      await fetchData();
+    } catch (e) {
+      console.error("Periodic data refresh failed:", e);
+    }
   }, POLL_MS);
 }
 
