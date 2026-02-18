@@ -1,83 +1,573 @@
 {
-  "lastUpdated": "initial",
+  "lastUpdated": "2026-02-18T17:34:41Z",
   "critters": [
-
-    { "id": "whitetail_deer", "name": "White-tailed Deer", "category": "mammals", "icon": "🦌", "summary": "Common woodland browser often seen near fields and feeders.", "fact": "" },
-    { "id": "black_bear", "name": "Black Bear", "category": "mammals", "icon": "🐻", "summary": "Largest forest mammal in Michigan woodlands.", "fact": "" },
-    { "id": "coyote", "name": "Coyote", "category": "mammals", "icon": "🐕", "summary": "Adaptable predator common in rural areas.", "fact": "" },
-    { "id": "red_fox", "name": "Red Fox", "category": "mammals", "icon": "🦊", "summary": "Solitary hunter active in open woods and fields.", "fact": "" },
-    { "id": "gray_fox", "name": "Gray Fox", "category": "mammals", "icon": "🦊", "summary": "Smaller fox species able to climb trees.", "fact": "" },
-    { "id": "bobcat", "name": "Bobcat", "category": "mammals", "icon": "🐈", "summary": "Elusive woodland feline predator.", "fact": "" },
-    { "id": "porcupine", "name": "Porcupine", "category": "mammals", "icon": "🦔", "summary": "Slow-moving rodent protected by quills.", "fact": "" },
-    { "id": "beaver", "name": "Beaver", "category": "mammals", "icon": "🦫", "summary": "Dam-building wetland engineer.", "fact": "" },
-    { "id": "muskrat", "name": "Muskrat", "category": "mammals", "icon": "🦫", "summary": "Small aquatic rodent near ponds and streams.", "fact": "" },
-    { "id": "mink", "name": "Mink", "category": "mammals", "icon": "🐾", "summary": "Semi-aquatic predator along shorelines.", "fact": "" },
-    { "id": "fisher", "name": "Fisher", "category": "mammals", "icon": "🐾", "summary": "Forest carnivore related to weasels.", "fact": "" },
-    { "id": "river_otter", "name": "River Otter", "category": "mammals", "icon": "🦦", "summary": "Playful aquatic predator found near rivers.", "fact": "" },
-    { "id": "gray_squirrel", "name": "Eastern Gray Squirrel", "category": "mammals", "icon": "🐿️", "summary": "Tree squirrel common at feeders.", "fact": "" },
-    { "id": "red_squirrel", "name": "American Red Squirrel", "category": "mammals", "icon": "🐿️", "summary": "Small territorial woodland squirrel.", "fact": "" },
-    { "id": "chipmunk", "name": "Chipmunk", "category": "mammals", "icon": "🐿️", "summary": "Ground squirrel known for cheek pouches.", "fact": "" },
-    { "id": "snowshoe_hare", "name": "Snowshoe Hare", "category": "mammals", "icon": "🐇", "summary": "Forest rabbit with seasonal coat change.", "fact": "" },
-    { "id": "cottontail", "name": "Eastern Cottontail", "category": "mammals", "icon": "🐇", "summary": "Common backyard rabbit species.", "fact": "" },
-
-    { "id": "raccoon", "name": "Raccoon", "category": "night", "icon": "🦝", "summary": "Nocturnal omnivore with dexterous paws.", "fact": "" },
-    { "id": "opossum", "name": "Opossum", "category": "night", "icon": "🐀", "summary": "North America's only marsupial.", "fact": "" },
-    { "id": "skunk", "name": "Striped Skunk", "category": "night", "icon": "🦨", "summary": "Night forager known for defensive spray.", "fact": "" },
-    { "id": "flying_squirrel", "name": "Flying Squirrel", "category": "night", "icon": "🐿️", "summary": "Gliding nocturnal tree squirrel.", "fact": "" },
-    { "id": "little_brown_bat", "name": "Little Brown Bat", "category": "night", "icon": "🦇", "summary": "Common insect-eating bat species.", "fact": "" },
-    { "id": "big_brown_bat", "name": "Big Brown Bat", "category": "night", "icon": "🦇", "summary": "Large bat active near structures.", "fact": "" },
-    { "id": "barred_owl", "name": "Barred Owl", "category": "night", "icon": "🦉", "summary": "Woodland owl known for 'who cooks for you' call.", "fact": "" },
-    { "id": "great_horned_owl", "name": "Great Horned Owl", "category": "night", "icon": "🦉", "summary": "Large powerful nocturnal raptor.", "fact": "" },
-
-    { "id": "bluejay", "name": "Blue Jay", "category": "birds", "icon": "🐦", "summary": "Bold feeder visitor with loud calls.", "fact": "" },
-    { "id": "cardinal", "name": "Northern Cardinal", "category": "birds", "icon": "🐦‍⬛", "summary": "Bright red year-round songbird.", "fact": "" },
-    { "id": "chickadee", "name": "Black-capped Chickadee", "category": "birds", "icon": "🐤", "summary": "Small energetic feeder regular.", "fact": "" },
-    { "id": "titmouse", "name": "Tufted Titmouse", "category": "birds", "icon": "🐤", "summary": "Curious small woodland songbird.", "fact": "" },
-    { "id": "nuthatch", "name": "White-breasted Nuthatch", "category": "birds", "icon": "🐦", "summary": "Tree climber often moving headfirst down bark.", "fact": "" },
-    { "id": "downy_woodpecker", "name": "Downy Woodpecker", "category": "birds", "icon": "🐦", "summary": "Small woodpecker common at feeders.", "fact": "" },
-    { "id": "hairy_woodpecker", "name": "Hairy Woodpecker", "category": "birds", "icon": "🐦", "summary": "Larger look-alike of the downy.", "fact": "" },
-    { "id": "pileated_woodpecker", "name": "Pileated Woodpecker", "category": "birds", "icon": "🪵", "summary": "Large crested forest woodpecker.", "fact": "" },
-    { "id": "red_bellied_woodpecker", "name": "Red-bellied Woodpecker", "category": "birds", "icon": "🐦", "summary": "Common woodland woodpecker species.", "fact": "" },
-    { "id": "mourning_dove", "name": "Mourning Dove", "category": "birds", "icon": "🕊️", "summary": "Gentle ground-feeding dove.", "fact": "" },
-    { "id": "goldfinch", "name": "American Goldfinch", "category": "birds", "icon": "🐦", "summary": "Bright yellow seasonal finch.", "fact": "" },
-    { "id": "junco", "name": "Dark-eyed Junco", "category": "birds", "icon": "🐦", "summary": "Winter feeder bird.", "fact": "" },
-    { "id": "house_finch", "name": "House Finch", "category": "birds", "icon": "🐦", "summary": "Small social seed-eater.", "fact": "" },
-    { "id": "purple_finch", "name": "Purple Finch", "category": "birds", "icon": "🐦", "summary": "Rosy-colored woodland finch.", "fact": "" },
-    { "id": "wild_turkey", "name": "Wild Turkey", "category": "birds", "icon": "🦃", "summary": "Large ground bird common in Michigan.", "fact": "" },
-    { "id": "ruffed_grouse", "name": "Ruffed Grouse", "category": "birds", "icon": "🐓", "summary": "Forest bird known for drumming display.", "fact": "" },
-    { "id": "sandhill_crane", "name": "Sandhill Crane", "category": "birds", "icon": "🕊️", "summary": "Tall wetland bird with loud call.", "fact": "" },
-    { "id": "crow", "name": "American Crow", "category": "birds", "icon": "🐦‍⬛", "summary": "Highly intelligent black bird.", "fact": "" },
-    { "id": "raven", "name": "Common Raven", "category": "birds", "icon": "🐦‍⬛", "summary": "Large intelligent corvid species.", "fact": "" },
-    { "id": "red_tailed_hawk", "name": "Red-tailed Hawk", "category": "birds", "icon": "🦅", "summary": "Common soaring raptor.", "fact": "" },
-    { "id": "coopers_hawk", "name": "Cooper’s Hawk", "category": "birds", "icon": "🦅", "summary": "Fast woodland hunting hawk.", "fact": "" },
-
-    { "id": "mallard", "name": "Mallard Duck", "category": "water", "icon": "🦆", "summary": "Common freshwater duck.", "fact": "" },
-    { "id": "wood_duck", "name": "Wood Duck", "category": "water", "icon": "🦆", "summary": "Colorful duck nesting in tree cavities.", "fact": "" },
-    { "id": "canada_goose", "name": "Canada Goose", "category": "water", "icon": "🪿", "summary": "Migratory waterfowl species.", "fact": "" },
-    { "id": "great_blue_heron", "name": "Great Blue Heron", "category": "water", "icon": "🦤", "summary": "Large fish-eating wading bird.", "fact": "" },
-    { "id": "painted_turtle", "name": "Painted Turtle", "category": "water", "icon": "🐢", "summary": "Common basking turtle.", "fact": "" },
-    { "id": "snapping_turtle", "name": "Snapping Turtle", "category": "water", "icon": "🐢", "summary": "Large aquatic turtle.", "fact": "" },
-    { "id": "bluegill", "name": "Bluegill", "category": "water", "icon": "🐟", "summary": "Common freshwater panfish.", "fact": "" },
-    { "id": "largemouth_bass", "name": "Largemouth Bass", "category": "water", "icon": "🐟", "summary": "Popular freshwater predator fish.", "fact": "" },
-    { "id": "yellow_perch", "name": "Yellow Perch", "category": "water", "icon": "🐟", "summary": "Schooling freshwater fish.", "fact": "" },
-    { "id": "northern_pike", "name": "Northern Pike", "category": "water", "icon": "🐟", "summary": "Fast ambush predator fish.", "fact": "" },
-
-    { "id": "spring_peeper", "name": "Spring Peeper", "category": "amphib_reptile", "icon": "🐸", "summary": "Tiny frog with loud spring calls.", "fact": "" },
-    { "id": "bullfrog", "name": "American Bullfrog", "category": "amphib_reptile", "icon": "🐸", "summary": "Large pond frog.", "fact": "" },
-    { "id": "green_frog", "name": "Green Frog", "category": "amphib_reptile", "icon": "🐸", "summary": "Common shoreline frog.", "fact": "" },
-    { "id": "leopard_frog", "name": "Leopard Frog", "category": "amphib_reptile", "icon": "🐸", "summary": "Spotted frog near wetlands.", "fact": "" },
-    { "id": "garter_snake", "name": "Garter Snake", "category": "amphib_reptile", "icon": "🐍", "summary": "Common harmless snake.", "fact": "" },
-    { "id": "water_snake", "name": "Water Snake", "category": "amphib_reptile", "icon": "🐍", "summary": "Semi-aquatic snake species.", "fact": "" },
-    { "id": "milk_snake", "name": "Eastern Milk Snake", "category": "amphib_reptile", "icon": "🐍", "summary": "Non-venomous woodland snake.", "fact": "" },
-
-    { "id": "monarch", "name": "Monarch Butterfly", "category": "insects", "icon": "🦋", "summary": "Migratory butterfly species.", "fact": "" },
-    { "id": "swallowtail", "name": "Swallowtail Butterfly", "category": "insects", "icon": "🦋", "summary": "Large colorful butterfly.", "fact": "" },
-    { "id": "dragonfly", "name": "Dragonfly", "category": "insects", "icon": "🪲", "summary": "Fast aerial insect predator.", "fact": "" },
-    { "id": "damselfly", "name": "Damselfly", "category": "insects", "icon": "🪲", "summary": "Slender cousin of dragonflies.", "fact": "" },
-    { "id": "firefly", "name": "Firefly", "category": "insects", "icon": "✨", "summary": "Bioluminescent summer insect.", "fact": "" },
-    { "id": "honeybee", "name": "Honeybee", "category": "insects", "icon": "🐝", "summary": "Important pollinator species.", "fact": "" },
-    { "id": "bumblebee", "name": "Bumblebee", "category": "insects", "icon": "🐝", "summary": "Cold-tolerant pollinator.", "fact": "" },
-    { "id": "grasshopper", "name": "Grasshopper", "category": "insects", "icon": "🦗", "summary": "Common jumping insect.", "fact": "" }
-
+    {
+      "id": "whitetail_deer",
+      "name": "White-tailed Deer",
+      "category": "mammals",
+      "icon": "🦌",
+      "summary": "Common woodland browser often seen near fields and feeders.",
+      "fact": "White-tailed deer use their white tails to signal danger by flashing them like a warning flag."
+    },
+    {
+      "id": "black_bear",
+      "name": "Black Bear",
+      "category": "mammals",
+      "icon": "🐻",
+      "summary": "Largest forest mammal in Michigan woodlands.",
+      "fact": "Black bears can run up to 30 miles per hour despite their bulky size!"
+    },
+    {
+      "id": "coyote",
+      "name": "Coyote",
+      "category": "mammals",
+      "icon": "🐕",
+      "summary": "Adaptable predator common in rural areas.",
+      "fact": "Coyotes communicate using howls, yips, and barks to coordinate with their pack and mark territory."
+    },
+    {
+      "id": "red_fox",
+      "name": "Red Fox",
+      "category": "mammals",
+      "icon": "🦊",
+      "summary": "Solitary hunter active in open woods and fields.",
+      "fact": "Red foxes use their fluffy tails for balance and warmth during cold weather."
+    },
+    {
+      "id": "gray_fox",
+      "name": "Gray Fox",
+      "category": "mammals",
+      "icon": "🦊",
+      "summary": "Smaller fox species able to climb trees.",
+      "fact": "Gray foxes are unique for their ability to climb trees, unlike most other North American foxes."
+    },
+    {
+      "id": "bobcat",
+      "name": "Bobcat",
+      "category": "mammals",
+      "icon": "🐈",
+      "summary": "Elusive woodland feline predator.",
+      "fact": "Bobcats have tufted ears and can leap up to 10 feet to catch prey!"
+    },
+    {
+      "id": "porcupine",
+      "name": "Porcupine",
+      "category": "mammals",
+      "icon": "🦔",
+      "summary": "Slow-moving rodent protected by quills.",
+      "fact": "Porcupines have sharp quills that detach easily to protect them from predators."
+    },
+    {
+      "id": "beaver",
+      "name": "Beaver",
+      "category": "mammals",
+      "icon": "🦫",
+      "summary": "Dam-building wetland engineer.",
+      "fact": "Beavers build dams to create ponds, protecting their homes from predators and providing easy access to food."
+    },
+    {
+      "id": "muskrat",
+      "name": "Muskrat",
+      "category": "mammals",
+      "icon": "🦫",
+      "summary": "Small aquatic rodent near ponds and streams.",
+      "fact": "Muskrats build underwater lodges using plants, with tunnels that keep them safe from predators above water!"
+    },
+    {
+      "id": "mink",
+      "name": "Mink",
+      "category": "mammals",
+      "icon": "🐾",
+      "summary": "Semi-aquatic predator along shorelines.",
+      "fact": "Minks are semi-aquatic mammals known for their sleek fur and excellent swimming skills."
+    },
+    {
+      "id": "fisher",
+      "name": "Fisher",
+      "category": "mammals",
+      "icon": "🐾",
+      "summary": "Forest carnivore related to weasels.",
+      "fact": "Fishers are skilled climbers and use trees to hunt their prey, including porcupines!"
+    },
+    {
+      "id": "river_otter",
+      "name": "River Otter",
+      "category": "mammals",
+      "icon": "🦦",
+      "summary": "Playful aquatic predator found near rivers.",
+      "fact": "River otters can hold their breath underwater for up to 8 minutes while hunting fish!"
+    },
+    {
+      "id": "gray_squirrel",
+      "name": "Eastern Gray Squirrel",
+      "category": "mammals",
+      "icon": "🐿️",
+      "summary": "Tree squirrel common at feeders.",
+      "fact": "Eastern Gray Squirrels can find buried nuts using their amazing sense of smell under snow!"
+    },
+    {
+      "id": "red_squirrel",
+      "name": "American Red Squirrel",
+      "category": "mammals",
+      "icon": "🐿️",
+      "summary": "Small territorial woodland squirrel.",
+      "fact": "American Red Squirrels fiercely defend their food caches to survive harsh winters in North American forests."
+    },
+    {
+      "id": "chipmunk",
+      "name": "Chipmunk",
+      "category": "mammals",
+      "icon": "🐿️",
+      "summary": "Ground squirrel known for cheek pouches.",
+      "fact": "Chipmunks can gather and store thousands of seeds in cheek pouches for winter food."
+    },
+    {
+      "id": "snowshoe_hare",
+      "name": "Snowshoe Hare",
+      "category": "mammals",
+      "icon": "🐇",
+      "summary": "Forest rabbit with seasonal coat change.",
+      "fact": "Snowshoe hares change their fur color seasonally for camouflage—brown in summer, white in winter!"
+    },
+    {
+      "id": "cottontail",
+      "name": "Eastern Cottontail",
+      "category": "mammals",
+      "icon": "🐇",
+      "summary": "Common backyard rabbit species.",
+      "fact": "Eastern Cottontails can run up to 18 miles per hour to escape predators!"
+    },
+    {
+      "id": "raccoon",
+      "name": "Raccoon",
+      "category": "night",
+      "icon": "🦝",
+      "summary": "Nocturnal omnivore with dexterous paws.",
+      "fact": "Raccoons have highly sensitive front paws, helping them identify food by touch almost like human hands!"
+    },
+    {
+      "id": "opossum",
+      "name": "Opossum",
+      "category": "night",
+      "icon": "🐀",
+      "summary": "North America's only marsupial.",
+      "fact": "Opossums are immune to snake venom, making them natural predators of venomous snakes like rattlesnakes!"
+    },
+    {
+      "id": "skunk",
+      "name": "Striped Skunk",
+      "category": "night",
+      "icon": "🦨",
+      "summary": "Night forager known for defensive spray.",
+      "fact": "Striped skunks can spray a smelly liquid up to 10 feet to deter predators."
+    },
+    {
+      "id": "flying_squirrel",
+      "name": "Flying Squirrel",
+      "category": "night",
+      "icon": "🐿️",
+      "summary": "Gliding nocturnal tree squirrel.",
+      "fact": "Flying squirrels glide using a special skin flap called a patagium between their front and back legs."
+    },
+    {
+      "id": "little_brown_bat",
+      "name": "Little Brown Bat",
+      "category": "night",
+      "icon": "🦇",
+      "summary": "Common insect-eating bat species.",
+      "fact": "Little Brown Bats use echolocation to hunt insects, emitting high-pitched sounds inaudible to humans."
+    },
+    {
+      "id": "big_brown_bat",
+      "name": "Big Brown Bat",
+      "category": "night",
+      "icon": "🦇",
+      "summary": "Large bat active near structures.",
+      "fact": "Big Brown Bats use echolocation to catch insects, helping control pest populations naturally!"
+    },
+    {
+      "id": "barred_owl",
+      "name": "Barred Owl",
+      "category": "night",
+      "icon": "🦉",
+      "summary": "Woodland owl known for 'who cooks for you' call.",
+      "fact": "Barred Owls hoot with a distinctive “Who cooks for you? Who cooks for you all?” call."
+    },
+    {
+      "id": "great_horned_owl",
+      "name": "Great Horned Owl",
+      "category": "night",
+      "icon": "🦉",
+      "summary": "Large powerful nocturnal raptor.",
+      "fact": "Great Horned Owls have incredible night vision and silent flight for hunting in the dark!"
+    },
+    {
+      "id": "bluejay",
+      "name": "Blue Jay",
+      "category": "birds",
+      "icon": "🐦",
+      "summary": "Bold feeder visitor with loud calls.",
+      "fact": "Blue Jays can mimic hawk calls to scare away predators or other birds from their territory!"
+    },
+    {
+      "id": "cardinal",
+      "name": "Northern Cardinal",
+      "category": "birds",
+      "icon": "🐦‍⬛",
+      "summary": "Bright red year-round songbird.",
+      "fact": "Northern Cardinals are one of the few birds where males and females both sing beautifully."
+    },
+    {
+      "id": "chickadee",
+      "name": "Black-capped Chickadee",
+      "category": "birds",
+      "icon": "🐤",
+      "summary": "Small energetic feeder regular.",
+      "fact": "Black-capped Chickadees can remember hundreds of food hiding spots using their excellent spatial memory!"
+    },
+    {
+      "id": "titmouse",
+      "name": "Tufted Titmouse",
+      "category": "birds",
+      "icon": "🐤",
+      "summary": "Curious small woodland songbird.",
+      "fact": "Tufted Titmice can remember thousands of hidden seeds, helping them survive winter’s cold months."
+    },
+    {
+      "id": "nuthatch",
+      "name": "White-breasted Nuthatch",
+      "category": "birds",
+      "icon": "🐦",
+      "summary": "Tree climber often moving headfirst down bark.",
+      "fact": "White-breasted Nuthatches can climb headfirst down tree trunks to find hidden insects!"
+    },
+    {
+      "id": "downy_woodpecker",
+      "name": "Downy Woodpecker",
+      "category": "birds",
+      "icon": "🐦",
+      "summary": "Small woodpecker common at feeders.",
+      "fact": "Downy Woodpeckers use their tiny beaks to drum on trees, communicating and searching for insects."
+    },
+    {
+      "id": "hairy_woodpecker",
+      "name": "Hairy Woodpecker",
+      "category": "birds",
+      "icon": "🐦",
+      "summary": "Larger look-alike of the downy.",
+      "fact": "Hairy Woodpeckers have a bill nearly as long as their head, perfect for drilling into trees!"
+    },
+    {
+      "id": "pileated_woodpecker",
+      "name": "Pileated Woodpecker",
+      "category": "birds",
+      "icon": "🪵",
+      "summary": "Large crested forest woodpecker.",
+      "fact": "Pileated Woodpeckers create large rectangular holes to find ants and insects in dead trees."
+    },
+    {
+      "id": "red_bellied_woodpecker",
+      "name": "Red-bellied Woodpecker",
+      "category": "birds",
+      "icon": "🐦",
+      "summary": "Common woodland woodpecker species.",
+      "fact": "Red-bellied Woodpeckers use their strong beaks to drill into trees for insects and sap."
+    },
+    {
+      "id": "mourning_dove",
+      "name": "Mourning Dove",
+      "category": "birds",
+      "icon": "🕊️",
+      "summary": "Gentle ground-feeding dove.",
+      "fact": "Mourning Doves can eat up to 6,000 seeds a day with their strong, quick beaks!"
+    },
+    {
+      "id": "goldfinch",
+      "name": "American Goldfinch",
+      "category": "birds",
+      "icon": "🐦",
+      "summary": "Bright yellow seasonal finch.",
+      "fact": "American Goldfinches molt twice yearly, showing bright yellow plumage only during spring and summer."
+    },
+    {
+      "id": "junco",
+      "name": "Dark-eyed Junco",
+      "category": "birds",
+      "icon": "🐦",
+      "summary": "Winter feeder bird.",
+      "fact": "Dark-eyed Juncos are often called \"snowbirds\" because they appear in winter across much of North America."
+    },
+    {
+      "id": "house_finch",
+      "name": "House Finch",
+      "category": "birds",
+      "icon": "🐦",
+      "summary": "Small social seed-eater.",
+      "fact": "House Finches are known for their cheerful songs, which males use to attract mates and defend territory."
+    },
+    {
+      "id": "purple_finch",
+      "name": "Purple Finch",
+      "category": "birds",
+      "icon": "🐦",
+      "summary": "Rosy-colored woodland finch.",
+      "fact": "Purple Finches have a sweet, raspberry-like song that brightens North American forests during spring!"
+    },
+    {
+      "id": "wild_turkey",
+      "name": "Wild Turkey",
+      "category": "birds",
+      "icon": "🦃",
+      "summary": "Large ground bird common in Michigan.",
+      "fact": "Wild turkeys can run up to 20 miles per hour and fly short distances to escape danger!"
+    },
+    {
+      "id": "ruffed_grouse",
+      "name": "Ruffed Grouse",
+      "category": "birds",
+      "icon": "🐓",
+      "summary": "Forest bird known for drumming display.",
+      "fact": "Ruffed Grouse create a unique drumming sound by beating their wings to attract mates."
+    },
+    {
+      "id": "sandhill_crane",
+      "name": "Sandhill Crane",
+      "category": "birds",
+      "icon": "🕊️",
+      "summary": "Tall wetland bird with loud call.",
+      "fact": "Sandhill Cranes perform rhythmic dances to communicate and strengthen pair bonds during mating season!"
+    },
+    {
+      "id": "crow",
+      "name": "American Crow",
+      "category": "birds",
+      "icon": "🐦‍⬛",
+      "summary": "Highly intelligent black bird.",
+      "fact": "American Crows use tools, like sticks, to help them find and catch insects for food."
+    },
+    {
+      "id": "raven",
+      "name": "Common Raven",
+      "category": "birds",
+      "icon": "🐦‍⬛",
+      "summary": "Large intelligent corvid species.",
+      "fact": "Common Ravens can mimic human speech and other sounds, showing impressive vocal intelligence in the wild!"
+    },
+    {
+      "id": "red_tailed_hawk",
+      "name": "Red-tailed Hawk",
+      "category": "birds",
+      "icon": "🦅",
+      "summary": "Common soaring raptor.",
+      "fact": "Red-tailed Hawks use their sharp vision to spot prey from over a mile away in the wild!"
+    },
+    {
+      "id": "coopers_hawk",
+      "name": "Cooper’s Hawk",
+      "category": "birds",
+      "icon": "🦅",
+      "summary": "Fast woodland hunting hawk.",
+      "fact": "Cooper’s Hawks are skilled hunters, often catching birds mid-flight with incredible speed and agility!"
+    },
+    {
+      "id": "mallard",
+      "name": "Mallard Duck",
+      "category": "water",
+      "icon": "🦆",
+      "summary": "Common freshwater duck.",
+      "fact": "Mallard ducks dabble in water, tipping forward to feed on plants and insects beneath the surface."
+    },
+    {
+      "id": "wood_duck",
+      "name": "Wood Duck",
+      "category": "water",
+      "icon": "🦆",
+      "summary": "Colorful duck nesting in tree cavities.",
+      "fact": "Wood Ducks nest in tree cavities, making them unique among North American waterfowl."
+    },
+    {
+      "id": "canada_goose",
+      "name": "Canada Goose",
+      "category": "water",
+      "icon": "🪿",
+      "summary": "Migratory waterfowl species.",
+      "fact": "Canada Geese can fly over 1,500 miles during migration without stopping to rest!"
+    },
+    {
+      "id": "great_blue_heron",
+      "name": "Great Blue Heron",
+      "category": "water",
+      "icon": "🦤",
+      "summary": "Large fish-eating wading bird.",
+      "fact": "Great Blue Herons can stand still for long periods, patiently hunting fish with their sharp beaks!"
+    },
+    {
+      "id": "painted_turtle",
+      "name": "Painted Turtle",
+      "category": "water",
+      "icon": "🐢",
+      "summary": "Common basking turtle.",
+      "fact": "Painted turtles can live over 30 years and absorb oxygen through their skin while underwater!"
+    },
+    {
+      "id": "snapping_turtle",
+      "name": "Snapping Turtle",
+      "category": "water",
+      "icon": "🐢",
+      "summary": "Large aquatic turtle.",
+      "fact": "Snapping turtles can live over 30 years and have powerful jaws to snap quickly at prey or threats!"
+    },
+    {
+      "id": "bluegill",
+      "name": "Bluegill",
+      "category": "water",
+      "icon": "🐟",
+      "summary": "Common freshwater panfish.",
+      "fact": "Bluegill can breathe air using a special organ, helping them survive in low-oxygen waters!"
+    },
+    {
+      "id": "largemouth_bass",
+      "name": "Largemouth Bass",
+      "category": "water",
+      "icon": "🐟",
+      "summary": "Popular freshwater predator fish.",
+      "fact": "Largemouth bass can grow over 2 feet long and use their big mouths to ambush prey!"
+    },
+    {
+      "id": "yellow_perch",
+      "name": "Yellow Perch",
+      "category": "water",
+      "icon": "🐟",
+      "summary": "Schooling freshwater fish.",
+      "fact": "Yellow perch have sharp spines on their fins to help protect them from predators in the wild!"
+    },
+    {
+      "id": "northern_pike",
+      "name": "Northern Pike",
+      "category": "water",
+      "icon": "🐟",
+      "summary": "Fast ambush predator fish.",
+      "fact": "Northern Pike can grow over 4 feet long and use ambush tactics to catch prey swiftly!"
+    },
+    {
+      "id": "spring_peeper",
+      "name": "Spring Peeper",
+      "category": "amphib_reptile",
+      "icon": "🐸",
+      "summary": "Tiny frog with loud spring calls.",
+      "fact": "Spring Peepers are tiny frogs known for their loud, distinctive peeping calls during early spring nights."
+    },
+    {
+      "id": "bullfrog",
+      "name": "American Bullfrog",
+      "category": "amphib_reptile",
+      "icon": "🐸",
+      "summary": "Large pond frog.",
+      "fact": "American Bullfrogs can grow up to 8 inches long, making them some of the largest frogs in North America!"
+    },
+    {
+      "id": "green_frog",
+      "name": "Green Frog",
+      "category": "amphib_reptile",
+      "icon": "🐸",
+      "summary": "Common shoreline frog.",
+      "fact": "Green frogs can jump over 4 feet, using powerful back legs to escape predators swiftly."
+    },
+    {
+      "id": "leopard_frog",
+      "name": "Leopard Frog",
+      "category": "amphib_reptile",
+      "icon": "🐸",
+      "summary": "Spotted frog near wetlands.",
+      "fact": "Leopard frogs can jump over 20 times their body length to escape predators quickly!"
+    },
+    {
+      "id": "garter_snake",
+      "name": "Garter Snake",
+      "category": "amphib_reptile",
+      "icon": "🐍",
+      "summary": "Common harmless snake.",
+      "fact": "Garter snakes can swim and often live near water, making them excellent swimmers in the wild!"
+    },
+    {
+      "id": "water_snake",
+      "name": "Water Snake",
+      "category": "amphib_reptile",
+      "icon": "🐍",
+      "summary": "Semi-aquatic snake species.",
+      "fact": "Water snakes can breathe underwater by holding their breath up to an hour while hunting fish."
+    },
+    {
+      "id": "milk_snake",
+      "name": "Eastern Milk Snake",
+      "category": "amphib_reptile",
+      "icon": "🐍",
+      "summary": "Non-venomous woodland snake.",
+      "fact": "Eastern Milk Snakes mimic venomous coral snakes with their colorful patterns to avoid predators."
+    },
+    {
+      "id": "monarch",
+      "name": "Monarch Butterfly",
+      "category": "insects",
+      "icon": "🦋",
+      "summary": "Migratory butterfly species.",
+      "fact": "Monarch butterflies migrate up to 3,000 miles between Canada and Mexico each year!"
+    },
+    {
+      "id": "swallowtail",
+      "name": "Swallowtail Butterfly",
+      "category": "insects",
+      "icon": "🦋",
+      "summary": "Large colorful butterfly.",
+      "fact": "Swallowtail butterflies have tail-like wings that mimic a swallow’s tail to confuse predators!"
+    },
+    {
+      "id": "dragonfly",
+      "name": "Dragonfly",
+      "category": "insects",
+      "icon": "🪲",
+      "summary": "Fast aerial insect predator.",
+      "fact": "Dragonflies can fly in six directions: up, down, forward, backward, and side to side!"
+    },
+    {
+      "id": "damselfly",
+      "name": "Damselfly",
+      "category": "insects",
+      "icon": "🪲",
+      "summary": "Slender cousin of dragonflies.",
+      "fact": "Damselflies fold their wings over their bodies, unlike dragonflies that keep wings spread out."
+    },
+    {
+      "id": "firefly",
+      "name": "Firefly",
+      "category": "insects",
+      "icon": "✨",
+      "summary": "Bioluminescent summer insect.",
+      "fact": "Fireflies use light to communicate, attracting mates with unique flashing patterns in the dark."
+    },
+    {
+      "id": "honeybee",
+      "name": "Honeybee",
+      "category": "insects",
+      "icon": "🐝",
+      "summary": "Important pollinator species.",
+      "fact": "Honeybees communicate by dancing to share directions to the best flowers with their hive mates!"
+    },
+    {
+      "id": "bumblebee",
+      "name": "Bumblebee",
+      "category": "insects",
+      "icon": "🐝",
+      "summary": "Cold-tolerant pollinator.",
+      "fact": "Bumblebees have fuzzy bodies that help them collect pollen and stay warm during cool weather."
+    },
+    {
+      "id": "grasshopper",
+      "name": "Grasshopper",
+      "category": "insects",
+      "icon": "🦗",
+      "summary": "Common jumping insect.",
+      "fact": "Grasshoppers have powerful hind legs that let them jump over 20 times their body length!"
+    }
   ]
 }
