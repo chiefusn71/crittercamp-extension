@@ -1,0 +1,68 @@
+name: Hourly Critter Refresh
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # hourly UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Update data/critter-data.json
+        run: |
+          python - << 'PY'
+          import json, datetime
+          from pathlib import Path
+
+          p = Path("data/critter-data.json")
+          data = json.loads(p.read_text(encoding="utf-8"))
+
+          # Support BOTH formats:
+          # (1) Array of critters
+          # (2) Object: { lastUpdated, factIndex, critters:[...] }
+          if isinstance(data, list):
+            wrapper = {
+              "lastUpdated": None,
+              "factIndex": 0,
+              "critters": data
+            }
+            data = wrapper
+
+          if not isinstance(data, dict) or "critters" not in data or not isinstance(data["critters"], list):
+            raise SystemExit("data/critter-data.json must be an array OR {critters:[...]}")
+
+          idx = data.get("factIndex", 0)
+          if not isinstance(idx, int):
+            idx = 0
+          idx += 1
+          data["factIndex"] = idx
+          data["lastUpdated"] = datetime.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
+
+          # If you later add facts[] arrays, this rotates activeFact automatically
+          for c in data["critters"]:
+            facts = c.get("facts")
+            if isinstance(facts, list) and len(facts) > 0:
+              c["activeFact"] = facts[idx % len(facts)]
+            else:
+              # fallback: keep existing 'fact' visible
+              f = c.get("fact") if isinstance(c.get("fact"), str) else None
+              c["activeFact"] = f or c.get("activeFact") or "—"
+
+          p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+          print("Updated", len(data["critters"]), "critters. factIndex=", idx)
+          PY
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add data/critter-data.json
+          git commit -m "Hourly critter refresh" || exit 0
+          git push
