@@ -6,19 +6,44 @@
     <link rel="stylesheet" href="./styles.css" />
     <title>Critter Camp Overlay</title>
   </head>
+
   <body>
     <div id="app">
-      <div id="rail"></div>
+      <!-- Category rail (icons only) -->
+      <div id="catRail" aria-label="Critter categories"></div>
 
-      <div id="card" class="hidden">
-        <button id="close">×</button>
-        <h2 id="cName"></h2>
-        <p id="cTag"></p>
-        <p id="cBio"></p>
-        <p><strong>Fun fact:</strong> <span id="cFact"></span></p>
-        <p><strong>Last seen:</strong> <span id="cSeen"></span></p>
-        <small id="updated"></small>
+      <!-- Slide-out critter picker -->
+      <div id="panel" class="panel closed" aria-label="Critter list">
+        <div class="panelHeader">
+          <div class="panelTitle" id="panelTitle">Category</div>
+          <button id="panelClose" class="iconBtn" aria-label="Close panel">×</button>
+        </div>
+        <div id="critterGrid" class="grid" aria-label="Critter icons"></div>
       </div>
+
+      <!-- Critter info card -->
+      <div id="card" class="card hidden" aria-label="Critter info">
+        <button id="cardClose" class="iconBtn" aria-label="Close card">×</button>
+        <div class="cardTop">
+          <div class="bigIcon" id="cIcon">🐾</div>
+          <div class="cardNames">
+            <div class="name" id="cName">Critter</div>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="label">Summary</div>
+          <div class="text" id="cSummary"></div>
+        </div>
+
+        <div class="block">
+          <div class="label">Fun Fact</div>
+          <div class="fact" id="cFact"></div>
+        </div>
+      </div>
+
+      <!-- tiny status (optional) -->
+      <div id="status" class="status"></div>
     </div>
 
     <script src="./viewer.js"></script>
