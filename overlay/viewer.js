@@ -1,17 +1,17 @@
-/* CritterCampRCT Hover-Only UI
-   - Overlay appears ONLY when mouse is over Twitch video player area
-   - Hover category -> panel opens
-   - Hover critter -> info card shows
-   - Leaving areas auto-closes with small delay to prevent flicker
+/* CritterCampRCT Hover-Only UI (Stabilized)
+   - Hover category -> panel opens and stays open long enough to reach it
+   - Hover critter -> card shows
+   - Leaving areas auto-closes with comfortable delays (no flicker)
+   - Overlay doesn't vanish while interacting with rail/panel/card
 */
 
-const DATA_URL = "../data/critter-data.json"; // <-- FIXED PATH (data folder is sibling of overlay)
+const DATA_URL = "../data/critter-data.json";
 
-// --- CONFIG ---
-const HIDE_DELAY_MS = 450;
-const PANEL_CLOSE_DELAY_MS = 350;
-const CARD_HIDE_DELAY_MS = 250;
-const REFRESH_MS = 60 * 60 * 1000; // 60 minutes
+// --- CONFIG (tuned for human movement) ---
+const OVERLAY_HIDE_DELAY_MS = 1200;   // was 450 (too fast)
+const PANEL_CLOSE_DELAY_MS = 1100;    // was 350 (too fast)
+const CARD_HIDE_DELAY_MS = 700;       // was 250 (too fast)
+const REFRESH_MS = 60 * 60 * 1000;    // 60 minutes
 
 const CATEGORIES = [
   { id: "mammals", label: "Mammals", icon: "🦌" },
@@ -46,6 +46,8 @@ let hideOverlayTimer = null;
 let closePanelTimer = null;
 let hideCardTimer = null;
 
+let isInteractingWithUI = false; // key: prevents overlay hiding while using rail/panel/card
+
 // --- Helpers ---
 function showStatus(msg) {
   if (!statusEl) return;
@@ -66,18 +68,22 @@ function hideRoot() {
   root.classList.add("hidden");
   closePanel(true);
   hideCard(true);
+  isInteractingWithUI = false;
 }
 
 function openPanel() {
   panel.classList.remove("closed");
 }
-function closePanel(force = false) {
+function scheduleClosePanel() {
   closePanelTimer = clearTimer(closePanelTimer);
-  if (force) {
+  closePanelTimer = setTimeout(() => {
     panel.classList.add("closed");
-    return;
-  }
-  closePanelTimer = setTimeout(() => panel.classList.add("closed"), PANEL_CLOSE_DELAY_MS);
+    activeCategoryId = null;
+  }, PANEL_CLOSE_DELAY_MS);
+}
+function keepPanelOpen() {
+  closePanelTimer = clearTimer(closePanelTimer);
+  openPanel();
 }
 
 function showCard(critter) {
@@ -90,13 +96,12 @@ function showCard(critter) {
 
   card.classList.remove("hidden");
 }
-function hideCard(force = false) {
+function scheduleHideCard() {
   hideCardTimer = clearTimer(hideCardTimer);
-  if (force) {
-    card.classList.add("hidden");
-    return;
-  }
   hideCardTimer = setTimeout(() => card.classList.add("hidden"), CARD_HIDE_DELAY_MS);
+}
+function keepCardOpen() {
+  hideCardTimer = clearTimer(hideCardTimer);
 }
 
 function normalizeData(list) {
@@ -121,11 +126,17 @@ function renderCategories() {
     btn.appendChild(ico);
 
     btn.addEventListener("mouseenter", () => {
+      isInteractingWithUI = true;
       activeCategoryId = cat.id;
       panelTitle.textContent = cat.label.toUpperCase();
       renderCritterGrid(cat.id);
-      openPanel();
-      hideCard(true);
+      keepPanelOpen();
+      card.classList.add("hidden");
+    });
+
+    btn.addEventListener("mouseleave", () => {
+      // do not close immediately; allow time to move into panel
+      scheduleClosePanel();
     });
 
     catRail.appendChild(btn);
@@ -156,8 +167,15 @@ function renderCritterGrid(categoryId) {
     ico.textContent = c.icon || "🐾";
     b.appendChild(ico);
 
-    b.addEventListener("mouseenter", () => showCard(c));
-    b.addEventListener("mouseleave", () => hideCard(false));
+    b.addEventListener("mouseenter", () => {
+      isInteractingWithUI = true;
+      keepPanelOpen();
+      showCard(c);
+    });
+
+    b.addEventListener("mouseleave", () => {
+      scheduleHideCard();
+    });
 
     grid.appendChild(b);
   }
@@ -165,23 +183,19 @@ function renderCritterGrid(categoryId) {
 
 // --- Data loading ---
 async function loadData() {
-  const url = `${DATA_URL}?t=${Date.now()}`; // cache-buster
+  const url = `${DATA_URL}?t=${Date.now()}`;
   const res = await fetch(url, { cache: "no-store" });
   if (!res.ok) throw new Error(`Data fetch failed: ${res.status}`);
-
   const json = await res.json();
-
-  // Support either {critters:[...]} or raw array
   const list = Array.isArray(json) ? json : (json.critters || []);
   critters = Array.isArray(list) ? list : [];
-
   normalizeData(critters);
 
-  const lu = (json && json.lastUpdated) ? ` | ${json.lastUpdated}` : "";
+  const lu = json && json.lastUpdated ? ` | ${json.lastUpdated}` : "";
   showStatus(`Loaded ${critters.length} critters${lu}`);
 }
 
-// --- Twitch video hover detection ---
+// --- Visibility gating (over Twitch video area) ---
 function isOverTwitchVideo(event) {
   const el = document.elementFromPoint(event.clientX, event.clientY);
   if (!el) return false;
@@ -193,53 +207,66 @@ function isOverTwitchVideo(event) {
 
   if (inChat) return false;
 
-  const playerAncestor =
+  const player =
     el.closest("video") ||
     el.closest('[data-a-target="player-overlay-click-handler"]') ||
     el.closest('[data-a-target="player-overlay"]') ||
     el.closest('[data-a-target="player-controls"]') ||
     el.closest('[data-a-target="video-player"]') ||
-    el.closest('.video-player') ||
-    el.closest('.player-video') ||
+    el.closest(".video-player") ||
+    el.closest(".player-video") ||
     el.closest('[class*="video-player"]');
 
-  return Boolean(playerAncestor);
+  return Boolean(player);
 }
 
 function hookHoverVisibility() {
   document.addEventListener("mousemove", (e) => {
     const overVideo = isOverTwitchVideo(e);
 
-    if (overVideo) {
+    if (overVideo || isInteractingWithUI) {
       hideOverlayTimer = clearTimer(hideOverlayTimer);
       showRoot();
     } else {
       hideOverlayTimer = clearTimer(hideOverlayTimer);
-      hideOverlayTimer = setTimeout(() => hideRoot(), HIDE_DELAY_MS);
+      hideOverlayTimer = setTimeout(() => {
+        // if user started interacting during delay, don't hide
+        if (!isInteractingWithUI) hideRoot();
+      }, OVERLAY_HIDE_DELAY_MS);
     }
   });
 
+  // Panel area: keep open while inside
   panel.addEventListener("mouseenter", () => {
-    closePanelTimer = clearTimer(closePanelTimer);
+    isInteractingWithUI = true;
+    keepPanelOpen();
   });
   panel.addEventListener("mouseleave", () => {
-    closePanel(false);
-    hideCard(false);
+    scheduleClosePanel();
+    scheduleHideCard();
+    // interaction ends after grace period; overlay may hide later if not over video
+    setTimeout(() => { isInteractingWithUI = false; }, 300);
   });
 
+  // Rail area: keep open while inside
   catRail.addEventListener("mouseenter", () => {
-    closePanelTimer = clearTimer(closePanelTimer);
+    isInteractingWithUI = true;
+    keepPanelOpen();
   });
   catRail.addEventListener("mouseleave", () => {
-    closePanel(false);
-    hideCard(false);
+    scheduleClosePanel();
+    setTimeout(() => { isInteractingWithUI = false; }, 300);
   });
 
+  // Card area: keep visible while inside
   card.addEventListener("mouseenter", () => {
-    hideCardTimer = clearTimer(hideCardTimer);
+    isInteractingWithUI = true;
+    keepCardOpen();
+    keepPanelOpen();
   });
   card.addEventListener("mouseleave", () => {
-    hideCard(false);
+    scheduleHideCard();
+    setTimeout(() => { isInteractingWithUI = false; }, 300);
   });
 }
 
@@ -265,4 +292,3 @@ function hookHoverVisibility() {
     }
   }, REFRESH_MS);
 })();
-
