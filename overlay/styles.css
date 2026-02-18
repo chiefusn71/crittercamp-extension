@@ -1,1 +1,36 @@
-placeholder
+body { margin:0; font-family: Arial, sans-serif; background: transparent; }
+#app { position: relative; width: 420px; height: 720px; }
+
+#rail {
+  position:absolute; left:0; top:0;
+  width:120px; height:100%;
+  padding:10px;
+  display:flex; flex-direction:column; gap:10px;
+}
+
+.critterBtn {
+  cursor:pointer;
+  padding:10px;
+  border-radius:10px;
+  background: rgba(0,0,0,0.55);
+  color:#fff;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+#card {
+  position:absolute; left:130px; top:10px;
+  width:270px;
+  padding:14px;
+  border-radius:14px;
+  background: rgba(0,0,0,0.70);
+  color:#fff;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+#close {
+  position:absolute; right:10px; top:10px;
+  cursor:pointer;
+}
+
+.hidden { display:none; }
+small { opacity:0.75; }
