@@ -5,22 +5,21 @@
    - Leaving areas auto-closes with small delay to prevent flicker
 */
 
-const DATA_URL = "./data/critter-data.json";
+const DATA_URL = "../data/critter-data.json"; // <-- FIXED PATH (data folder is sibling of overlay)
 
-// --- CONFIG (tweak later if you want) ---
-const HIDE_DELAY_MS = 450;   // delay before hiding overlay when leaving video
+// --- CONFIG ---
+const HIDE_DELAY_MS = 450;
 const PANEL_CLOSE_DELAY_MS = 350;
 const CARD_HIDE_DELAY_MS = 250;
 const REFRESH_MS = 60 * 60 * 1000; // 60 minutes
 
-// Category definitions (icon shown on the left rail)
 const CATEGORIES = [
   { id: "mammals", label: "Mammals", icon: "🦌" },
   { id: "birds", label: "Birds", icon: "🦅" },
   { id: "night", label: "Night Critters", icon: "🦝" },
   { id: "water", label: "Water Critters", icon: "🐟" },
   { id: "amphib_reptile", label: "Amphib & Reptile", icon: "🐸" },
-  { id: "insects", label: "Insects", icon: "🦋" },
+  { id: "insects", label: "Insects", icon: "🦋" }
 ];
 
 // --- DOM ---
@@ -42,12 +41,13 @@ const statusEl = document.getElementById("status");
 let critters = [];
 let byCategory = new Map();
 let activeCategoryId = null;
+
 let hideOverlayTimer = null;
 let closePanelTimer = null;
 let hideCardTimer = null;
 
 // --- Helpers ---
-function setStatus(msg) {
+function showStatus(msg) {
   if (!statusEl) return;
   statusEl.style.display = "block";
   statusEl.textContent = msg;
@@ -64,7 +64,6 @@ function showRoot() {
 
 function hideRoot() {
   root.classList.add("hidden");
-  // Also close sub-UI so it doesn't flash next time
   closePanel(true);
   hideCard(true);
 }
@@ -78,15 +77,13 @@ function closePanel(force = false) {
     panel.classList.add("closed");
     return;
   }
-  closePanelTimer = setTimeout(() => {
-    panel.classList.add("closed");
-  }, PANEL_CLOSE_DELAY_MS);
+  closePanelTimer = setTimeout(() => panel.classList.add("closed"), PANEL_CLOSE_DELAY_MS);
 }
 
 function showCard(critter) {
   hideCardTimer = clearTimer(hideCardTimer);
 
-  cIcon.textContent = critter.icon || "🦌";
+  cIcon.textContent = critter.icon || "🐾";
   cName.textContent = critter.name || "Critter";
   cSummary.textContent = critter.summary || "";
   cFact.textContent = critter.fact || "";
@@ -99,9 +96,7 @@ function hideCard(force = false) {
     card.classList.add("hidden");
     return;
   }
-  hideCardTimer = setTimeout(() => {
-    card.classList.add("hidden");
-  }, CARD_HIDE_DELAY_MS);
+  hideCardTimer = setTimeout(() => card.classList.add("hidden"), CARD_HIDE_DELAY_MS);
 }
 
 function normalizeData(list) {
@@ -123,22 +118,14 @@ function renderCategories() {
     const ico = document.createElement("div");
     ico.className = "catIcon";
     ico.textContent = cat.icon;
-
     btn.appendChild(ico);
 
-    // Hover category -> open panel and show critters
     btn.addEventListener("mouseenter", () => {
       activeCategoryId = cat.id;
       panelTitle.textContent = cat.label.toUpperCase();
       renderCritterGrid(cat.id);
       openPanel();
-      hideCard(true); // reset card when switching categories
-    });
-
-    // If you leave the category rail, we don't instantly close.
-    // Panel will close when leaving panel area too.
-    btn.addEventListener("mouseleave", () => {
-      // do nothing; panel handles delayed close
+      hideCard(true);
     });
 
     catRail.appendChild(btn);
@@ -149,6 +136,16 @@ function renderCritterGrid(categoryId) {
   const list = byCategory.get(categoryId) || [];
   grid.innerHTML = "";
 
+  if (!list.length) {
+    const msg = document.createElement("div");
+    msg.style.color = "rgba(255,255,255,0.7)";
+    msg.style.fontSize = "12px";
+    msg.style.padding = "8px";
+    msg.textContent = "No critters loaded for this category yet.";
+    grid.appendChild(msg);
+    return;
+  }
+
   for (const c of list) {
     const b = document.createElement("div");
     b.className = "critterBtn";
@@ -156,50 +153,39 @@ function renderCritterGrid(categoryId) {
 
     const ico = document.createElement("div");
     ico.className = "ico";
-    ico.textContent = c.icon || "🦌";
+    ico.textContent = c.icon || "🐾";
     b.appendChild(ico);
 
-    // Hover critter -> show card
-    b.addEventListener("mouseenter", () => {
-      showCard(c);
-    });
-    b.addEventListener("mouseleave", () => {
-      hideCard(false);
-    });
+    b.addEventListener("mouseenter", () => showCard(c));
+    b.addEventListener("mouseleave", () => hideCard(false));
 
     grid.appendChild(b);
   }
 }
 
+// --- Data loading ---
 async function loadData() {
-  const res = await fetch(DATA_URL, { cache: "no-store" });
+  const url = `${DATA_URL}?t=${Date.now()}`; // cache-buster
+  const res = await fetch(url, { cache: "no-store" });
+  if (!res.ok) throw new Error(`Data fetch failed: ${res.status}`);
+
   const json = await res.json();
-  critters = Array.isArray(json) ? json : (json.critters || []);
+
+  // Support either {critters:[...]} or raw array
+  const list = Array.isArray(json) ? json : (json.critters || []);
+  critters = Array.isArray(list) ? list : [];
+
   normalizeData(critters);
+
+  const lu = (json && json.lastUpdated) ? ` | ${json.lastUpdated}` : "";
+  showStatus(`Loaded ${critters.length} critters${lu}`);
 }
 
 // --- Twitch video hover detection ---
 function isOverTwitchVideo(event) {
-  // Use elementFromPoint so it works even if overlay is on top
   const el = document.elementFromPoint(event.clientX, event.clientY);
   if (!el) return false;
 
-  // Twitch uses a video element + containers. We accept if:
-  // - hovering over a <video>
-  // - or any ancestor matches common player containers
-  const isVideo = el.tagName === "VIDEO";
-  const playerAncestor =
-    el.closest('video') ||
-    el.closest('[data-a-target="player-overlay-click-handler"]') ||
-    el.closest('[data-a-target="player-overlay"]') ||
-    el.closest('[data-a-target="player-theatre-mode-button"]') ||
-    el.closest('[data-a-target="player-controls"]') ||
-    el.closest('[data-a-target="video-player"]') ||
-    el.closest('.video-player') ||
-    el.closest('.player-video') ||
-    el.closest('[class*="video-player"]');
-
-  // We specifically do NOT want chat. If the hovered element is inside chat, reject.
   const inChat =
     el.closest('[data-a-target="chat-room-component-layout"]') ||
     el.closest('[data-a-target="right-column-chat-bar"]') ||
@@ -207,7 +193,17 @@ function isOverTwitchVideo(event) {
 
   if (inChat) return false;
 
-  return Boolean(isVideo || playerAncestor);
+  const playerAncestor =
+    el.closest("video") ||
+    el.closest('[data-a-target="player-overlay-click-handler"]') ||
+    el.closest('[data-a-target="player-overlay"]') ||
+    el.closest('[data-a-target="player-controls"]') ||
+    el.closest('[data-a-target="video-player"]') ||
+    el.closest('.video-player') ||
+    el.closest('.player-video') ||
+    el.closest('[class*="video-player"]');
+
+  return Boolean(playerAncestor);
 }
 
 function hookHoverVisibility() {
@@ -219,13 +215,10 @@ function hookHoverVisibility() {
       showRoot();
     } else {
       hideOverlayTimer = clearTimer(hideOverlayTimer);
-      hideOverlayTimer = setTimeout(() => {
-        hideRoot();
-      }, HIDE_DELAY_MS);
+      hideOverlayTimer = setTimeout(() => hideRoot(), HIDE_DELAY_MS);
     }
   });
 
-  // Panel open/close behavior: close when leaving both rail + panel
   panel.addEventListener("mouseenter", () => {
     closePanelTimer = clearTimer(closePanelTimer);
   });
@@ -242,7 +235,6 @@ function hookHoverVisibility() {
     hideCard(false);
   });
 
-  // Card stays while you are over the card itself
   card.addEventListener("mouseenter", () => {
     hideCardTimer = clearTimer(hideCardTimer);
   });
@@ -258,22 +250,18 @@ function hookHoverVisibility() {
 
   try {
     await loadData();
-    setStatus(`Facts refreshed.`);
   } catch (err) {
-    setStatus(`ERROR loading data.`);
     console.error(err);
+    showStatus(`ERROR loading data: ${err.message}`);
   }
 
-  // Auto refresh data every hour
   setInterval(async () => {
     try {
       await loadData();
-      setStatus(`Facts refreshed: ${new Date().toISOString()}`);
-      // If a category is open, re-render it so new facts show
       if (activeCategoryId) renderCritterGrid(activeCategoryId);
     } catch (err) {
-      setStatus(`ERROR refreshing data.`);
       console.error(err);
+      showStatus(`ERROR refreshing data: ${err.message}`);
     }
   }, REFRESH_MS);
 })();
