@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "manual",
+  "lastUpdated": "2026-02-18T14:46:15Z",
   "critters": [
     {
       "id": "deer",
@@ -7,7 +7,7 @@
       "name": "White-tailed Deer",
       "tag": "Corn Pile Regular",
       "bio": "Quiet visitor at first light and near dusk.",
-      "funFact": "A deer’s eyes help them watch for danger while feeding.",
+      "funFact": "A deer\u2019s eyes help them watch for danger while feeding.",
       "lastSeen": "Unknown"
     },
     {
