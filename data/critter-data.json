@@ -1,1 +1,23 @@
-placeholder
+{
+  "lastUpdated": "manual",
+  "critters": [
+    {
+      "id": "deer",
+      "buttonLabel": "DEER",
+      "name": "White-tailed Deer",
+      "tag": "Corn Pile Regular",
+      "bio": "Quiet visitor at first light and near dusk.",
+      "funFact": "A deer’s eyes help them watch for danger while feeding.",
+      "lastSeen": "Unknown"
+    },
+    {
+      "id": "raccoon",
+      "buttonLabel": "RACC",
+      "name": "Raccoon",
+      "tag": "Night Shift Supervisor",
+      "bio": "Shows up after dark and audits the snack supply.",
+      "funFact": "Raccoons can remember solutions to problems for a long time.",
+      "lastSeen": "Unknown"
+    }
+  ]
+}
