@@ -1,23 +1,16 @@
 {
-  "lastUpdated": "2026-02-18T14:47:02Z",
+  "lastUpdated": "manual",
   "critters": [
-    {
-      "id": "deer",
-      "buttonLabel": "DEER",
-      "name": "White-tailed Deer",
-      "tag": "Corn Pile Regular",
-      "bio": "Quiet visitor at first light and near dusk.",
-      "funFact": "A deer\u2019s eyes help them watch for danger while feeding.",
-      "lastSeen": "Unknown"
-    },
-    {
-      "id": "raccoon",
-      "buttonLabel": "RACC",
-      "name": "Raccoon",
-      "tag": "Night Shift Supervisor",
-      "bio": "Shows up after dark and audits the snack supply.",
-      "funFact": "Raccoons can remember solutions to problems for a long time.",
-      "lastSeen": "Unknown"
-    }
+    { "id": "deer", "category": "mammals", "icon": "🦌", "name": "White-tailed Deer", "summary": "Common woodland browser often seen around feeders.", "fact": "" },
+    { "id": "raccoon", "category": "mammals", "icon": "🦝", "name": "Raccoon", "summary": "Nocturnal snack inspector with clever paws.", "fact": "" },
+    { "id": "gray_squirrel", "category": "mammals", "icon": "🐿️", "name": "Eastern Gray Squirrel", "summary": "Fast tree runner and expert seed thief.", "fact": "" },
+    { "id": "red_squirrel", "category": "mammals", "icon": "🐿️", "name": "American Red Squirrel", "summary": "Small, bold, and loud about its territory.", "fact": "" },
+    { "id": "chipmunk", "category": "mammals", "icon": "🐿️", "name": "Eastern Chipmunk", "summary": "Pocket-stuffer built for snack logistics.", "fact": "" },
+    { "id": "opossum", "category": "mammals", "icon": "🦡", "name": "Virginia Opossum", "summary": "Slow mover that cruises after dark for food.", "fact": "" },
+    { "id": "rabbit", "category": "mammals", "icon": "🐇", "name": "Eastern Cottontail", "summary": "Edge-of-woods grazer with quick escape hops.", "fact": "" },
+    { "id": "skunk", "category": "mammals", "icon": "🦨", "name": "Striped Skunk", "summary": "Night forager with a famous defense plan.", "fact": "" },
+
+    { "id": "bluejay", "category": "birds", "icon": "🐦", "name": "Blue Jay", "summary": "Bold feeder visitor that announces everything.", "fact": "" },
+    { "id": "cardinal", "category": "birds", "icon": "🐦", "name": "Northern Cardinal", "summary": "Bright songbird often seen near brushy edges.", "fact": "" }
   ]
 }
