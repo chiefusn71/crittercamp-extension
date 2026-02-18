@@ -1,0 +1,2 @@
+# crittercamp-extension
+CritterCampRCT extension
