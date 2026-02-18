@@ -1,60 +1,22 @@
 {
-  "lastUpdated": "manual",
+  "lastUpdated": "initial",
   "critters": [
-    // MAMMALS (8)
-    { "id": "deer", "category": "mammals", "icon": "🦌", "name": "White-tailed Deer", "summary": "Common woodland browser often seen around feeders.", "fact": "" },
-    { "id": "raccoon", "category": "mammals", "icon": "🦝", "name": "Raccoon", "summary": "Nocturnal forager known for clever paws and curiosity.", "fact": "" },
-    { "id": "gray_squirrel", "category": "mammals", "icon": "🐿️", "name": "Eastern Gray Squirrel", "summary": "Fast tree runner that raids feeders and caches food.", "fact": "" },
-    { "id": "red_squirrel", "category": "mammals", "icon": "🐿️", "name": "American Red Squirrel", "summary": "Small, bold, and territorial with a big attitude.", "fact": "" },
-    { "id": "chipmunk", "category": "mammals", "icon": "🐿️", "name": "Eastern Chipmunk", "summary": "Ground critter that darts in for seeds and disappears fast.", "fact": "" },
-    { "id": "opossum", "category": "mammals", "icon": "🦡", "name": "Virginia Opossum", "summary": "Slow-moving nighttime scavenger that patrols for leftovers.", "fact": "" },
-    { "id": "rabbit", "category": "mammals", "icon": "🐇", "name": "Eastern Cottontail", "summary": "Edge-of-woods grazer with quick escape hops.", "fact": "" },
-    { "id": "skunk", "category": "mammals", "icon": "🦨", "name": "Striped Skunk", "summary": "Night forager famous for a strong defense strategy.", "fact": "" },
+    { "id": "whitetail_deer", "name": "White-Tailed Deer", "category": "mammals", "icon": "🦌", "summary": "Common woodland browser found throughout northern Michigan.", "fact": "Deer can rotate their ears independently to pinpoint sounds." },
+    { "id": "raccoon", "name": "Raccoon", "category": "night", "icon": "🦝", "summary": "Highly adaptable nocturnal omnivore often seen near feeders.", "fact": "Raccoons have extremely sensitive front paws that help identify food." },
+    { "id": "red_fox", "name": "Red Fox", "category": "mammals", "icon": "🦊", "summary": "Solitary predator known for intelligence and adaptability.", "fact": "Foxes use Earth’s magnetic field when hunting small prey." },
+    { "id": "coyote", "name": "Coyote", "category": "mammals", "icon": "🐕", "summary": "Widespread adaptable canid common in rural Michigan.", "fact": "Coyotes can run up to about 40 mph in short bursts." },
 
-    // BIRDS (14)
-    { "id": "blue_jay", "category": "birds", "icon": "🐦", "name": "Blue Jay", "summary": "Bold feeder visitor that calls out everything happening.", "fact": "" },
-    { "id": "cardinal", "category": "birds", "icon": "🐦", "name": "Northern Cardinal", "summary": "Bright songbird often seen near brushy edges and feeders.", "fact": "" },
-    { "id": "chickadee", "category": "birds", "icon": "🐦", "name": "Black-capped Chickadee", "summary": "Tiny, fearless feeder regular that grabs-and-goes.", "fact": "" },
-    { "id": "nuthatch", "category": "birds", "icon": "🐦", "name": "White-breasted Nuthatch", "summary": "Tree-trunk climber that often moves headfirst down bark.", "fact": "" },
-    { "id": "downy_woodpecker", "category": "birds", "icon": "🐦", "name": "Downy Woodpecker", "summary": "Small woodpecker that taps and pecks around trees and feeders.", "fact": "" },
-    { "id": "hairy_woodpecker", "category": "birds", "icon": "🐦", "name": "Hairy Woodpecker", "summary": "Larger look-alike of the downy with a stronger peck.", "fact": "" },
-    { "id": "mourning_dove", "category": "birds", "icon": "🕊️", "name": "Mourning Dove", "summary": "Gentle ground feeder that often visits in pairs or small groups.", "fact": "" },
-    { "id": "goldfinch", "category": "birds", "icon": "🐦", "name": "American Goldfinch", "summary": "Seed lover that brightens up feeders, especially in season.", "fact": "" },
-    { "id": "junco", "category": "birds", "icon": "🐦", "name": "Dark-eyed Junco", "summary": "Winter regular that feeds low and flicks around the ground.", "fact": "" },
-    { "id": "house_finch", "category": "birds", "icon": "🐦", "name": "House Finch", "summary": "Social seed-eater that often arrives in small groups.", "fact": "" },
-    { "id": "pileated_woodpecker", "category": "birds", "icon": "🐦", "name": "Pileated Woodpecker", "summary": "Big woodpecker with a bold crest and loud presence.", "fact": "" },
-    { "id": "titmouse", "category": "birds", "icon": "🐦", "name": "Tufted Titmouse", "summary": "Curious feeder visitor with a small crest and quick hops.", "fact": "" },
-    { "id": "grackle", "category": "birds", "icon": "🐦", "name": "Common Grackle", "summary": "Glossy blackbird that can roll in loud and hungry.", "fact": "" },
-    { "id": "red_winged_blackbird", "category": "birds", "icon": "🐦", "name": "Red-winged Blackbird", "summary": "Marsh-edge singer with bold shoulder patches in season.", "fact": "" },
+    { "id": "bluejay", "name": "Blue Jay", "category": "birds", "icon": "🐦", "summary": "Bold woodland songbird frequently visiting feeders.", "fact": "Blue jays can mimic hawk calls to deter other birds." },
+    { "id": "cardinal", "name": "Northern Cardinal", "category": "birds", "icon": "🐦", "summary": "Bright red songbird active year-round.", "fact": "Cardinals don’t migrate and maintain territories all winter." },
+    { "id": "chickadee", "name": "Black-Capped Chickadee", "category": "birds", "icon": "🐦", "summary": "Small energetic bird common at feeders.", "fact": "Chickadees can lower body temperature at night to conserve energy." },
 
-    // NIGHT CRITTERS (4)
-    { "id": "flying_squirrel", "category": "night", "icon": "🐿️", "name": "Flying Squirrel", "summary": "Night visitor that glides between trees and hits feeders fast.", "fact": "" },
-    { "id": "owl", "category": "night", "icon": "🦉", "name": "Owl", "summary": "Silent night hunter you may hear more often than see.", "fact": "" },
-    { "id": "bat", "category": "night", "icon": "🦇", "name": "Bat", "summary": "Night flyer that patrols for insects over open areas.", "fact": "" },
-    { "id": "coyote", "category": "night", "icon": "🐺", "name": "Coyote", "summary": "Often heard at night and sometimes seen crossing open trails.", "fact": "" },
+    { "id": "mallard", "name": "Mallard Duck", "category": "water", "icon": "🦆", "summary": "Common pond and wetland duck.", "fact": "Mallards can sleep with one eye open for predator awareness." },
+    { "id": "canada_goose", "name": "Canada Goose", "category": "water", "icon": "🪿", "summary": "Large migratory waterfowl often seen in flocks.", "fact": "Geese fly in V formation to reduce wind resistance." },
 
-    // AMPHIBIANS / REPTILES (6)
-    { "id": "bullfrog", "category": "amphib_reptile", "icon": "🐸", "name": "American Bullfrog", "summary": "Big pond frog known for a deep, booming call.", "fact": "" },
-    { "id": "green_frog", "category": "amphib_reptile", "icon": "🐸", "name": "Green Frog", "summary": "Pond-edge frog that likes warm shallows and sunny banks.", "fact": "" },
-    { "id": "spring_peeper", "category": "amphib_reptile", "icon": "🐸", "name": "Spring Peeper", "summary": "Tiny frog famous for loud springtime choruses.", "fact": "" },
-    { "id": "snapping_turtle", "category": "amphib_reptile", "icon": "🐢", "name": "Snapping Turtle", "summary": "Large turtle that prefers muddy bottoms and slow water.", "fact": "" },
-    { "id": "painted_turtle", "category": "amphib_reptile", "icon": "🐢", "name": "Painted Turtle", "summary": "Basks on logs and rocks when the sun is out.", "fact": "" },
-    { "id": "garter_snake", "category": "amphib_reptile", "icon": "🐍", "name": "Garter Snake", "summary": "Common, harmless snake often seen near grass and water edges.", "fact": "" },
+    { "id": "painted_turtle", "name": "Painted Turtle", "category": "amphib_reptile", "icon": "🐢", "summary": "Common basking turtle in ponds and wetlands.", "fact": "Painted turtles can survive low oxygen conditions during winter." },
+    { "id": "spring_peeper", "name": "Spring Peeper", "category": "amphib_reptile", "icon": "🐸", "summary": "Tiny frog known for loud spring calls.", "fact": "Their chorus is often one of the first signs of warming weather." },
 
-    // WATER CRITTERS (6) (no bird repeats)
-    { "id": "bluegill", "category": "water", "icon": "🐟", "name": "Bluegill", "summary": "Common panfish often found near shallow cover.", "fact": "" },
-    { "id": "largemouth_bass", "category": "water", "icon": "🐟", "name": "Largemouth Bass", "summary": "Ambush predator that likes weeds, logs, and shady edges.", "fact": "" },
-    { "id": "yellow_perch", "category": "water", "icon": "🐟", "name": "Yellow Perch", "summary": "Schooling fish known for striped sides and quick bites.", "fact": "" },
-    { "id": "northern_pike", "category": "water", "icon": "🐟", "name": "Northern Pike", "summary": "Long, fast predator that waits in cover then strikes.", "fact": "" },
-    { "id": "muskrat", "category": "water", "icon": "🦫", "name": "Muskrat", "summary": "Shoreline swimmer that cruises slow water and builds shelters.", "fact": "" },
-    { "id": "leopard_frog", "category": "water", "icon": "🐸", "name": "Leopard Frog", "summary": "Pond-edge frog that prefers wet grass and shallow water.", "fact": "" },
-
-    // INSECTS (6)
-    { "id": "monarch", "category": "insects", "icon": "🦋", "name": "Monarch Butterfly", "summary": "Bright orange butterfly known for long-distance migration.", "fact": "" },
-    { "id": "dragonfly", "category": "insects", "icon": "🪲", "name": "Dragonfly", "summary": "Fast pond patrol insect often seen zipping over water.", "fact": "" },
-    { "id": "firefly", "category": "insects", "icon": "✨", "name": "Firefly", "summary": "Summer night glower that flashes signals in the grass.", "fact": "" },
-    { "id": "honeybee", "category": "insects", "icon": "🐝", "name": "Honeybee", "summary": "Pollinator that visits flowers and carries pollen back to the hive.", "fact": "" },
-    { "id": "bumblebee", "category": "insects", "icon": "🐝", "name": "Bumblebee", "summary": "Fuzzy pollinator often active in cooler weather than other bees.", "fact": "" },
-    { "id": "grasshopper", "category": "insects", "icon": "🦗", "name": "Grasshopper", "summary": "Jumping insect common in fields and trail edges.", "fact": "" }
+    { "id": "dragonfly", "name": "Dragonfly", "category": "insects", "icon": "🪲", "summary": "Fast flying insect common near water.", "fact": "Dragonflies can fly in all directions including backward." },
+    { "id": "monarch", "name": "Monarch Butterfly", "category": "insects", "icon": "🦋", "summary": "Migratory butterfly sometimes seen seasonally.", "fact": "Monarchs migrate thousands of miles between seasons." }
   ]
 }
