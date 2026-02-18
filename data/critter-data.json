@@ -1,22 +1,35 @@
 {
   "lastUpdated": "initial",
   "critters": [
-    { "id": "whitetail_deer", "name": "White-Tailed Deer", "category": "mammals", "icon": "🦌", "summary": "Common woodland browser found throughout northern Michigan.", "fact": "Deer can rotate their ears independently to pinpoint sounds." },
-    { "id": "raccoon", "name": "Raccoon", "category": "night", "icon": "🦝", "summary": "Highly adaptable nocturnal omnivore often seen near feeders.", "fact": "Raccoons have extremely sensitive front paws that help identify food." },
-    { "id": "red_fox", "name": "Red Fox", "category": "mammals", "icon": "🦊", "summary": "Solitary predator known for intelligence and adaptability.", "fact": "Foxes use Earth’s magnetic field when hunting small prey." },
-    { "id": "coyote", "name": "Coyote", "category": "mammals", "icon": "🐕", "summary": "Widespread adaptable canid common in rural Michigan.", "fact": "Coyotes can run up to about 40 mph in short bursts." },
 
-    { "id": "bluejay", "name": "Blue Jay", "category": "birds", "icon": "🐦", "summary": "Bold woodland songbird frequently visiting feeders.", "fact": "Blue jays can mimic hawk calls to deter other birds." },
-    { "id": "cardinal", "name": "Northern Cardinal", "category": "birds", "icon": "🐦", "summary": "Bright red songbird active year-round.", "fact": "Cardinals don’t migrate and maintain territories all winter." },
-    { "id": "chickadee", "name": "Black-Capped Chickadee", "category": "birds", "icon": "🐦", "summary": "Small energetic bird common at feeders.", "fact": "Chickadees can lower body temperature at night to conserve energy." },
+    { "id": "whitetail_deer", "name": "White-Tailed Deer", "category": "mammals", "icon": "🦌", "summary": "Common Michigan woodland browser frequently seen near feeders.", "fact": "Deer shed and regrow antlers every year." },
+    { "id": "black_bear", "name": "Black Bear", "category": "mammals", "icon": "🐻", "summary": "Largest land mammal in Michigan forests.", "fact": "Black bears can smell food over a mile away." },
+    { "id": "coyote", "name": "Coyote", "category": "mammals", "icon": "🐕", "summary": "Adaptable predator often heard more than seen.", "fact": "Coyotes can run around 40 mph." },
+    { "id": "red_fox", "name": "Red Fox", "category": "mammals", "icon": "🦊", "summary": "Solitary hunter common in fields and woods.", "fact": "Foxes use Earth’s magnetic field when hunting." },
+    { "id": "gray_squirrel", "name": "Gray Squirrel", "category": "mammals", "icon": "🐿️", "summary": "Tree-dwelling rodent common at feeders.", "fact": "Squirrels forget some buried nuts, helping trees grow." },
+    { "id": "snowshoe_hare", "name": "Snowshoe Hare", "category": "mammals", "icon": "🐇", "summary": "Forest rabbit that changes color seasonally.", "fact": "Their large feet act like snowshoes in winter." },
 
-    { "id": "mallard", "name": "Mallard Duck", "category": "water", "icon": "🦆", "summary": "Common pond and wetland duck.", "fact": "Mallards can sleep with one eye open for predator awareness." },
-    { "id": "canada_goose", "name": "Canada Goose", "category": "water", "icon": "🪿", "summary": "Large migratory waterfowl often seen in flocks.", "fact": "Geese fly in V formation to reduce wind resistance." },
+    { "id": "raccoon", "name": "Raccoon", "category": "night", "icon": "🦝", "summary": "Nocturnal omnivore often visiting feeders.", "fact": "Raccoons have extremely sensitive front paws." },
+    { "id": "opossum", "name": "Opossum", "category": "night", "icon": "🐀", "summary": "North America’s only marsupial.", "fact": "Opossums help control ticks in the ecosystem." },
+    { "id": "skunk", "name": "Striped Skunk", "category": "night", "icon": "🦨", "summary": "Nocturnal omnivore known for defensive spray.", "fact": "Their spray can reach about 10 feet." },
+    { "id": "flying_squirrel", "name": "Flying Squirrel", "category": "night", "icon": "🐿️", "summary": "Small nocturnal gliding squirrel.", "fact": "They glide using skin flaps between limbs." },
 
-    { "id": "painted_turtle", "name": "Painted Turtle", "category": "amphib_reptile", "icon": "🐢", "summary": "Common basking turtle in ponds and wetlands.", "fact": "Painted turtles can survive low oxygen conditions during winter." },
-    { "id": "spring_peeper", "name": "Spring Peeper", "category": "amphib_reptile", "icon": "🐸", "summary": "Tiny frog known for loud spring calls.", "fact": "Their chorus is often one of the first signs of warming weather." },
+    { "id": "bluejay", "name": "Blue Jay", "category": "birds", "icon": "🪶", "summary": "Bold woodland songbird common at feeders.", "fact": "Blue jays can mimic hawk calls." },
+    { "id": "cardinal", "name": "Northern Cardinal", "category": "birds", "icon": "🐦‍⬛", "summary": "Bright red bird active year-round.", "fact": "Cardinals do not migrate." },
+    { "id": "chickadee", "name": "Black-Capped Chickadee", "category": "birds", "icon": "🐤", "summary": "Small energetic feeder bird.", "fact": "Chickadees lower body temp at night to conserve energy." },
+    { "id": "pileated_woodpecker", "name": "Pileated Woodpecker", "category": "birds", "icon": "🪵", "summary": "Large woodpecker often heard drumming.", "fact": "They excavate large rectangular tree holes." },
+    { "id": "turkey", "name": "Wild Turkey", "category": "birds", "icon": "🦃", "summary": "Large ground bird common in Michigan.", "fact": "Turkeys can fly short distances." },
+    { "id": "sandhill_crane", "name": "Sandhill Crane", "category": "birds", "icon": "🕊️", "summary": "Tall wetland bird with distinctive call.", "fact": "Cranes mate for life." },
 
-    { "id": "dragonfly", "name": "Dragonfly", "category": "insects", "icon": "🪲", "summary": "Fast flying insect common near water.", "fact": "Dragonflies can fly in all directions including backward." },
-    { "id": "monarch", "name": "Monarch Butterfly", "category": "insects", "icon": "🦋", "summary": "Migratory butterfly sometimes seen seasonally.", "fact": "Monarchs migrate thousands of miles between seasons." }
+    { "id": "mallard", "name": "Mallard Duck", "category": "water", "icon": "🦆", "summary": "Common pond and wetland duck.", "fact": "Mallards can sleep with one eye open." },
+    { "id": "canada_goose", "name": "Canada Goose", "category": "water", "icon": "🪿", "summary": "Migratory waterfowl often seen in flocks.", "fact": "They fly in V formation to save energy." },
+    { "id": "great_blue_heron", "name": "Great Blue Heron", "category": "water", "icon": "🦤", "summary": "Large wading bird near lakes and rivers.", "fact": "Herons strike fish with lightning-fast neck thrusts." },
+    { "id": "painted_turtle", "name": "Painted Turtle", "category": "water", "icon": "🐢", "summary": "Common basking turtle.", "fact": "They can survive low oxygen winter conditions." },
+
+    { "id": "spring_peeper", "name": "Spring Peeper", "category": "amphib_reptile", "icon": "🐸", "summary": "Tiny frog with loud spring call.", "fact": "Often first amphibian heard after winter." },
+    { "id": "garter_snake", "name": "Garter Snake", "category": "amphib_reptile", "icon": "🐍", "summary": "Common non-venomous snake.", "fact": "Some garter snakes hibernate in large groups." },
+
+    { "id": "monarch", "name": "Monarch Butterfly", "category": "insects", "icon": "🦋", "summary": "Migratory butterfly species.", "fact": "They travel thousands of miles annually." },
+    { "id": "dragonfly", "name": "Dragonfly", "category": "insects", "icon": "🪲", "summary": "Fast flying insect near water.", "fact": "Dragonflies are aerial predators." }
   ]
 }
