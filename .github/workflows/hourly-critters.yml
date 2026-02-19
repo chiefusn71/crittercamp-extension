@@ -1,68 +1,149 @@
-name: Hourly Critter Refresh
+name: Hourly Critter Facts
 
 on:
   schedule:
-    - cron: "0 * * * *"   # hourly UTC
+    - cron: "0 * * * *"   # every hour (UTC)
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  refresh:
+  update:
     runs-on: ubuntu-latest
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
-      - name: Update data/critter-data.json
+      # Make sure the runner matches origin/main exactly (prevents "fetch first" / rebase conflicts)
+      - name: Sync workspace with origin/main
         run: |
-          python - << 'PY'
-          import json, datetime
-          from pathlib import Path
+          set -e
+          git fetch origin main
+          git reset --hard origin/main
 
-          p = Path("data/critter-data.json")
-          data = json.loads(p.read_text(encoding="utf-8"))
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
 
-          # Support BOTH formats:
-          # (1) Array of critters
-          # (2) Object: { lastUpdated, factIndex, critters:[...] }
-          if isinstance(data, list):
-            wrapper = {
-              "lastUpdated": None,
-              "factIndex": 0,
-              "critters": data
-            }
-            data = wrapper
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install requests
 
-          if not isinstance(data, dict) or "critters" not in data or not isinstance(data["critters"], list):
-            raise SystemExit("data/critter-data.json must be an array OR {critters:[...]}")
+      - name: Generate fresh facts and update JSON
+        run: |
+          python - <<'PY'
+          import os, json, datetime, random, time
+          import requests
 
-          idx = data.get("factIndex", 0)
-          if not isinstance(idx, int):
-            idx = 0
-          idx += 1
-          data["factIndex"] = idx
-          data["lastUpdated"] = datetime.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
+          API_KEY = os.environ.get("OPENAI_API_KEY")
+          if not API_KEY:
+              raise SystemExit("Missing OPENAI_API_KEY secret")
 
-          # If you later add facts[] arrays, this rotates activeFact automatically
-          for c in data["critters"]:
-            facts = c.get("facts")
-            if isinstance(facts, list) and len(facts) > 0:
-              c["activeFact"] = facts[idx % len(facts)]
-            else:
-              # fallback: keep existing 'fact' visible
-              f = c.get("fact") if isinstance(c.get("fact"), str) else None
-              c["activeFact"] = f or c.get("activeFact") or "—"
+          PATH = "data/critter-data.json"
 
-          p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-          print("Updated", len(data["critters"]), "critters. factIndex=", idx)
+          with open(PATH, "r", encoding="utf-8") as f:
+              data = json.load(f)
+
+          critters = data.get("critters", [])
+          if not isinstance(critters, list) or not critters:
+              raise SystemExit("data['critters'] must be a non-empty array")
+
+          # Update timestamp
+          now = datetime.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
+          data["lastUpdated"] = now
+
+          # How many critters to refresh per hour (keeps API usage sane)
+          UPDATE_COUNT = int(os.environ.get("UPDATE_COUNT", "12"))
+          UPDATE_COUNT = max(1, min(UPDATE_COUNT, len(critters)))
+
+          # Choose a rotating/random subset each run
+          # (Random is fine; if you want strict rotation later we can add it.)
+          subset = random.sample(critters, UPDATE_COUNT)
+
+          def call_openai_fact(animal_name: str) -> str:
+              url = "https://api.openai.com/v1/responses"
+              headers = {
+                  "Authorization": f"Bearer {API_KEY}",
+                  "Content-Type": "application/json",
+              }
+              payload = {
+                  "model": "gpt-4.1-mini",
+                  "input": [
+                      {
+                          "role": "user",
+                          "content": (
+                              f"Write ONE accurate fun fact about {animal_name} for a wildlife Twitch stream. "
+                              "Max 18 words. Plain text only. No profanity. No ages or birthdays. No speculation."
+                          ),
+                      }
+                  ],
+              }
+
+              r = requests.post(url, headers=headers, json=payload, timeout=60)
+              r.raise_for_status()
+              out = r.json()
+
+              # Extract output text
+              text_parts = []
+              for item in out.get("output", []):
+                  for c in item.get("content", []):
+                      if c.get("type") == "output_text":
+                          t = (c.get("text") or "").strip()
+                          if t:
+                              text_parts.append(t)
+
+              fact = " ".join(text_parts).replace("\n", " ").strip()
+              # Safety fallback so you never write empty facts
+              if not fact:
+                  fact = f"{animal_name} is a fascinating part of Michigan’s ecosystem."
+              return fact
+
+          updated = 0
+          for c in subset:
+              name = (c.get("name") or "").strip()
+              if not name:
+                  continue
+
+              try:
+                  new_fact = call_openai_fact(name)
+                  c["fact"] = new_fact
+                  updated += 1
+              except Exception as e:
+                  # Don't kill the whole run if one critter fails
+                  # Keep previous fact intact
+                  pass
+
+              time.sleep(0.4)  # tiny pause
+
+          # Save
+          with open(PATH, "w", encoding="utf-8") as f:
+              json.dump(data, f, indent=2, ensure_ascii=False)
+
+          print(f"Updated timestamp: {now}")
+          print(f"Updated facts: {updated}/{UPDATE_COUNT}")
           PY
 
       - name: Commit and push
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          set -e
+          git config user.name "crittercamp-bot"
+          git config user.email "actions@users.noreply.github.com"
+
           git add data/critter-data.json
-          git commit -m "Hourly critter refresh" || exit 0
-          git push
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Hourly critter fact refresh"
+          git push origin HEAD:main
