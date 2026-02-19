@@ -2,7 +2,7 @@ name: Hourly Critter Facts
 
 on:
   schedule:
-    - cron: "0 * * * *"   # every hour (UTC)
+    - cron: "0 * * * *"   # hourly (UTC)
   workflow_dispatch:
 
 permissions:
@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      UPDATE_COUNT: "71"   # TEST MODE: update everything so you can confirm
 
     steps:
       - name: Checkout
@@ -21,12 +22,12 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      # Make sure the runner matches origin/main exactly (prevents "fetch first" / rebase conflicts)
-      - name: Sync workspace with origin/main
+      - name: Sync to origin/main (clean workspace)
         run: |
           set -e
           git fetch origin main
           git reset --hard origin/main
+          git clean -fd
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -41,7 +42,7 @@ jobs:
       - name: Generate fresh facts and update JSON
         run: |
           python - <<'PY'
-          import os, json, datetime, random, time
+          import os, json, datetime, time
           import requests
 
           API_KEY = os.environ.get("OPENAI_API_KEY")
@@ -49,7 +50,6 @@ jobs:
               raise SystemExit("Missing OPENAI_API_KEY secret")
 
           PATH = "data/critter-data.json"
-
           with open(PATH, "r", encoding="utf-8") as f:
               data = json.load(f)
 
@@ -57,19 +57,10 @@ jobs:
           if not isinstance(critters, list) or not critters:
               raise SystemExit("data['critters'] must be a non-empty array")
 
-          # Update timestamp
           now = datetime.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
           data["lastUpdated"] = now
 
-          # How many critters to refresh per hour (keeps API usage sane)
-          UPDATE_COUNT = int(os.environ.get("UPDATE_COUNT", "12"))
-          UPDATE_COUNT = max(1, min(UPDATE_COUNT, len(critters)))
-
-          # Choose a rotating/random subset each run
-          # (Random is fine; if you want strict rotation later we can add it.)
-          subset = random.sample(critters, UPDATE_COUNT)
-
-          def call_openai_fact(animal_name: str) -> str:
+          def gen_fact(name: str) -> str:
               url = "https://api.openai.com/v1/responses"
               headers = {
                   "Authorization": f"Bearer {API_KEY}",
@@ -77,59 +68,55 @@ jobs:
               }
               payload = {
                   "model": "gpt-4.1-mini",
-                  "input": [
-                      {
-                          "role": "user",
-                          "content": (
-                              f"Write ONE accurate fun fact about {animal_name} for a wildlife Twitch stream. "
-                              "Max 18 words. Plain text only. No profanity. No ages or birthdays. No speculation."
-                          ),
-                      }
-                  ],
+                  "input": (
+                      f"Write ONE accurate fun fact about {name} for a wildlife Twitch stream. "
+                      "Max 18 words. Plain text only. No profanity. No ages. No speculation."
+                  ),
               }
 
-              r = requests.post(url, headers=headers, json=payload, timeout=60)
-              r.raise_for_status()
+              r = requests.post(url, headers=headers, json=payload, timeout=90)
+
+              # HARD FAIL with readable info if OpenAI rejects your key/model/etc.
+              if r.status_code >= 400:
+                  raise SystemExit(f"OpenAI error {r.status_code}: {r.text[:500]}")
+
               out = r.json()
 
-              # Extract output text
-              text_parts = []
+              txt = ""
               for item in out.get("output", []):
                   for c in item.get("content", []):
                       if c.get("type") == "output_text":
-                          t = (c.get("text") or "").strip()
-                          if t:
-                              text_parts.append(t)
+                          txt += c.get("text", "")
 
-              fact = " ".join(text_parts).replace("\n", " ").strip()
-              # Safety fallback so you never write empty facts
+              fact = (txt or "").strip().replace("\n", " ")
               if not fact:
-                  fact = f"{animal_name} is a fascinating part of Michigan’s ecosystem."
+                  raise SystemExit("OpenAI returned empty output_text")
               return fact
 
           updated = 0
-          for c in subset:
+          for c in critters:
               name = (c.get("name") or "").strip()
               if not name:
                   continue
+              old = (c.get("fact") or "").strip()
 
-              try:
-                  new_fact = call_openai_fact(name)
-                  c["fact"] = new_fact
-                  updated += 1
-              except Exception as e:
-                  # Don't kill the whole run if one critter fails
-                  # Keep previous fact intact
-                  pass
+              new = gen_fact(name)
+              c["fact"] = new
+              updated += 1
 
-              time.sleep(0.4)  # tiny pause
+              # print first few changes so you KNOW it's working
+              if updated <= 5:
+                  print(f"{name}:")
+                  print(f"  OLD: {old}")
+                  print(f"  NEW: {new}")
 
-          # Save
+              time.sleep(0.35)
+
           with open(PATH, "w", encoding="utf-8") as f:
               json.dump(data, f, indent=2, ensure_ascii=False)
 
           print(f"Updated timestamp: {now}")
-          print(f"Updated facts: {updated}/{UPDATE_COUNT}")
+          print(f"Updated facts: {updated}/{len(critters)}")
           PY
 
       - name: Commit and push
