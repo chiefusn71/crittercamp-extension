@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-19T16:21:51Z",
+  "lastUpdated": "2026-02-19T16:42:09Z",
   "critters": [
     {
       "id": "whitetail_deer",
@@ -7,7 +7,7 @@
       "category": "mammals",
       "icon": "🦌",
       "summary": "Common woodland browser often seen near fields and feeders.",
-      "fact": "White-tailed deer can run up to 30 miles per hour to escape predators.",
+      "fact": "White-tailed deer use their white tail as a warning signal to alert others of danger nearby.",
       "activeFact": "White-tailed deer can run up to 30 miles per hour to escape predators."
     },
     {
@@ -16,7 +16,7 @@
       "category": "mammals",
       "icon": "🐻",
       "summary": "Largest forest mammal in Michigan woodlands.",
-      "fact": "Black bears have excellent memories and can remember food sources for years!",
+      "fact": "Black bears have an excellent memory and can remember food locations for years.",
       "activeFact": "Black bears have excellent memories and can remember food sources for years!"
     },
     {
@@ -133,7 +133,7 @@
       "category": "mammals",
       "icon": "🐿️",
       "summary": "Ground squirrel known for cheek pouches.",
-      "fact": "Chipmunks have cheek pouches that can expand to carry food back to their burrows for storage.",
+      "fact": "Chipmunks have cheek pouches to carry food back to their burrows for storage.",
       "activeFact": "Chipmunks have cheek pouches that can expand to carry food back to their burrows for storage."
     },
     {
@@ -169,7 +169,7 @@
       "category": "night",
       "icon": "🐀",
       "summary": "North America's only marsupial.",
-      "fact": "Opossums play dead to avoid predators, slowing their heartbeat and breathing to appear lifeless.",
+      "fact": "Opossums can hang by their tails to climb and escape predators effectively.",
       "activeFact": "Opossums play dead to avoid predators, slowing their heartbeat and breathing to appear lifeless."
     },
     {
@@ -232,7 +232,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Bold feeder visitor with loud calls.",
-      "fact": "Blue Jays can mimic hawk calls to scare away other birds and protect their territory.",
+      "fact": "Blue Jays can mimic the calls of hawks to scare away other birds and protect their territory.",
       "activeFact": "Blue Jays can mimic hawk calls to scare away other birds and protect their territory."
     },
     {
@@ -331,7 +331,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Winter feeder bird.",
-      "fact": "Dark-eyed Juncos change feather colors seasonally, showing brighter plumage during breeding for attracting mates!",
+      "fact": "Dark-eyed Juncos fluff their feathers to stay warm during cold winter nights.",
       "activeFact": "Dark-eyed Juncos change feather colors seasonally, showing brighter plumage during breeding for attracting mates!"
     },
     {
@@ -358,7 +358,7 @@
       "category": "birds",
       "icon": "🦃",
       "summary": "Large ground bird common in Michigan.",
-      "fact": "Wild turkeys can fly at speeds up to 55 miles per hour for short bursts!",
+      "fact": "Wild turkeys can run up to 20 miles per hour and fly short distances at 55 miles per hour.",
       "activeFact": "Wild turkeys can fly at speeds up to 55 miles per hour for short bursts!"
     },
     {
@@ -367,7 +367,7 @@
       "category": "birds",
       "icon": "🐓",
       "summary": "Forest bird known for drumming display.",
-      "fact": "Ruffed Grouse create a drumming sound by beating their wing feathers to attract mates and mark territory.",
+      "fact": "Ruffed Grouse create a drumming sound by rapidly beating their wings to attract mates.",
       "activeFact": "Ruffed Grouse create a drumming sound by beating their wing feathers to attract mates and mark territory."
     },
     {
@@ -376,7 +376,7 @@
       "category": "birds",
       "icon": "🕊️",
       "summary": "Tall wetland bird with loud call.",
-      "fact": "Sandhill Cranes perform graceful, synchronized dances to strengthen pair bonds and communicate with each other.",
+      "fact": "Sandhill Cranes perform elaborate, synchronized dancing to strengthen pair bonds and communicate.",
       "activeFact": "Sandhill Cranes perform graceful, synchronized dances to strengthen pair bonds and communicate with each other."
     },
     {
@@ -412,7 +412,7 @@
       "category": "birds",
       "icon": "🦅",
       "summary": "Fast woodland hunting hawk.",
-      "fact": "Cooper’s Hawks are skilled flyers that use surprise attacks to catch birds mid-air.",
+      "fact": "Cooper’s Hawks are skilled fliers, able to maneuver quickly through dense trees while hunting birds.",
       "activeFact": "Cooper’s Hawks are skilled flyers that use surprise attacks to catch birds mid-air."
     },
     {
@@ -466,7 +466,7 @@
       "category": "water",
       "icon": "🐢",
       "summary": "Large aquatic turtle.",
-      "fact": "Snapping turtles have powerful jaws and can snap shut in less than a second to catch prey!",
+      "fact": "Snapping turtles have powerful jaws and can snap shut in less than 0.15 seconds.",
       "activeFact": "Snapping turtles have powerful jaws and can snap shut in less than a second to catch prey!"
     },
     {
@@ -592,7 +592,7 @@
       "category": "insects",
       "icon": "🪲",
       "summary": "Fast aerial insect predator.",
-      "fact": "Dragonflies can fly in six directions: up, down, forward, backward, left, and right!",
+      "fact": "Dragonflies can fly in six directions: up, down, forward, backward, and side to side.",
       "activeFact": "Dragonflies can fly in six directions: up, down, forward, backward, left, and right!"
     },
     {
