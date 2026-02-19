@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-      UPDATE_COUNT: "12"
+      UPDATE_COUNT: "71"
 
     steps:
       - name: Checkout
