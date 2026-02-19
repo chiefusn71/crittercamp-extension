@@ -82,10 +82,27 @@ jobs:
           PY
 
       - name: Commit and push
-        run: |
-          git config user.name "crittercamp-bot"
-          git config user.email "actions@users.noreply.github.com"
-          git add data/critter-data.json
-          git commit -m "Hourly critter fact refresh" || exit 0
-          git push
+  run: |
+    set -e
+
+    git config user.name "crittercamp-bot"
+    git config user.email "actions@users.noreply.github.com"
+
+    # Make sure we are on main and up to date
+    git checkout main
+    git fetch origin main
+    git rebase origin/main
+
+    # Stage changes
+    git add data/critter-data.json
+
+    # If nothing changed, exit clean (prevents random failures)
+    if git diff --cached --quiet; then
+      echo "No changes to commit."
+      exit 0
+    fi
+
+    # Commit and push (rebase-safe)
+    git commit -m "Hourly critter fact refresh"
+    git push origin main
 
