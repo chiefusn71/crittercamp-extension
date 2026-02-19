@@ -13,8 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-      # Set this to a smaller number if you DON'T want to update all 71 every hour
-      UPDATE_COUNT: "71"
+      UPDATE_COUNT: "71" # change to 10-15 recommended
 
     steps:
       - name: Checkout (full history)
@@ -23,7 +22,7 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - name: Hard-sync workspace to origin/main (prevents push/rebase conflicts)
+      - name: Hard-sync workspace to origin/main
         run: |
           set -e
           git fetch origin main
@@ -39,11 +38,10 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install requests
 
-      - name: Generate fresh facts and update JSON
+      - name: Generate fresh facts and update JSON (FAIL if facts don't change)
         run: |
           python - <<'PY'
-          import os, json, datetime, random, time
-          import requests
+          import os, json, datetime, time, requests
 
           API_KEY = os.environ.get("OPENAI_API_KEY")
           if not API_KEY:
@@ -54,98 +52,134 @@ jobs:
           with open(PATH, "r", encoding="utf-8") as f:
               data = json.load(f)
 
-          # Support BOTH formats:
-          # 1) Array of critters: [ {..}, {..} ]
-          # 2) Object wrapper: { "lastUpdated": "...", "critters": [ ... ] }
+          # Support either:
+          # 1) [ {critter}, ... ]
+          # 2) { lastUpdated, critters:[...] }
           if isinstance(data, list):
-              data = {"lastUpdated": None, "runId": None, "critters": data}
+              data = {"lastUpdated": None, "cursor": 0, "critters": data}
 
-          if not isinstance(data, dict) or "critters" not in data or not isinstance(data["critters"], list):
+          critters = data.get("critters")
+          if not isinstance(critters, list) or not critters:
               raise SystemExit("critter-data.json must be an array OR { critters: [...] }")
 
-          critters = data["critters"]
-          if not critters:
-              raise SystemExit("critters array is empty")
+          # rotation cursor
+          cursor = data.get("cursor", 0)
+          if not isinstance(cursor, int):
+              cursor = 0
+
+          UPDATE_COUNT = int(os.environ.get("UPDATE_COUNT", "12"))
+          UPDATE_COUNT = max(1, min(UPDATE_COUNT, len(critters)))
+
+          # choose next UPDATE_COUNT critters in a loop
+          picks = []
+          for i in range(UPDATE_COUNT):
+              picks.append((cursor + i) % len(critters))
+          data["cursor"] = (cursor + UPDATE_COUNT) % len(critters)
 
           now = datetime.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
           data["lastUpdated"] = now
-          data["runId"] = now  # proof stamp so you can SEE it changed
+          data["runId"] = now  # proof stamp
 
-          # How many to update this run
-          UPDATE_COUNT = int(os.environ.get("UPDATE_COUNT", "71"))
-          UPDATE_COUNT = max(1, min(UPDATE_COUNT, len(critters)))
-
-          # Choose subset (if UPDATE_COUNT == 71, it's all of them)
-          subset = critters if UPDATE_COUNT == len(critters) else random.sample(critters, UPDATE_COUNT)
-
-          def extract_text(resp_json: dict) -> str:
-              txt = []
-              for item in resp_json.get("output", []):
-                  for c in item.get("content", []):
-                      if c.get("type") == "output_text":
-                          t = (c.get("text") or "").strip()
-                          if t:
-                              txt.append(t)
-              return " ".join(txt).replace("\n", " ").strip()
-
-          def call_openai_fact(animal_name: str, previous_fact: str) -> str:
-              url = "https://api.openai.com/v1/responses"
+          def chat_completion(animal_name: str, avoid: list[str]) -> str:
+              url = "https://api.openai.com/v1/chat/completions"
               headers = {
                   "Authorization": f"Bearer {API_KEY}",
                   "Content-Type": "application/json",
               }
 
-              prev = (previous_fact or "").strip()
+              avoid_text = "\n".join([f"- {a}" for a in avoid if a]) or "- (none)"
 
               payload = {
-                  "model": "gpt-4.1-mini",
-                  "temperature": 1.0,
-                  "max_output_tokens": 80,
-                  "input": (
-                      f"Write ONE accurate fun fact about {animal_name} for a wildlife Twitch stream.\n"
-                      f"Rules:\n"
-                      f"- Max 18 words\n"
-                      f"- Plain text only\n"
-                      f"- Must be DIFFERENT from this previous fact (do not reuse its wording): {prev!r}\n"
-                      f"- No profanity, no ages/birthdays, no speculation\n"
-                  ),
+                  "model": "gpt-4o-mini",
+                  "temperature": 1.2,
+                  "messages": [
+                      {
+                          "role": "system",
+                          "content": "You write accurate, short wildlife facts. No profanity. No speculation. Plain text."
+                      },
+                      {
+                          "role": "user",
+                          "content": (
+                              f"Write ONE accurate fun fact about {animal_name}.\n"
+                              "Rules:\n"
+                              "- Max 18 words\n"
+                              "- Must be clearly different from ALL of these recent facts:\n"
+                              f"{avoid_text}\n"
+                              "- No ages/birthdays, no medical claims, no speculation\n"
+                          )
+                      }
+                  ]
               }
 
               r = requests.post(url, headers=headers, json=payload, timeout=90)
               if r.status_code >= 400:
-                  raise RuntimeError(f"OpenAI error {r.status_code}: {r.text[:500]}")
+                  raise RuntimeError(f"OpenAI error {r.status_code}: {r.text[:300]}")
+              out = r.json()
+              text = (out["choices"][0]["message"]["content"] or "").strip().replace("\n", " ")
+              return text
 
-              fact = extract_text(r.json())
-              if not fact:
-                  raise RuntimeError("OpenAI returned empty output_text")
-              return fact
+          successes = 0
+          failures = 0
+          unchanged = 0
+          errors = []
 
-          updated = 0
-          failed = 0
-
-          for c in subset:
+          for idx in picks:
+              c = critters[idx]
               name = (c.get("name") or "").strip()
               if not name:
                   continue
 
               old_fact = (c.get("fact") or "").strip()
 
+              # keep small history so we can avoid repeats
+              hist = c.get("factHistory")
+              if not isinstance(hist, list):
+                  hist = []
+              hist = [h for h in hist if isinstance(h, str) and h.strip()]
+              hist = hist[-5:]  # last 5 only
+
+              avoid = [old_fact] + hist
+
               try:
-                  new_fact = call_openai_fact(name, old_fact)
-                  # Only write if it actually changed (extra protection)
-                  if new_fact and new_fact != old_fact:
+                  new_fact = chat_completion(name, avoid)
+
+                  if not new_fact:
+                      raise RuntimeError("Empty fact returned")
+
+                  # if model still repeats, count it and force failure visibility
+                  if new_fact == old_fact or new_fact in hist:
+                      unchanged += 1
+                  else:
+                      # push old into history then set new
+                      if old_fact:
+                          hist.append(old_fact)
+                      c["factHistory"] = hist[-5:]
                       c["fact"] = new_fact
-                  updated += 1
+                      successes += 1
+
               except Exception as e:
-                  failed += 1
-                  # Keep old fact if one fails
-              time.sleep(0.35)
+                  failures += 1
+                  errors.append(f"{name}: {e}")
+
+              time.sleep(0.4)
+
+          # HARD RULE: if nothing actually changed, fail the run
+          if successes == 0:
+              msg = (
+                  f"NO FACTS CHANGED. successes={successes} failures={failures} unchanged={unchanged}\n"
+                  + ("\n".join(errors[:8]) if errors else "")
+              )
+              raise SystemExit(msg)
 
           with open(PATH, "w", encoding="utf-8") as f:
               json.dump(data, f, indent=2, ensure_ascii=False)
 
           print("Updated timestamp:", now)
-          print(f"Attempted facts: {updated}/{UPDATE_COUNT} | failed: {failed}")
+          print(f"Updated facts: {successes}/{UPDATE_COUNT} | failures={failures} | unchanged={unchanged}")
+          if errors:
+              print("Sample errors:")
+              for e in errors[:8]:
+                  print(" -", e)
           PY
 
       - name: Commit and push (only if changed)
