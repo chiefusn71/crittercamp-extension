@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-19T05:15:05Z",
+  "lastUpdated": "2026-02-19T08:02:14Z",
   "critters": [
     {
       "id": "whitetail_deer",
@@ -641,5 +641,5 @@
       "activeFact": "Grasshoppers have powerful hind legs that can leap over 20 times their body length in a single jump!"
     }
   ],
-  "factIndex": 3
+  "factIndex": 4
 }
