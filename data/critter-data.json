@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-22T14:28:41Z",
+  "lastUpdated": "2026-03-22T15:27:38Z",
   "critters": [
     {
       "id": "whitetail_deer",
@@ -7,7 +7,7 @@
       "category": "mammals",
       "icon": "🦌",
       "summary": "Late-winter woodland browser feeding heavily as snow begins melting.",
-      "fact": "White-tailed deer flash the white underside of their tails to signal danger to other deer nearby.",
+      "fact": "White-tailed deer use their white tails to signal danger by flashing them like a flag.",
       "activeFact": "White-tailed deer move more during early spring thaw, especially at dawn and dusk as food becomes easier to reach."
     },
     {
@@ -16,7 +16,7 @@
       "category": "mammals",
       "icon": "🐻",
       "summary": "Large forest mammal beginning to stir as winter loosens its grip.",
-      "fact": "Black bears have an excellent sense of smell, up to seven times better than a bloodhound’s.",
+      "fact": "Black bears have an excellent sense of smell, even better than bloodhounds, helping them find food efficiently.",
       "activeFact": "Early spring bears often start roaming in search of easy meals after months of winter denning."
     },
     {
@@ -25,7 +25,7 @@
       "category": "mammals",
       "icon": "🐕",
       "summary": "Active late-winter predator often heard during breeding season.",
-      "fact": "Coyotes are highly adaptable and can thrive in urban, suburban, and wild environments across North America.",
+      "fact": "Coyotes can communicate using over 11 different vocalizations, including howls, yips, and barks.",
       "activeFact": "In mid-March, coyotes often patrol open ground and field edges where melting snow exposes scent trails and prey."
     },
     {
@@ -34,7 +34,7 @@
       "category": "mammals",
       "icon": "🦊",
       "summary": "Solitary hunter active around thawing fields and woodland edges.",
-      "fact": "Red foxes use their bushy tails for balance and to keep warm in cold weather.",
+      "fact": "Red foxes use their bushy tails for balance, warmth, and communication with other foxes.",
       "activeFact": "As March snow melts, red foxes often work field edges where voles and mice become easier to hear and catch."
     },
     {
@@ -43,7 +43,7 @@
       "category": "mammals",
       "icon": "🦊",
       "summary": "Secretive woodland fox moving more during the seasonal transition.",
-      "fact": "Gray foxes can climb trees using their strong, hooked claws to escape predators.",
+      "fact": "Gray foxes are unique canids capable of climbing trees to escape predators or hunt.",
       "activeFact": "In mid-March, gray foxes may shift between den cover and feeding areas as nights stay cold but days warm up."
     },
     {
@@ -52,7 +52,7 @@
       "category": "mammals",
       "icon": "🐈",
       "summary": "Elusive predator still hunting hard through the late-winter thaw.",
-      "fact": "Bobcats can leap up to 10 feet horizontally, making them excellent hunters and climbers in the wild.",
+      "fact": "Bobcats are excellent swimmers and can climb trees to escape predators or hunt prey.",
       "activeFact": "As trails soften and snow recedes, bobcats often travel wooded edges where prey movement increases."
     },
     {
@@ -70,7 +70,7 @@
       "category": "mammals",
       "icon": "🦫",
       "summary": "Wetland engineer becoming more visible as ice loosens on ponds and creeks.",
-      "fact": "Beavers use their large, flat tails for balance, communication, and storing fat.",
+      "fact": "Beavers build dams that create wetlands, benefiting many other species by increasing water availability.",
       "activeFact": "Early spring thaw can trigger fresh beaver activity along shorelines as open water expands."
     },
     {
@@ -79,7 +79,7 @@
       "category": "mammals",
       "icon": "🦫",
       "summary": "Aquatic rodent showing more shoreline activity during thaw season.",
-      "fact": "Muskrats build dome-shaped lodges using vegetation, providing shelter and protection from predators in wetlands.",
+      "fact": "Muskrats build dome-shaped lodges from vegetation and mud, often with underwater entrances for protection.",
       "activeFact": "In mid-March, muskrats often cruise open pockets of water and shoreline runs looking for fresh plant material."
     },
     {
@@ -88,7 +88,7 @@
       "category": "mammals",
       "icon": "🐾",
       "summary": "Semi-aquatic hunter working thawing banks and open water edges.",
-      "fact": "Minks are excellent swimmers, using their webbed feet to hunt fish and small aquatic animals.",
+      "fact": "Minks are skilled swimmers and use their webbed feet to catch fish and other aquatic prey.",
       "activeFact": "As March ice breaks apart, mink patrol creek edges and pond margins where prey gets more exposed."
     },
     {
@@ -97,7 +97,7 @@
       "category": "mammals",
       "icon": "🐾",
       "summary": "Forest carnivore still roaming widely through late-winter woods.",
-      "fact": "Fishers are skilled climbers and can rotate their ankles to climb down trees headfirst.",
+      "fact": "Fishers are skilled climbers, using their sharp claws to navigate trees while hunting prey.",
       "activeFact": "During the spring transition, fishers often use wooded corridors and ridges as snow conditions change day to day."
     },
     {
@@ -106,7 +106,7 @@
       "category": "mammals",
       "icon": "🦦",
       "summary": "Aquatic predator enjoying more open water as winter fades.",
-      "fact": "River otters can close their ears and nostrils underwater to stay dry and swim efficiently.",
+      "fact": "River otters can hold their breath underwater for up to eight minutes while hunting for food.",
       "activeFact": "Mid-March otters often use melting channels and soft banks to travel, hunt, and play near open water."
     },
     {
@@ -115,7 +115,7 @@
       "category": "mammals",
       "icon": "🐿️",
       "summary": "Tree squirrel busy with feeding and nest activity as spring nears.",
-      "fact": "Eastern Gray Squirrels use their bushy tails for balance and to communicate with other squirrels.",
+      "fact": "Eastern Gray Squirrels communicate using over 10 different vocal sounds and tail movements.",
       "activeFact": "On mild March days, gray squirrels spend extra time gathering food and chasing through treetops."
     },
     {
@@ -124,7 +124,7 @@
       "category": "mammals",
       "icon": "🐿️",
       "summary": "Territorial woodland squirrel defending food caches into early spring.",
-      "fact": "American Red Squirrels fiercely defend their territory and food caches from other squirrels year-round.",
+      "fact": "American Red Squirrels fiercely defend their food caches from intruders all year round.",
       "activeFact": "As snow melts back, red squirrels often work old middens and stash spots with their usual tiny attitude."
     },
     {
@@ -133,7 +133,7 @@
       "category": "mammals",
       "icon": "🐿️",
       "summary": "Ground squirrel reappearing more often on warmer late-winter days.",
-      "fact": "Chipmunks have cheek pouches to carry food back to their burrows for storage.",
+      "fact": "Chipmunks use their cheek pouches to carry food back to their burrows for storage.",
       "activeFact": "Mid-March chipmunks may dart out on sunny days, especially near logs, brush piles, and old burrow entrances."
     },
     {
@@ -142,7 +142,7 @@
       "category": "mammals",
       "icon": "🐇",
       "summary": "Forest hare caught between winter cover and the coming spring change.",
-      "fact": "Snowshoe hares change their fur color seasonally for camouflage, from brown in summer to white in winter.",
+      "fact": "Snowshoe hares change fur color seasonally for camouflage, white in winter and brown in summer.",
       "activeFact": "The late-winter thaw can leave snowshoe hares standing out more as camouflage lags behind changing conditions."
     },
     {
@@ -160,7 +160,7 @@
       "category": "night",
       "icon": "🦝",
       "summary": "Nocturnal forager becoming more active as nights slowly moderate.",
-      "fact": "Raccoons have exceptionally dexterous front paws, allowing them to open containers and manipulate objects skillfully.",
+      "fact": "Raccoons can remember solutions to tasks for at least three years, showcasing impressive problem-solving skills.",
       "activeFact": "During mid-March thaw, raccoons start ranging more widely at night around water, woods, and easy feeding spots."
     },
     {
@@ -169,7 +169,7 @@
       "category": "night",
       "icon": "🐀",
       "summary": "Cold-sensitive marsupial more visible on milder spring-leaning nights.",
-      "fact": "Opossums are immune to most snake venom, including rattlesnakes and cottonmouths.",
+      "fact": "Opossums have a remarkable immune system that makes them resistant to many snake venoms and diseases.",
       "activeFact": "In mid-March, opossums often take advantage of thawing ground and leftover food sources around edges and yards."
     },
     {
@@ -187,7 +187,7 @@
       "category": "night",
       "icon": "🐿️",
       "summary": "Gliding nocturnal squirrel still active in chilly early-spring woods.",
-      "fact": "Flying squirrels glide using a flap of skin called a patagium between their limbs.",
+      "fact": "Flying squirrels glide up to 150 feet using a membrane called the patagium between their limbs.",
       "activeFact": "Even during the late-winter thaw, flying squirrels stay mostly hidden by day and busy overhead after dark."
     },
     {
@@ -196,7 +196,7 @@
       "category": "night",
       "icon": "🦇",
       "summary": "Insect-eating bat waiting on warmer nights and emerging insect life.",
-      "fact": "Little Brown Bats use echolocation to catch insects mid-air with incredible precision.",
+      "fact": "Little Brown Bats use echolocation to catch insects mid-air, making them expert nighttime hunters.",
       "activeFact": "By mid-March, warm spells can trigger limited bat activity near roosts if enough insects are moving."
     },
     {
@@ -205,7 +205,7 @@
       "category": "night",
       "icon": "🦇",
       "summary": "Hardy bat species capable of early-season activity on mild nights.",
-      "fact": "Big Brown Bats use echolocation to catch insects, eating up to half their body weight nightly.",
+      "fact": "Big Brown Bats can consume up to half their body weight in insects each night.",
       "activeFact": "A warm mid-March evening can bring big brown bats out to hunt early-season insects near buildings and lights."
     },
     {
@@ -214,7 +214,7 @@
       "category": "night",
       "icon": "🦉",
       "summary": "Woodland owl vocal during the late-winter to spring transition.",
-      "fact": "Barred Owls can rotate their heads nearly 270 degrees to spot prey without moving their bodies.",
+      "fact": "Barred Owls have distinctive hooting calls that sound like \"Who cooks for you? Who cooks for you all?\"",
       "activeFact": "March is a great time to hear barred owls calling through hardwoods after sunset and before dawn."
     },
     {
@@ -223,7 +223,7 @@
       "category": "night",
       "icon": "🦉",
       "summary": "Powerful owl often already nesting by the time spring begins.",
-      "fact": "Great Horned Owls have ear tufts that help them blend into tree branches and communicate mood.",
+      "fact": "Great Horned Owls have powerful talons that can crush prey as large as skunks and rabbits.",
       "activeFact": "In mid-March, great horned owls may already be deep into nesting season while snow still patches the woods."
     },
     {
@@ -232,7 +232,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Bold songbird growing louder and more territorial as spring approaches.",
-      "fact": "Blue Jays can mimic the calls of hawks to scare away other birds from their territory.",
+      "fact": "Blue Jays mimic hawk calls to scare away other birds and protect their territory.",
       "activeFact": "Mid-March blue jays often call loudly, chase rivals, and start acting more serious about territory."
     },
     {
@@ -241,7 +241,7 @@
       "category": "birds",
       "icon": "🐦‍⬛",
       "summary": "Bright red songbird ramping up territorial singing in early spring.",
-      "fact": "Northern Cardinals are known for their vibrant red feathers, which help males attract mates during breeding season.",
+      "fact": "Northern Cardinals are one of the few birds where males and females sing beautifully.",
       "activeFact": "One of the clearest signs of spring is a cardinal belting out songs on a cold March morning."
     },
     {
@@ -250,7 +250,7 @@
       "category": "birds",
       "icon": "🐤",
       "summary": "Energetic feeder regular entering spring pair-bonding season.",
-      "fact": "Black-capped Chickadees can remember hundreds of hiding spots for their food throughout the winter.",
+      "fact": "Black-capped Chickadees can remember hundreds of hiding spots for their food throughout winter.",
       "activeFact": "In mid-March, chickadees often switch from quick winter feeding to more calling, chasing, and pairing behavior."
     },
     {
@@ -259,7 +259,7 @@
       "category": "birds",
       "icon": "🐤",
       "summary": "Curious woodland songbird growing more vocal as nesting season nears.",
-      "fact": "Tufted Titmice use their crest to communicate mood with other birds and potential predators.",
+      "fact": "Tufted Titmice use a distinctive “peter-peter” call to communicate with each other in woodlands.",
       "activeFact": "Mid-March titmice often call from exposed perches, sounding off as spring behavior ramps up."
     },
     {
@@ -268,7 +268,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Tree-climbing bird active on warming bark and early nest territory.",
-      "fact": "White-breasted Nuthatches can climb down trees headfirst, a rare ability among birds.",
+      "fact": "White-breasted Nuthatches can climb down trees headfirst, unlike most other birds.",
       "activeFact": "As days lengthen, nuthatches often become more vocal and territorial while still working bark for food."
     },
     {
@@ -277,7 +277,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Small woodpecker starting to drum more with spring on the horizon.",
-      "fact": "Downy Woodpeckers use their short beaks to drum on trees, creating rhythmic sounds for communication.",
+      "fact": "Downy Woodpeckers drum on trees to communicate and establish territory.",
       "activeFact": "That quick tapping in mid-March often means a downy woodpecker is making itself known."
     },
     {
@@ -286,7 +286,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Large woodland woodpecker more vocal as breeding season nears.",
-      "fact": "Hairy Woodpeckers drum on trees to communicate and find insects hidden beneath the bark.",
+      "fact": "Hairy Woodpeckers drum on trees to communicate and find insects hidden under bark.",
       "activeFact": "Mid-March hairy woodpeckers often work larger trunks and announce their presence with louder, sharper drumming."
     },
     {
@@ -295,7 +295,7 @@
       "category": "birds",
       "icon": "🪵",
       "summary": "Big forest woodpecker becoming more obvious during spring territory season.",
-      "fact": "Pileated Woodpeckers create large rectangular holes in trees to find insects and build nests.",
+      "fact": "Pileated Woodpeckers create large, rectangular holes to find ants and beetle larvae in dead trees.",
       "activeFact": "A booming call or deep hammering in the March woods can be a pileated woodpecker making headlines."
     },
     {
@@ -304,7 +304,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Common woodland woodpecker growing more active as spring approaches.",
-      "fact": "Red-bellied Woodpeckers have a distinctive red cap and can loudly drum to mark territory.",
+      "fact": "Red-bellied Woodpeckers drum to mark territory and communicate with other woodpeckers nearby.",
       "activeFact": "Mid-March red-bellied woodpeckers may spend more time chasing rivals and less time quietly feeding."
     },
     {
@@ -322,7 +322,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Seasonal finch starting to brighten and shift toward spring behavior.",
-      "fact": "American Goldfinches molt twice a year, changing from bright yellow in summer to dull olive in winter.",
+      "fact": "American Goldfinches are unique among finches for molting twice a year, changing bright yellow in summer.",
       "activeFact": "By mid-March, goldfinches can look restless and lively as plumage and social behavior begin changing."
     },
     {
@@ -331,7 +331,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Cool-season songbird still common as winter slowly gives ground.",
-      "fact": "Dark-eyed Juncos create musical trills using air passing over their tail feathers during flight displays.",
+      "fact": "Dark-eyed Juncos change plumage seasonally, displaying darker feathers in winter and lighter in summer.",
       "activeFact": "Mid-March is often when juncos still dominate the ground under feeders before later spring departures."
     },
     {
@@ -340,7 +340,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Small social finch growing more vocal with the coming nesting season.",
-      "fact": "House Finches are one of the few North American birds that have adapted well to urban environments.",
+      "fact": "House Finches were once illegal pets, causing their wild population to explode after many were released.",
       "activeFact": "In mid-March, house finches may shift from simple feeder visits to active singing and pair behavior."
     },
     {
@@ -349,7 +349,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Rosy woodland finch tied to seasonal seed and cone availability.",
-      "fact": "Purple Finches have a cheerful, warbling song that helps them communicate and attract mates during spring.",
+      "fact": "Purple Finches have a sweet, musical song that can brighten any forest during spring mornings.",
       "activeFact": "Mid-March purple finch activity can come in waves, with short bursts of feeding and song."
     },
     {
@@ -358,7 +358,7 @@
       "category": "birds",
       "icon": "🦃",
       "summary": "Large ground bird starting to shift from winter flocking to spring display season.",
-      "fact": "Wild turkeys can run up to 20 miles per hour and fly short distances at 55 miles per hour.",
+      "fact": "Wild turkeys can run up to 20 miles per hour and are strong fliers despite their size.",
       "activeFact": "By mid-March, toms may start strutting more often even if mornings still feel like winter."
     },
     {
@@ -367,7 +367,7 @@
       "category": "birds",
       "icon": "🐓",
       "summary": "Forest bird approaching the spring drumming season.",
-      "fact": "Ruffed Grouse create a drumming sound by beating their wings rapidly to attract mates.",
+      "fact": "Ruffed Grouse create loud drumming sounds by rapidly beating their wings to attract mates.",
       "activeFact": "Mid-March is when the woods can start carrying that distant engine-like thump of a drumming grouse."
     },
     {
@@ -376,7 +376,7 @@
       "category": "birds",
       "icon": "🕊️",
       "summary": "Tall wetland bird returning north with the early migration wave.",
-      "fact": "Sandhill Cranes perform impressive synchronized dances during mating season to strengthen pair bonds.",
+      "fact": "Sandhill Cranes perform intricate, synchronized dances to strengthen pair bonds and communicate with each other.",
       "activeFact": "A sandhill crane call over thawing marshes is one of the loudest signs that spring is waking up."
     },
     {
@@ -385,7 +385,7 @@
       "category": "birds",
       "icon": "🐦‍⬛",
       "summary": "Smart black bird active across open country and woodland edges in early spring.",
-      "fact": "American Crows use tools and can recognize human faces to avoid danger.",
+      "fact": "American Crows can recognize human faces and remember those who pose threats to them.",
       "activeFact": "In mid-March, crows often gather loudly at dawn and patrol fields, roads, and timber edges for food."
     },
     {
@@ -403,7 +403,7 @@
       "category": "birds",
       "icon": "🦅",
       "summary": "Soaring raptor entering nest season as winter loosens.",
-      "fact": "Red-tailed Hawks use their keen eyesight to spot prey from over a mile away while soaring high.",
+      "fact": "Red-tailed Hawks use soaring flight to spot prey from high above open fields and forests.",
       "activeFact": "Mid-March hawks may spend more time soaring, calling, and carrying sticks than simply hunting."
     },
     {
@@ -412,7 +412,7 @@
       "category": "birds",
       "icon": "🦅",
       "summary": "Fast woodland hawk moving into spring territory behavior.",
-      "fact": "Cooper’s Hawks are agile flyers, expertly navigating dense trees to catch birds mid-air.",
+      "fact": "Cooper’s Hawks are expert fliers, skillfully weaving through trees to catch birds mid-flight.",
       "activeFact": "During mid-March, Cooper’s hawks may make quick, aggressive flights while defending early nest space."
     },
     {
@@ -421,7 +421,7 @@
       "category": "water",
       "icon": "🦆",
       "summary": "Common duck returning to open water and pairing up for spring.",
-      "fact": "Mallard ducks can recognize their mates by unique vocalizations and often reunite each breeding season.",
+      "fact": "Male mallards have a distinctive glossy green head that helps attract mates during the breeding season.",
       "activeFact": "Mid-March mallards often form pairs and work newly opened water for food and resting spots."
     },
     {
@@ -430,7 +430,7 @@
       "category": "water",
       "icon": "🦆",
       "summary": "Colorful cavity-nesting duck returning with early spring wetlands activity.",
-      "fact": "Wood Ducks nest in tree cavities and their ducklings leap from high nests to reach the ground safely.",
+      "fact": "Wood Ducks nest in tree cavities and have colorful, iridescent plumage unique among North American waterfowl.",
       "activeFact": "In mid-March, wood ducks may appear on flooded timber, creek bends, and quiet ponds as ice gives way."
     },
     {
@@ -439,7 +439,7 @@
       "category": "water",
       "icon": "🪿",
       "summary": "Migratory goose active around thawing water and early nest sites.",
-      "fact": "Canada Geese can fly thousands of miles during migration, often following the same routes yearly.",
+      "fact": "Canada Geese can fly thousands of miles during migration using a distinctive V-formation for energy efficiency.",
       "activeFact": "Mid-March geese can get extra noisy and territorial around open ponds, fields, and marsh edges."
     },
     {
@@ -448,7 +448,7 @@
       "category": "water",
       "icon": "🦤",
       "summary": "Large wading bird returning to open water as thaw expands.",
-      "fact": "Great Blue Herons can stand still for long periods, waiting patiently to catch fish with lightning-fast strikes.",
+      "fact": "Great Blue Herons use their sharp beaks to spear fish while standing still in shallow water.",
       "activeFact": "A heron standing beside a half-thawed stream is one of spring’s quieter comeback scenes."
     },
     {
@@ -457,7 +457,7 @@
       "category": "water",
       "icon": "🐢",
       "summary": "Basking turtle waiting for the first dependable warm-up of spring.",
-      "fact": "Painted Turtles can absorb oxygen through their skin while underwater, allowing longer submersion.",
+      "fact": "Painted turtles can absorb oxygen through their skin while underwater, allowing longer diving times.",
       "activeFact": "On a warm mid-March afternoon, painted turtles may appear on logs even while nights still freeze."
     },
     {
@@ -466,7 +466,7 @@
       "category": "water",
       "icon": "🐢",
       "summary": "Large aquatic turtle still mostly quiet but beginning to stir as waters warm.",
-      "fact": "Snapping turtles have powerful jaws that can snap shut at speeds up to 300 pounds of force.",
+      "fact": "Snapping turtles have powerful jaws that can snap shut with incredible speed and force.",
       "activeFact": "In mid-March, snapping turtles may begin shifting from deep winter inactivity toward slow spring movement."
     },
     {
@@ -475,7 +475,7 @@
       "category": "water",
       "icon": "🐟",
       "summary": "Panfish beginning to adjust to warming shallow water.",
-      "fact": "Bluegill can rapidly change color to communicate with other fish and show mood changes.",
+      "fact": "Bluegills can puff up their bodies to appear larger and deter predators in the wild.",
       "activeFact": "During the spring thaw, bluegill often hold near cover where warming water and food start to build."
     },
     {
@@ -484,7 +484,7 @@
       "category": "water",
       "icon": "🐟",
       "summary": "Freshwater predator easing toward pre-spawn spring movement.",
-      "fact": "Largemouth bass can jump three to five feet out of the water to catch prey or escape predators.",
+      "fact": "Largemouth bass can expand their mouths wide enough to swallow prey nearly half their body size!",
       "activeFact": "Mid-March bass are often not fully shallow yet, but they start positioning closer to warming cover."
     },
     {
@@ -493,7 +493,7 @@
       "category": "water",
       "icon": "🐟",
       "summary": "Schooling fish entering one of the earliest spring spawning periods.",
-      "fact": "Yellow Perch have distinct dark vertical stripes, making them easily recognizable among freshwater fish species.",
+      "fact": "Yellow Perch have distinct vertical stripes that help them blend into underwater vegetation and avoid predators.",
       "activeFact": "Mid-March perch may gather in schools near shallower water in preparation for spawning."
     },
     {
@@ -502,7 +502,7 @@
       "category": "water",
       "icon": "🐟",
       "summary": "Fast predator moving into one of its prime spring spawning periods.",
-      "fact": "Northern Pike can ambush prey by remaining motionless, then striking with lightning-fast speed.",
+      "fact": "Northern Pike can grow over 4 feet long and have sharp teeth to catch their prey.",
       "activeFact": "Mid-March is right in the wheelhouse for pike movement toward flooded shallows and soft spawning habitat."
     },
     {
@@ -511,7 +511,7 @@
       "category": "amphib_reptile",
       "icon": "🐸",
       "summary": "Tiny frog preparing for the first true chorus nights of spring.",
-      "fact": "Spring Peepers can be heard singing their distinctive high-pitched calls across wetlands during early spring evenings.",
+      "fact": "Spring Peepers can be heard singing loudly from wetlands, signaling the start of spring.",
       "activeFact": "A mild mid-March evening can trigger the first peeper calls, even if winter hasn’t fully packed up yet."
     },
     {
@@ -520,7 +520,7 @@
       "category": "amphib_reptile",
       "icon": "🐸",
       "summary": "Large pond frog still mostly quiet while waiting for warmer spring water.",
-      "fact": "American Bullfrogs can produce loud, deep calls that can be heard over half a mile away.",
+      "fact": "American Bullfrogs can produce loud croaks that carry over long distances to attract mates.",
       "activeFact": "In mid-March, bullfrogs are often still in slow mode while peepers and other early callers steal the show."
     },
     {
@@ -529,7 +529,7 @@
       "category": "amphib_reptile",
       "icon": "🐸",
       "summary": "Common shoreline frog beginning to stir as wetlands warm.",
-      "fact": "Green Frogs can be identified by their distinctive ridge running from their eyes down their sides.",
+      "fact": "Green Frogs have distinctive ridges running down their backs, which help distinguish them from other frog species.",
       "activeFact": "By mid-March, green frogs may begin shifting from winter stillness toward more shoreline movement."
     },
     {
@@ -538,7 +538,7 @@
       "category": "amphib_reptile",
       "icon": "🐸",
       "summary": "Spotted wetland frog among the earlier spring movers.",
-      "fact": "Leopard frogs have distinctive dark spots and are known for their loud, chuckling croaks during mating season.",
+      "fact": "Leopard frogs can jump over 10 times their body length in a single leap.",
       "activeFact": "Mid-March leopard frogs may appear on mild days near thawed marshes before many later amphibians arrive."
     },
     {
@@ -547,7 +547,7 @@
       "category": "amphib_reptile",
       "icon": "🐍",
       "summary": "Harmless snake often among the first reptiles seen in spring.",
-      "fact": "Garter snakes can release a mild musk to deter predators when threatened.",
+      "fact": "Garter snakes can swim and often hunt for fish and amphibians in water.",
       "activeFact": "A sunny mid-March day can bring garter snakes out to bask near brush piles, rocks, and old logs."
     },
     {
@@ -556,7 +556,7 @@
       "category": "amphib_reptile",
       "icon": "🐍",
       "summary": "Semi-aquatic snake waiting on warmer wetland conditions.",
-      "fact": "Water snakes can stay underwater for up to an hour while hunting or hiding from predators.",
+      "fact": "Water snakes can hold their breath underwater for up to 30 minutes while hunting or avoiding predators.",
       "activeFact": "By mid-March, water snakes may show limited movement on especially sunny days near open water."
     },
     {
@@ -565,7 +565,7 @@
       "category": "amphib_reptile",
       "icon": "🐍",
       "summary": "Woodland snake beginning to reappear as spring slowly builds.",
-      "fact": "Eastern Milk Snakes mimic venomous coral snakes with red, black, and white banding for protection.",
+      "fact": "Eastern Milk Snakes mimic rattlesnakes by vibrating their tails to scare off predators.",
       "activeFact": "Mid-March milk snake sightings are often tied to warm afternoons around old wood, barns, or brushy debris."
     },
     {
@@ -574,7 +574,7 @@
       "category": "insects",
       "icon": "🦋",
       "summary": "Migratory butterfly still mostly south of Michigan as spring begins.",
-      "fact": "Monarch butterflies migrate over 3,000 miles between Canada and Mexico each year.",
+      "fact": "Monarch butterflies migrate up to 3,000 miles to overwinter in specific Mexican forests.",
       "activeFact": "Mid-March is more about the northbound journey beginning than monarchs already filling northern fields."
     },
     {
@@ -583,7 +583,7 @@
       "category": "insects",
       "icon": "🦋",
       "summary": "Large butterfly waiting for steadier spring warmth in the North.",
-      "fact": "Swallowtail butterflies have tails that mimic dragonfly antennae, confusing predators during flight.",
+      "fact": "Swallowtail butterflies use bright wing patterns to warn predators they may taste bad or be toxic.",
       "activeFact": "By mid-March, swallowtails are mostly still a promise of spring rather than a common sight in northern woods."
     },
     {
@@ -592,7 +592,7 @@
       "category": "insects",
       "icon": "🪲",
       "summary": "Aerial predator still mostly developing underwater this early in the season.",
-      "fact": "Dragonflies can fly in six directions: up, down, forward, backward, and side to side.",
+      "fact": "Dragonflies can fly up to 30 miles per hour, making them one of the fastest insects.",
       "activeFact": "Mid-March wetlands hold future dragonflies below the surface long before summer patrol flights begin."
     },
     {
@@ -601,7 +601,7 @@
       "category": "insects",
       "icon": "🪲",
       "summary": "Slender wetland insect still mostly in aquatic juvenile stages during March.",
-      "fact": "Damselflies fold their wings along their bodies when resting, unlike dragonflies that keep wings spread.",
+      "fact": "Damselflies fold their wings over their bodies, unlike dragonflies that hold wings open while resting.",
       "activeFact": "This time of year, damselflies are more hidden in pond margins than hovering over them."
     },
     {
@@ -610,7 +610,7 @@
       "category": "insects",
       "icon": "✨",
       "summary": "Summer glow insect still dormant during the March thaw.",
-      "fact": "Fireflies use bioluminescence to communicate and attract mates during warm summer nights.",
+      "fact": "Fireflies use bioluminescence to attract mates and communicate through unique light patterns.",
       "activeFact": "March is still way too early for blinking firefly nights, but the groundwork is quietly there underfoot."
     },
     {
@@ -619,7 +619,7 @@
       "category": "insects",
       "icon": "🐝",
       "summary": "Pollinator taking advantage of the first mild spring flights.",
-      "fact": "Honeybees communicate by performing a “waggle dance” to share the location of flowers.",
+      "fact": "Honeybees communicate by dancing to share the location of flowers with their hive mates.",
       "activeFact": "A sunny mid-March afternoon can bring honeybees buzzing out briefly even while frost still owns the mornings."
     },
     {
@@ -628,7 +628,7 @@
       "category": "insects",
       "icon": "🐝",
       "summary": "Cold-tolerant bee among the earliest pollinators to reappear.",
-      "fact": "Bumblebees can regulate their body temperature, allowing them to fly in cooler weather than many other bees.",
+      "fact": "Bumblebees can vibrate their flight muscles to release pollen, a behavior called \"buzz pollination.\"",
       "activeFact": "Mid-March warmth can bring out lone queen bumblebees searching for flowers and a nesting spot."
     },
     {
@@ -637,7 +637,7 @@
       "category": "insects",
       "icon": "🦗",
       "summary": "Jumping insect still mostly absent from the March scene in northern woods.",
-      "fact": "Grasshoppers can jump over 20 times their body length using their powerful hind legs.",
+      "fact": "Grasshoppers can jump up to 20 times their body length using their powerful hind legs.",
       "activeFact": "This part of the year is still quiet for grasshoppers, with spring thaw setting the stage long before summer hopping begins."
     }
   ]
