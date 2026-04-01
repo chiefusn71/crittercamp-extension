@@ -1,644 +1,644 @@
 {
-  "lastUpdated": "2026-04-01T15:30:00Z",
+  "lastUpdated": "2026-04-01T16:05:00Z",
   "critters": [
     {
       "id": "whitetail_deer",
       "name": "White-tailed Deer",
       "category": "mammals",
       "icon": "🦌",
-      "summary": "Early-spring browser feeding on fresh shoots, buds, and newly exposed ground.",
-      "fact": "In early April, white-tailed deer often shift from winter survival foods to tender spring growth as it greens up.",
-      "activeFact": "This time of year, deer are commonly seen browsing field edges, openings, and trails at dawn and dusk."
+      "summary": "Spring-fed woodland grazer shifting from winter browse to tender new growth.",
+      "fact": "As April begins, white-tailed deer increasingly target emerging greens, buds, and soft shoots instead of tougher winter foods.",
+      "activeFact": "At this point in spring, deer are often visible along trail edges and openings where the first fresh plants are coming up."
     },
     {
       "id": "black_bear",
       "name": "Black Bear",
       "category": "mammals",
       "icon": "🐻",
-      "summary": "Large forest mammal emerging into a landscape that is finally waking up.",
-      "fact": "By early April, more black bears may be out of dens and searching for easy food after winter dormancy.",
-      "activeFact": "Early spring bears often focus on low-effort foods first while the woods slowly build back toward greener meals."
+      "summary": "Recently emerged forest forager searching for the easiest calories on the landscape.",
+      "fact": "Early spring black bears often focus on low-effort foods such as carrion, leftover mast, and fresh plant growth after leaving dens.",
+      "activeFact": "In early April, bear movement can start picking up around swamps, low ground, and quiet woodland feeding areas."
     },
     {
       "id": "coyote",
       "name": "Coyote",
       "category": "mammals",
       "icon": "🐕",
-      "summary": "Active spring predator traveling open ground, field edges, and muddy trail corridors.",
-      "fact": "Coyotes stay busy in early spring, hunting where thawed ground exposes prey movement and scent trails.",
-      "activeFact": "In early April, coyotes often patrol fields and edge habitat where rodents and rabbits are easier to track."
+      "summary": "Lean spring hunter covering open ground and edge habitat with purpose.",
+      "fact": "Coyotes in early spring often hunt along field margins and thawed cover where rodents, rabbits, and scent trails are easier to detect.",
+      "activeFact": "Right now, coyotes are often using muddy two-tracks, trail corridors, and open field edges during low-light hours."
     },
     {
       "id": "red_fox",
       "name": "Red Fox",
       "category": "mammals",
       "icon": "🦊",
-      "summary": "Solitary hunter working brush lines, grassy openings, and thawed field margins.",
-      "fact": "Red foxes use exposed spring ground to hunt rodents in grass, brush, and patchy cover.",
-      "activeFact": "As more snow disappears, red foxes often become easier to spot crossing open areas in the morning or evening."
+      "summary": "Quick-footed edge hunter working brush, grass, and exposed spring ground.",
+      "fact": "Red foxes benefit from spring melt because thinning cover makes small prey easier to hear and catch.",
+      "activeFact": "In early April, red foxes may be spotted crossing open fields or pausing near grassy pockets to listen for movement."
     },
     {
       "id": "gray_fox",
       "name": "Gray Fox",
       "category": "mammals",
       "icon": "🦊",
-      "summary": "Secretive woodland fox moving through brushy cover during the spring transition.",
-      "fact": "Gray foxes remain hard to spot in early spring, usually sticking to dense cover while moving between feeding and den areas.",
-      "activeFact": "This time of year, gray foxes may adjust activity with warming days while still favoring thick edges and timber."
+      "summary": "Brush-loving woodland fox staying mostly tucked into cover as spring advances.",
+      "fact": "Gray foxes often favor dense thickets and tangled edge habitat in spring, moving quietly between feeding and resting areas.",
+      "activeFact": "This time of year, gray foxes are more likely to stay ghostlike in brushy cover than show themselves in open ground."
     },
     {
       "id": "bobcat",
       "name": "Bobcat",
       "category": "mammals",
       "icon": "🐈",
-      "summary": "Elusive predator still hunting hard through muddy spring woods and edges.",
-      "fact": "Bobcats stay active in early spring, using brush, timber, and transition zones to stalk rabbits and other prey.",
-      "activeFact": "With snow mostly fading, bobcats often travel wooded margins where prey movement is picking up."
+      "summary": "Stealth predator slipping through timber and brush in the muddy spring season.",
+      "fact": "Bobcats remain effective spring hunters by using broken cover, downed timber, and edge habitat to ambush prey.",
+      "activeFact": "In early April, bobcats may follow brush lines and wooded transitions where rabbit and squirrel activity is increasing."
     },
     {
       "id": "porcupine",
       "name": "Porcupine",
       "category": "mammals",
       "icon": "🦔",
-      "summary": "Slow-moving feeder still using bark, buds, and early spring browse.",
-      "fact": "Porcupines often keep relying on woody foods in early April before soft green vegetation fully takes over.",
-      "activeFact": "This stage of spring still finds porcupines feeding on bark and buds while fresher plant growth slowly expands."
+      "summary": "Slow spring browser still relying on bark, buds, and woody foods.",
+      "fact": "Porcupines often continue feeding on twigs, bark, and early buds in spring before abundant soft vegetation becomes widespread.",
+      "activeFact": "At this stage of spring, porcupines are still likely to be found feeding in trees or near woody browse sites."
     },
     {
       "id": "beaver",
       "name": "Beaver",
       "category": "mammals",
       "icon": "🦫",
-      "summary": "Wetland builder active along opening water, softened banks, and repaired flow lines.",
-      "fact": "Early spring often brings increased beaver maintenance work as flowing water pressures dams, channels, and lodges.",
-      "activeFact": "With more water open now, fresh beaver activity often shows up as cuttings, slides, and shoreline changes."
+      "summary": "Busy water engineer dealing with moving spring currents and opened channels.",
+      "fact": "Spring runoff and changing water levels often push beavers into fresh rounds of dam and bank maintenance.",
+      "activeFact": "In early April, new cuttings, muddy slides, and repaired flow spots can all point to active beaver work."
     },
     {
       "id": "muskrat",
       "name": "Muskrat",
       "category": "mammals",
       "icon": "🦫",
-      "summary": "Aquatic rodent more visible as marsh edges and shorelines fully open.",
-      "fact": "Muskrats become easier to spot in early April as open water expands and feeding routes along wetlands reopen.",
-      "activeFact": "This time of year, muskrats often cruise shorelines and open pockets looking for fresh plant material."
+      "summary": "Wetland rodent more exposed now that ice and shoreline barriers are gone.",
+      "fact": "Muskrats become easier to see in spring as they travel open marsh edges and feed on fresh aquatic vegetation.",
+      "activeFact": "Right now, muskrats may be swimming shoreline routes or feeding near cattails and shallow emergent plants."
     },
     {
       "id": "mink",
       "name": "Mink",
       "category": "mammals",
       "icon": "🐾",
-      "summary": "Semi-aquatic hunter working creek banks, muddy margins, and thawed water edges.",
-      "fact": "Minks take advantage of spring thaw by hunting along open shorelines where fish, frogs, and small mammals are more exposed.",
-      "activeFact": "In early April, mink often patrol creek bends and pond edges where prey movement is increasing."
+      "summary": "Sharp little shoreline predator working every opening along creek and pond edges.",
+      "fact": "Minks use exposed banks and reopened waterways in spring to hunt frogs, fish, voles, and other small prey.",
+      "activeFact": "In early April, mink often patrol muddy water margins where movement and scent are concentrated."
     },
     {
       "id": "fisher",
       "name": "Fisher",
       "category": "mammals",
       "icon": "🐾",
-      "summary": "Forest carnivore ranging through timber as spring conditions settle in.",
-      "fact": "Fishers remain active in early spring, traveling wooded corridors and hunting across changing ground conditions.",
-      "activeFact": "As the woods soften and open, fishers often keep to cover while moving ridges, timber, and edge routes."
+      "summary": "Wide-ranging forest carnivore threading through spring-softening timber country.",
+      "fact": "Fishers stay active through spring, using wooded cover and travel corridors to hunt across large areas.",
+      "activeFact": "This time of year, fishers may still move mostly unseen through heavier timber and connected forest edges."
     },
     {
       "id": "river_otter",
       "name": "River Otter",
       "category": "mammals",
       "icon": "🦦",
-      "summary": "Aquatic predator taking full advantage of returning open water.",
-      "fact": "River otters become easier to notice in early spring as streams, channels, and pond edges reopen for travel and hunting.",
-      "activeFact": "In early April, otters may be seen using open banks and water lanes to move, fish, and play."
+      "summary": "Playful water hunter thriving now that streams and pond edges are opening wide.",
+      "fact": "River otters often become more noticeable in spring as open water expands and fish activity increases.",
+      "activeFact": "In early April, otters may cruise channels, slide muddy banks, and work open water for fish."
     },
     {
       "id": "gray_squirrel",
       "name": "Eastern Gray Squirrel",
       "category": "mammals",
       "icon": "🐿️",
-      "summary": "Tree squirrel busy with feeding, chasing, and nest activity in early spring.",
-      "fact": "Eastern gray squirrels are highly active in early spring as breeding activity, nest work, and food gathering continue.",
-      "activeFact": "Warm April days often bring extra squirrel traffic through the trees as they feed and work nest sites."
+      "summary": "Active treetop forager balancing nest work, feeding, and chasing behavior.",
+      "fact": "Eastern gray squirrels are especially busy in spring as they feed, inspect nests, and interact more aggressively with rivals.",
+      "activeFact": "Right now, gray squirrels are often highly visible on warm days, racing through trees and carrying nesting material."
     },
     {
       "id": "red_squirrel",
       "name": "American Red Squirrel",
       "category": "mammals",
       "icon": "🐿️",
-      "summary": "Territorial woodland squirrel guarding food stores and spring space with attitude.",
-      "fact": "Red squirrels stay loud in early spring as they defend middens and keep tabs on old food caches.",
-      "activeFact": "In early April, red squirrels often sound off from favorite perches while working cone piles and cover."
+      "summary": "Tiny woodland loudmouth still guarding food and personal space with full commitment.",
+      "fact": "Red squirrels remain strongly territorial in spring, especially around cone caches and favored feeding cover.",
+      "activeFact": "In early April, red squirrels often seem louder than ever as they defend middens and patrol nearby trees."
     },
     {
       "id": "chipmunk",
       "name": "Chipmunk",
       "category": "mammals",
       "icon": "🐿️",
-      "summary": "Ground squirrel now appearing more regularly as spring warmth builds.",
-      "fact": "Chipmunks become much easier to spot in early April as sunny days and open ground boost above-ground activity.",
-      "activeFact": "This time of year, chipmunks often zip around logs, rocks, and old burrow entrances on mild afternoons."
+      "summary": "Small ground squirrel back in regular circulation on sunny spring days.",
+      "fact": "Chipmunks become much more visible in spring once exposed ground and warmer afternoons return.",
+      "activeFact": "This time of year, chipmunks are often darting around logs, rocks, and burrow entrances collecting food."
     },
     {
       "id": "snowshoe_hare",
       "name": "Snowshoe Hare",
       "category": "mammals",
       "icon": "🐇",
-      "summary": "Forest hare navigating the rough switch from winter camouflage to spring ground.",
-      "fact": "Snowshoe hares can look mismatched in early spring when pale winter fur meets bare ground and patchy cover.",
-      "activeFact": "As April arrives, snowshoe hares may stand out more in open spots until seasonal coat change catches up."
+      "summary": "Northern forest hare caught in the awkward handoff between snow season and bare ground.",
+      "fact": "Snowshoe hares can look out of place in early spring when their winter coat lingers longer than the remaining snow.",
+      "activeFact": "In early April, patchy camouflage can make snowshoe hares more noticeable where cover is thinning."
     },
     {
       "id": "cottontail",
       "name": "Eastern Cottontail",
       "category": "mammals",
       "icon": "🐇",
-      "summary": "Common rabbit feeding along brushy openings, hedges, and early green edges.",
-      "fact": "Eastern cottontails stay active in early spring, browsing tender shoots and using brush piles for cover.",
-      "activeFact": "With more ground open now, cottontails often work yard edges, hedgerows, and field margins for food."
+      "summary": "Common spring rabbit feeding along hedges, brush piles, and fresh green margins.",
+      "fact": "Eastern cottontails take advantage of spring growth by browsing tender shoots near protective cover.",
+      "activeFact": "Right now, cottontails are often most visible along yard edges, hedgerows, and brushy openings."
     },
     {
       "id": "raccoon",
       "name": "Raccoon",
       "category": "night",
       "icon": "🦝",
-      "summary": "Nocturnal forager more active as spring nights get milder and food opens up.",
-      "fact": "Raccoons often increase movement in early spring as thawed ground, water edges, and easier food sources return.",
-      "activeFact": "In early April, raccoons may range more widely around woods, water, and human edges after dark."
+      "summary": "Night-roaming opportunist taking fuller advantage of milder spring conditions.",
+      "fact": "Raccoons often expand their nightly movement in spring as water edges open and more food becomes available.",
+      "activeFact": "In early April, raccoons may be covering more ground around creeks, ponds, camps, and woodland edges."
     },
     {
       "id": "opossum",
       "name": "Opossum",
       "category": "night",
       "icon": "🐀",
-      "summary": "Cold-sensitive marsupial benefiting from milder nights and easier spring travel.",
-      "fact": "Opossums become easier to notice in early spring when nighttime temperatures allow longer foraging trips.",
-      "activeFact": "This time of year, opossums often move through brush, yards, and edge habitat looking for easy meals."
+      "summary": "Cold-sensitive scavenger benefiting from softer nights and easier travel.",
+      "fact": "Opossums tend to move more freely in spring when freezing nights become less severe and food access improves.",
+      "activeFact": "At this point in spring, opossums may be seen more often around brush, sheds, and edge habitat after dark."
     },
     {
       "id": "skunk",
       "name": "Striped Skunk",
       "category": "night",
       "icon": "🦨",
-      "summary": "Night forager still roaming actively during the spring breeding window.",
-      "fact": "Striped skunks are often on the move in early spring as breeding activity keeps them wandering on mild nights.",
-      "activeFact": "Early April can still mean extra skunk movement around open ground, fields, and damp edge habitat."
+      "summary": "Wandering spring forager still putting on miles during the active breeding window.",
+      "fact": "Striped skunks are often very mobile in early spring as breeding-related movement continues on mild nights.",
+      "activeFact": "In early April, skunks may show up more often along roadsides, field edges, and open damp ground."
     },
     {
       "id": "flying_squirrel",
       "name": "Flying Squirrel",
       "category": "night",
       "icon": "🐿️",
-      "summary": "Gliding nocturnal squirrel staying active through cool but improving spring nights.",
-      "fact": "Flying squirrels remain active in early spring, gliding between trees to feed on buds, seeds, and stored foods.",
-      "activeFact": "Even now, flying squirrels stay mostly hidden by day while quietly working the treetops after dark."
+      "summary": "Night-gliding squirrel quietly active above the woods while most eyes are elsewhere.",
+      "fact": "Flying squirrels stay active in spring, feeding on buds, seeds, and stored foods while moving tree to tree after dark.",
+      "activeFact": "Even now, flying squirrels remain mostly unseen unless activity near feeders or nest boxes gives them away."
     },
     {
       "id": "little_brown_bat",
       "name": "Little Brown Bat",
       "category": "night",
       "icon": "🦇",
-      "summary": "Insect-eating bat beginning to benefit from warmer nights and rising bug activity.",
-      "fact": "Little brown bats may become more active in early April as flying insects start increasing on mild evenings.",
-      "activeFact": "A soft spring night near water can bring little brown bats out for one of the season’s early feeding runs."
+      "summary": "Early-season insect hunter beginning to benefit from warmer dusk conditions.",
+      "fact": "Little brown bats can become more active in spring as evening insect availability improves around water and sheltered areas.",
+      "activeFact": "On a mild early April night, little brown bats may make some of the season’s first steady feeding passes."
     },
     {
       "id": "big_brown_bat",
       "name": "Big Brown Bat",
       "category": "night",
       "icon": "🦇",
-      "summary": "Hardy bat ready to use early spring warm spells near lights and buildings.",
-      "fact": "Big brown bats can become active earlier than many bats when early spring evenings warm enough for insect flight.",
-      "activeFact": "In early April, big brown bats may show up on warmer nights around structures, lights, and open edges."
+      "summary": "Tough spring bat ready to work mild evenings before many others fully ramp up.",
+      "fact": "Big brown bats are among the more cold-tolerant bats and may forage earlier in the season than some smaller species.",
+      "activeFact": "Right now, warmer evenings near lights or buildings can bring big brown bats into view."
     },
     {
       "id": "barred_owl",
       "name": "Barred Owl",
       "category": "night",
       "icon": "🦉",
-      "summary": "Woodland owl still vocal as spring settles into the hardwoods.",
-      "fact": "Barred owls remain very vocal in early spring as pair bonds and territory activity stay strong.",
-      "activeFact": "Early April is still a great time to hear barred owls calling through the woods after sunset or before dawn."
+      "summary": "Spring-voiced woodland owl still calling through leafless hardwood nights.",
+      "fact": "Barred owls stay very vocal in spring as territory and pair coordination remain important.",
+      "activeFact": "In early April, barred owl calls can still carry far through the woods, especially near dusk and dawn."
     },
     {
       "id": "great_horned_owl",
       "name": "Great Horned Owl",
       "category": "night",
       "icon": "🦉",
-      "summary": "Powerful owl often already deep into nesting while spring gets started.",
-      "fact": "Great horned owls are among the earliest nesters and may already be raising young by early April.",
-      "activeFact": "By now, great horned owls can be well into family duties even while nights still feel cold."
+      "summary": "Powerful early nester already well ahead of the rest of spring’s family schedule.",
+      "fact": "Great horned owls begin nesting very early and may already have young by the time April arrives.",
+      "activeFact": "At this stage of spring, great horned owls may be more focused on guarding and feeding young than courting."
     },
     {
       "id": "bluejay",
       "name": "Blue Jay",
       "category": "birds",
       "icon": "🐦",
-      "summary": "Bold songbird louder and more territorial as nesting season gets serious.",
-      "fact": "Blue jays become increasingly active in early April as pair bonds strengthen and nest scouting ramps up.",
-      "activeFact": "This time of year, blue jays often call hard, chase rivals, and treat feeders like claimed property."
+      "summary": "Loud, sharp-eyed spring bird acting increasingly territorial around food and nesting space.",
+      "fact": "Blue jays often become more assertive in early spring as pair bonds strengthen and nest-site attention increases.",
+      "activeFact": "Right now, blue jays may be noisier, bossier, and quicker to chase off rivals around feeders and tree cover."
     },
     {
       "id": "cardinal",
       "name": "Northern Cardinal",
       "category": "birds",
       "icon": "🐦‍⬛",
-      "summary": "Bright red songbird fully engaged in spring singing and territory season.",
-      "fact": "Northern cardinals sing heavily in early April as males defend territory and attract mates.",
-      "activeFact": "A cardinal singing from a high perch is one of the clearest sounds of early spring settling in."
+      "summary": "Brilliant red singer now fully planted in the heart of spring territory season.",
+      "fact": "Northern cardinals use frequent singing in spring to defend breeding territory and maintain pair connections.",
+      "activeFact": "In early April, cardinals are often among the first loud voices of the morning around brush and woodland edges."
     },
     {
       "id": "chickadee",
       "name": "Black-capped Chickadee",
       "category": "birds",
       "icon": "🐤",
-      "summary": "Energetic feeder bird moving deeper into pair-bonding and cavity-checking season.",
-      "fact": "Black-capped chickadees become more vocal in early spring as they strengthen pair bonds and inspect nesting spots.",
-      "activeFact": "In early April, chickadees often balance quick feeding with more calling, chasing, and pair behavior."
+      "summary": "Tiny spring dynamo mixing feeder runs with cavity checks and pair behavior.",
+      "fact": "Black-capped chickadees grow more vocal and more focused on nesting areas as spring progresses.",
+      "activeFact": "This time of year, chickadees may shift from nonstop winter feeding to more courtship-like calling and chasing."
     },
     {
       "id": "titmouse",
       "name": "Tufted Titmouse",
       "category": "birds",
       "icon": "🐤",
-      "summary": "Curious woodland songbird growing louder and more territorial in early spring.",
-      "fact": "Tufted titmice increase calling and territory behavior in early April as cavity checking and nesting prep continue.",
-      "activeFact": "This stage of spring often brings titmice to exposed perches where they call across the woods."
+      "summary": "Curious woodland songbird sounding off more often as nest season nears.",
+      "fact": "Tufted titmice often inspect cavities and defend favored areas as spring nesting behavior increases.",
+      "activeFact": "In early April, titmice may spend more time calling from exposed branches than they did in deep winter."
     },
     {
       "id": "nuthatch",
       "name": "White-breasted Nuthatch",
       "category": "birds",
       "icon": "🐦",
-      "summary": "Tree-climbing bird active on bark, trunks, and spring nest routes.",
-      "fact": "White-breasted nuthatches stay busy in early spring, foraging along trunks and checking likely nest cavities.",
-      "activeFact": "In early April, nuthatches often get more vocal while still hammering seeds into bark cracks."
+      "summary": "Bark-running spring bird still busy on trunks while quietly shifting toward nesting mode.",
+      "fact": "White-breasted nuthatches forage actively in spring while also checking suitable cavities for nest use.",
+      "activeFact": "Right now, nuthatches may be especially active on larger trunks, often calling more between feeding stops."
     },
     {
       "id": "downy_woodpecker",
       "name": "Downy Woodpecker",
       "category": "birds",
       "icon": "🐦",
-      "summary": "Small woodpecker drumming steadily as spring territory season strengthens.",
-      "fact": "Downy woodpeckers increase drumming in early spring to advertise territory and prepare for nesting.",
-      "activeFact": "That quick tapping now often means a downy woodpecker is staking out spring space."
+      "summary": "Small drummer using spring sound to claim space and prepare for nesting.",
+      "fact": "Downy woodpeckers use drumming more often in spring to advertise territory and communicate with mates.",
+      "activeFact": "In early April, sharp little bursts of tapping often mean a downy is making its spring presence known."
     },
     {
       "id": "hairy_woodpecker",
       "name": "Hairy Woodpecker",
       "category": "birds",
       "icon": "🐦",
-      "summary": "Large woodland woodpecker growing louder with spring breeding activity.",
-      "fact": "Hairy woodpeckers become easier to hear in early April as drumming and calling continue to rise.",
-      "activeFact": "This time of year, hairy woodpeckers often work bigger trunks and advertise territory with sharp drumming."
+      "summary": "Larger bark specialist now louder as breeding-season urgency builds.",
+      "fact": "Hairy woodpeckers increase drumming and calling in spring as territory and nest preparation intensify.",
+      "activeFact": "This time of year, hairy woodpeckers may be easier to detect by sound than by sight in taller timber."
     },
     {
       "id": "pileated_woodpecker",
       "name": "Pileated Woodpecker",
       "category": "birds",
       "icon": "🪵",
-      "summary": "Big forest woodpecker becoming more obvious as spring territory behavior ramps up.",
-      "fact": "Pileated woodpeckers are often louder in early spring as pairs maintain territories and move toward nesting.",
-      "activeFact": "A booming call or deep hammering burst now can signal a pileated woodpecker owning a section of woods."
+      "summary": "Big forest carpenter announcing spring with heavier voice and harder hammering.",
+      "fact": "Pileated woodpeckers become especially noticeable in spring as they reinforce territories and focus on nesting activity.",
+      "activeFact": "In early April, deep pounding and loud calls can reveal pileated woodpeckers long before you see them."
     },
     {
       "id": "red_bellied_woodpecker",
       "name": "Red-bellied Woodpecker",
       "category": "birds",
       "icon": "🐦",
-      "summary": "Common woodland woodpecker more active and vocal in early spring.",
-      "fact": "Red-bellied woodpeckers often increase calling and drumming in early April while defending territory.",
-      "activeFact": "Early spring red-bellied woodpeckers may spend more time chasing rivals and less time quietly feeding."
+      "summary": "Vocal woodland woodpecker becoming more animated as spring competition rises.",
+      "fact": "Red-bellied woodpeckers often step up drumming and calling in spring while defending breeding territory.",
+      "activeFact": "Right now, red-bellied woodpeckers may spend more time chasing and calling than quietly feeding."
     },
     {
       "id": "mourning_dove",
       "name": "Mourning Dove",
       "category": "birds",
       "icon": "🕊️",
-      "summary": "Gentle dove easing further into courtship and early nesting behavior.",
-      "fact": "Mourning doves often show more cooing and courtship flights in early spring as daylight keeps increasing.",
-      "activeFact": "By early April, mourning doves may already be paired up and working on simple nest spots."
+      "summary": "Soft-voiced dove settling into pair behavior and early nest attempts.",
+      "fact": "Mourning doves often begin courtship and simple nest building early in the spring season.",
+      "activeFact": "In early April, paired doves may already be selecting spots and giving more frequent cooing displays."
     },
     {
       "id": "goldfinch",
       "name": "American Goldfinch",
       "category": "birds",
       "icon": "🐦",
-      "summary": "Seasonal finch brightening up and shifting toward spring energy.",
-      "fact": "American goldfinches begin transitioning out of winter plumage in early spring as breeding season approaches.",
-      "activeFact": "Early April can bring livelier flock movement and the first stronger hints of bright male color."
+      "summary": "Late-brightening finch beginning its slow spring color and energy shift.",
+      "fact": "American goldfinches change gradually through spring, with males brightening as breeding condition improves.",
+      "activeFact": "At this stage, goldfinches may still look partly winter-worn but noticeably livelier around feeders and edges."
     },
     {
       "id": "junco",
       "name": "Dark-eyed Junco",
       "category": "birds",
       "icon": "🐦",
-      "summary": "Cool-season songbird still common while spring continues pushing north.",
-      "fact": "Dark-eyed juncos remain active in early April, especially around feeders and exposed ground.",
-      "activeFact": "This time of year, juncos may still dominate the ground under feeders before later seasonal shifts."
+      "summary": "Cool-season ground feeder still hanging on while spring keeps pressing forward.",
+      "fact": "Dark-eyed juncos often remain common into early spring, especially where cool weather and seed sources persist.",
+      "activeFact": "In early April, juncos may still dominate the ground under feeders before later seasonal movement picks up."
     },
     {
       "id": "house_finch",
       "name": "House Finch",
       "category": "birds",
       "icon": "🐦",
-      "summary": "Small social finch turning more vocal as spring nesting gets closer.",
-      "fact": "House finches often sing more in early April as pairs strengthen bonds and start defending nest areas.",
-      "activeFact": "Now they may shift from casual feeder use to more obvious pair behavior and song."
+      "summary": "Social finch growing more musical and pair-focused as spring develops.",
+      "fact": "House finches often sing more often in spring as they reinforce pair bonds and defend nesting areas.",
+      "activeFact": "Right now, house finches may be shifting from casual feeder visits to more obvious singing and pairing behavior."
     },
     {
       "id": "purple_finch",
       "name": "Purple Finch",
       "category": "birds",
       "icon": "🐦",
-      "summary": "Rosy woodland finch tied to cone crops and lingering spring seed sources.",
-      "fact": "Purple finches may still move through in early spring, especially where woodland seeds remain plentiful.",
-      "activeFact": "Early April purple finch activity can come in short bursts, with quick feeding runs followed by quiet gaps."
+      "summary": "Rosy woodland finch tied to lingering seed sources and shifting spring movement.",
+      "fact": "Purple finches may still use northern feeding areas in spring where cone crops and seeds remain worthwhile.",
+      "activeFact": "In early April, purple finch appearances can be brief and sporadic, showing up in little waves."
     },
     {
       "id": "wild_turkey",
       "name": "Wild Turkey",
       "category": "birds",
       "icon": "🦃",
-      "summary": "Large ground bird shifting deeper into spring strut and display season.",
-      "fact": "Wild turkeys begin acting more focused on dominance and courtship as early spring progresses.",
-      "activeFact": "By early April, toms may be strutting more regularly as the breeding season gains steam."
+      "summary": "Big ground bird now leaning hard into spring strut, display, and dominance behavior.",
+      "fact": "Male wild turkeys increase courtship display in spring as breeding season becomes more active.",
+      "activeFact": "By early April, gobblers may be strutting more often in openings, field edges, and sunny woodland pockets."
     },
     {
       "id": "ruffed_grouse",
       "name": "Ruffed Grouse",
       "category": "birds",
       "icon": "🐓",
-      "summary": "Forest bird now entering a more active stretch of spring drumming season.",
-      "fact": "Ruffed grouse drum more often in early spring as males establish display sites and advertise to mates.",
-      "activeFact": "That distant engine-like thump in the woods gets more regular now as grouse really get going."
+      "summary": "Forest drummer building momentum as spring display season gains real traction.",
+      "fact": "Ruffed grouse drum in spring to advertise territory and attract mates from favored logs or display sites.",
+      "activeFact": "In early April, that low thumping rhythm in the woods may be happening more often than just a week ago."
     },
     {
       "id": "sandhill_crane",
       "name": "Sandhill Crane",
       "category": "birds",
       "icon": "🕊️",
-      "summary": "Tall wetland bird returning to reopened marshes and spring fields.",
-      "fact": "Sandhill cranes are one of the classic early spring returnees, often reappearing as wetlands reopen.",
-      "activeFact": "A sandhill crane call over wet ground in early April is one of spring’s loudest announcements."
+      "summary": "Tall wetland returnee bringing full spring energy back to marsh and meadow country.",
+      "fact": "Sandhill cranes return early in spring and quickly become active in marshes, wet meadows, and open feeding areas.",
+      "activeFact": "Right now, their rattling calls and slow wingbeats can be one of the most unmistakable signs of the season."
     },
     {
       "id": "crow",
       "name": "American Crow",
       "category": "birds",
       "icon": "🐦‍⬛",
-      "summary": "Smart black bird active across roads, fields, and spring woodland edges.",
-      "fact": "American crows stay busy in early spring, pairing up and focusing more on nest territory.",
-      "activeFact": "In early April, crows often gather loudly at dawn and patrol openings for food and trouble."
+      "summary": "Sharp-minded spring generalist patrolling fields, roads, and woodland margins.",
+      "fact": "American crows grow more territory-aware in spring as pairs focus increasingly on nesting areas.",
+      "activeFact": "In early April, crows are often loudly active at sunrise and quick to investigate anything unusual."
     },
     {
       "id": "raven",
       "name": "Common Raven",
       "category": "birds",
       "icon": "🐦‍⬛",
-      "summary": "Large intelligent corvid active over ridges, timber, and opening spring skies.",
-      "fact": "Common ravens are often already in breeding mode by early April, with pairs staying closely coordinated.",
-      "activeFact": "This time of year, ravens may be seen soaring, calling, and working together over forest openings."
+      "summary": "Large spring corvid cruising ridges and openings with steady pair coordination.",
+      "fact": "Common ravens are often already well into breeding-season routines by early spring.",
+      "activeFact": "This time of year, ravens may be seen soaring together, calling over timber, and working the same routes repeatedly."
     },
     {
       "id": "red_tailed_hawk",
       "name": "Red-tailed Hawk",
       "category": "birds",
       "icon": "🦅",
-      "summary": "Soaring raptor moving deeper into visible nest and territory behavior.",
-      "fact": "Red-tailed hawks often work on nests in early spring, carrying sticks and calling more often.",
-      "activeFact": "In early April, hawks may spend more time soaring and nest-tending than sitting quietly to hunt."
+      "summary": "Big soaring raptor balancing nest work with watchful hunting over open country.",
+      "fact": "Red-tailed hawks often become more visibly tied to nests in spring, carrying sticks and calling around territory boundaries.",
+      "activeFact": "In early April, some red-tails may spend more time circling and nest-tending than sitting on roadside perches."
     },
     {
       "id": "coopers_hawk",
       "name": "Cooper’s Hawk",
       "category": "birds",
       "icon": "🦅",
-      "summary": "Fast woodland hawk entering stronger spring territory and nest behavior.",
-      "fact": "Cooper’s hawks become more territorial in early spring as nesting season approaches in wooded areas and neighborhoods.",
-      "activeFact": "Now they may make sharp, aggressive flights while defending space around early nest sites."
+      "summary": "Fast woodland chaser getting sharper and more defensive as nesting season advances.",
+      "fact": "Cooper’s hawks become more territorial in spring and may defend nesting areas aggressively in wooded neighborhoods and edges.",
+      "activeFact": "Right now, quick darting flights through trees can sometimes be a Cooper’s hawk policing its spring space."
     },
     {
       "id": "mallard",
       "name": "Mallard Duck",
       "category": "water",
       "icon": "🦆",
-      "summary": "Common duck back on open water and pairing up across spring wetlands.",
-      "fact": "Mallards become more visible in early spring as ponds, creeks, and flooded low spots fully open.",
-      "activeFact": "Early April often finds mallards paired up and feeding across fresh open water and flooded edges."
+      "summary": "Common spring duck spread across open water, ditches, ponds, and flooded edges.",
+      "fact": "Mallards respond quickly to newly opened water in spring and often pair up early for the nesting season ahead.",
+      "activeFact": "In early April, mallards may be feeding and resting in shallow flooded areas that barely existed a month ago."
     },
     {
       "id": "wood_duck",
       "name": "Wood Duck",
       "category": "water",
       "icon": "🦆",
-      "summary": "Colorful cavity-nesting duck returning with active early spring wetland movement.",
-      "fact": "Wood ducks often arrive early and begin checking cavities as soon as quiet open water becomes available.",
-      "activeFact": "In early April, wood ducks may show up on flooded timber, creek bends, and calm ponds."
+      "summary": "Bright spring duck using quiet flooded timber and cavity-rich wetland edges.",
+      "fact": "Wood ducks often return early and begin checking nest cavities as soon as calm open water becomes available.",
+      "activeFact": "Right now, wood ducks may be tucked into sheltered bends, flooded woods, or backwater pockets."
     },
     {
       "id": "canada_goose",
       "name": "Canada Goose",
       "category": "water",
       "icon": "🪿",
-      "summary": "Migratory goose active around open water, shorelines, and early nest zones.",
-      "fact": "Canada geese are highly active in early spring as they pair up, claim shoreline space, and prepare for nesting.",
-      "activeFact": "Early April can make geese extra noisy and territorial around ponds, marshes, and nearby fields."
+      "summary": "Territorial spring goose claiming shoreline space and setting up for nesting.",
+      "fact": "Canada geese become highly visible in spring as pairs establish nest areas and defend nearby water.",
+      "activeFact": "In early April, geese may be especially loud and stubborn around ponds, marsh edges, and open fields."
     },
     {
       "id": "great_blue_heron",
       "name": "Great Blue Heron",
       "category": "water",
       "icon": "🦤",
-      "summary": "Large wading bird returning as streams, marshes, and pond edges open for hunting.",
-      "fact": "Great blue herons often reappear in early spring as creeks and wetlands reopen enough for steady feeding.",
-      "activeFact": "A heron along an open creek or pond edge in early April is a classic quiet comeback scene."
+      "summary": "Tall wader back on the hunt along open creeks, ponds, and marsh margins.",
+      "fact": "Great blue herons return to feed in shallow open water as spring thaws make hunting practical again.",
+      "activeFact": "This time of year, a lone heron standing statue-still near a shoreline is a classic early spring sight."
     },
     {
       "id": "painted_turtle",
       "name": "Painted Turtle",
       "category": "water",
       "icon": "🐢",
-      "summary": "Basking turtle starting to use sunny days more often as waters warm.",
-      "fact": "Painted turtles begin emerging more in early spring and use bright days to warm up on logs and banks.",
-      "activeFact": "A warm April afternoon can put painted turtles out basking even if nights still dip cold."
+      "summary": "Sun-seeking turtle starting to claim logs and banks on warm spring afternoons.",
+      "fact": "Painted turtles use spring sunshine to warm up after cold months, often basking whenever conditions allow.",
+      "activeFact": "In early April, the first busy basking logs may start filling whenever the sun sticks around."
     },
     {
       "id": "snapping_turtle",
       "name": "Snapping Turtle",
       "category": "water",
       "icon": "🐢",
-      "summary": "Large aquatic turtle slowly waking as shallow water temperatures climb.",
-      "fact": "Snapping turtles remain subdued in early spring but begin stirring as shallows gradually warm.",
-      "activeFact": "Early April may bring the first slow shift from winter stillness toward more snapping turtle movement."
+      "summary": "Heavy-bodied aquatic turtle beginning its slow return to more active spring movement.",
+      "fact": "Snapping turtles generally wake more gradually than basking turtles as spring water temperatures rise.",
+      "activeFact": "Right now, snapping turtles may just be starting to shift more often in shallower or warming water."
     },
     {
       "id": "bluegill",
       "name": "Bluegill",
       "category": "water",
       "icon": "🐟",
-      "summary": "Panfish reacting to longer days and slightly warming spring shallows.",
-      "fact": "Bluegill start moving more in early spring as daylight and mild warming pull them toward feeding zones.",
-      "activeFact": "This time of year, bluegill often hold near cover where warmer water and food begin gathering."
+      "summary": "Shallow-curious panfish responding to longer days and slowly warming spring water.",
+      "fact": "Bluegill begin adjusting their position in spring as sunlight and water temperature start improving feeding conditions.",
+      "activeFact": "In early April, bluegill often hold near weeds, wood, or dark-bottom shallows that warm a bit faster."
     },
     {
       "id": "largemouth_bass",
       "name": "Largemouth Bass",
       "category": "water",
       "icon": "🐟",
-      "summary": "Freshwater predator easing closer to spring staging areas and warming cover.",
-      "fact": "Largemouth bass begin shifting toward shallower staging areas in early spring as edges slowly warm.",
-      "activeFact": "In early April, bass are often closer to cover near warming water but not fully shallow yet."
+      "summary": "Spring-moving predator easing toward staging zones around warming cover.",
+      "fact": "Largemouth bass often begin shifting closer to shallower structure in spring as water edges start warming.",
+      "activeFact": "At this stage, bass may be edging toward cover-rich shallows without fully committing to spawn areas yet."
     },
     {
       "id": "yellow_perch",
       "name": "Yellow Perch",
       "category": "water",
       "icon": "🐟",
-      "summary": "Schooling fish entering one of the earliest active windows of spring.",
-      "fact": "Yellow perch are among the early spawners and often become more active as spring water temperatures rise.",
-      "activeFact": "Early April perch may gather in schools near shallower water as spawning approaches or unfolds."
+      "summary": "Early-active schooling fish hitting one of its better spring windows.",
+      "fact": "Yellow perch are among the earlier spring-active fish and often gather in groups near shallower areas as spawning nears.",
+      "activeFact": "In early April, perch schools may be moving more predictably through accessible nearshore water."
     },
     {
       "id": "northern_pike",
       "name": "Northern Pike",
       "category": "water",
       "icon": "🐟",
-      "summary": "Fast predator moving through one of its prime early spring periods.",
-      "fact": "Northern pike are early spawners and often move into shallow, weedy, or flooded areas soon after ice-out.",
-      "activeFact": "This stage of spring is prime time for pike movement toward soft shallow habitat and spawning areas."
+      "summary": "Big spring predator working shallow wet ground during one of its key seasonal periods.",
+      "fact": "Northern pike often use flooded vegetation and shallow weedy water soon after ice-out as part of early spawning behavior.",
+      "activeFact": "Right now, pike may be drawn into soft shallow habitat that looked empty all winter."
     },
     {
       "id": "spring_peeper",
       "name": "Spring Peeper",
       "category": "amphib_reptile",
       "icon": "🐸",
-      "summary": "Tiny frog ready to headline the earliest real chorus nights of spring.",
-      "fact": "Spring peepers are among the earliest calling frogs and often begin once warm spring nights reach wetland edges.",
-      "activeFact": "A mild early April evening can bring peeper calls that suddenly make a wetland sound fully alive."
+      "summary": "Tiny chorus frog ready to turn warm evenings into a full spring soundtrack.",
+      "fact": "Spring peepers are among the first frogs to call as soon as nighttime temperatures become favorable.",
+      "activeFact": "In early April, one warm wet evening can make peeper calls suddenly explode across a marsh or low wet spot."
     },
     {
       "id": "bullfrog",
       "name": "American Bullfrog",
       "category": "amphib_reptile",
       "icon": "🐸",
-      "summary": "Large pond frog still waiting for warmer water before getting truly active.",
-      "fact": "Bullfrogs usually stay quieter than the earliest spring frogs because they prefer warmer water and steadier conditions.",
-      "activeFact": "In early April, bullfrogs are often still lagging behind peepers and other first-voice amphibians."
+      "summary": "Big pond frog still waiting for warmer water before joining the louder spring crowd.",
+      "fact": "Bullfrogs typically become active later than some smaller spring frogs because they prefer more settled warmth.",
+      "activeFact": "Right now, bullfrogs are often still quieter and less obvious than peepers or other early amphibians."
     },
     {
       "id": "green_frog",
       "name": "Green Frog",
       "category": "amphib_reptile",
       "icon": "🐸",
-      "summary": "Common shoreline frog beginning to stir as spring warmth builds along wet edges.",
-      "fact": "Green frogs usually lag behind the earliest callers but start responding as spring temperatures continue rising.",
-      "activeFact": "By early April, green frogs may begin shifting from winter hiding toward more shoreline movement."
+      "summary": "Shoreline frog starting to stir as wet edges and shallow water gain warmth.",
+      "fact": "Green frogs usually lag behind the earliest spring callers but begin shifting toward more activity as temperatures rise.",
+      "activeFact": "In early April, green frogs may start appearing near thawed shorelines and quiet wet pockets."
     },
     {
       "id": "leopard_frog",
       "name": "Leopard Frog",
       "category": "amphib_reptile",
       "icon": "🐸",
-      "summary": "Spotted wetland frog among the earlier amphibians to move in spring.",
-      "fact": "Leopard frogs can become active in early spring warm spells, especially around shallow wetlands and marsh edges.",
-      "activeFact": "Early April may bring leopard frogs out near open wet ground, shallow pools, and sunny marsh margins."
+      "summary": "Early-moving spotted frog taking advantage of mild wetland warmups.",
+      "fact": "Leopard frogs are often among the earlier amphibians to become active around shallow marshes and wet meadows.",
+      "activeFact": "This time of year, leopard frogs may show up near sunny puddled ground, shallow pools, and marsh edges."
     },
     {
       "id": "garter_snake",
       "name": "Garter Snake",
       "category": "amphib_reptile",
       "icon": "🐍",
-      "summary": "Harmless snake often among the first reptiles spotted each spring.",
-      "fact": "Garter snakes are commonly one of the earliest snakes to emerge once spring sun begins warming exposed cover.",
-      "activeFact": "A sunny April afternoon can bring garter snakes out near rocks, boards, brush piles, and trail edges."
+      "summary": "One of spring’s first snakes, emerging anywhere the sun can warm cover quickly.",
+      "fact": "Garter snakes are often among the earliest reptiles to appear once rocks, boards, and brush piles start heating up.",
+      "activeFact": "In early April, a sunny afternoon can bring garter snakes out along trails, edges, and warm debris piles."
     },
     {
       "id": "water_snake",
       "name": "Water Snake",
       "category": "amphib_reptile",
       "icon": "🐍",
-      "summary": "Semi-aquatic snake waiting on steadier warmth along spring shorelines.",
-      "fact": "Water snakes begin stirring in spring as shorelines warm, though early activity still depends heavily on temperature.",
-      "activeFact": "During especially sunny early April days, water snakes may show limited movement near open water edges."
+      "summary": "Semi-aquatic snake easing toward activity as shorelines and shallows warm up.",
+      "fact": "Water snakes usually need steadier warmth than the earliest spring reptiles before becoming regularly visible.",
+      "activeFact": "Right now, sunny banks near calm open water may offer the best chance of seeing limited movement."
     },
     {
       "id": "milk_snake",
       "name": "Eastern Milk Snake",
       "category": "amphib_reptile",
       "icon": "🐍",
-      "summary": "Woodland snake beginning to reappear as spring sunlight reaches shelter spots.",
-      "fact": "Eastern milk snakes start becoming active in early spring as boards, rocks, and old wood warm in the sun.",
-      "activeFact": "Early April can produce milk snake sightings around barns, woodpiles, and brushy debris on mild afternoons."
+      "summary": "Secretive woodland snake beginning to reappear around sun-warmed shelter cover.",
+      "fact": "Eastern milk snakes often start moving in spring as boards, rocks, and old wood collect enough warmth.",
+      "activeFact": "In early April, milk snakes may turn up near barns, woodpiles, and brushy cover on mild afternoons."
     },
     {
       "id": "monarch",
       "name": "Monarch Butterfly",
       "category": "insects",
       "icon": "🦋",
-      "summary": "Migratory butterfly still mostly south of northern Michigan as spring opens further.",
-      "fact": "In early spring, monarch migration is underway farther south, but northern Michigan usually waits longer for broad arrivals.",
-      "activeFact": "Early April is more about monarchs advancing north than appearing widely around local fields and woods."
+      "summary": "Northbound migrant still mostly advancing toward, not yet filling, northern Michigan.",
+      "fact": "Monarch movement is underway in spring, but widespread northern Michigan appearances usually come later than early April.",
+      "activeFact": "Right now, monarchs are more a sign of the season approaching than a common local butterfly sight."
     },
     {
       "id": "swallowtail",
       "name": "Swallowtail Butterfly",
       "category": "insects",
       "icon": "🦋",
-      "summary": "Large butterfly still waiting on steadier warmth and stronger nectar flow.",
-      "fact": "Swallowtail activity in northern Michigan usually picks up later than early April once warmth and blooms increase.",
-      "activeFact": "At this point in spring, swallowtails are still more of a promise than a regular sight."
+      "summary": "Big spring butterfly still waiting on steadier warmth and more reliable blooming plants.",
+      "fact": "Swallowtails in northern areas usually become more regular later in spring once temperatures and nectar sources improve.",
+      "activeFact": "At this point, swallowtails are still more likely to be absent than actively moving through local woods."
     },
     {
       "id": "dragonfly",
       "name": "Dragonfly",
       "category": "insects",
       "icon": "🪲",
-      "summary": "Aerial predator still mostly developing underwater this early in the season.",
-      "fact": "Most dragonflies in early spring are still nymphs underwater, waiting for much warmer conditions to emerge.",
-      "activeFact": "Early April wetlands hold future dragonflies below the surface long before summer patrol flights begin."
+      "summary": "Future aerial hunter still mostly living underwater while spring gets established.",
+      "fact": "Most dragonflies are still in their aquatic nymph stage in early spring, waiting for much warmer emergence conditions.",
+      "activeFact": "In early April, wetlands may look quiet above the surface while future dragonflies are growing below it."
     },
     {
       "id": "damselfly",
       "name": "Damselfly",
       "category": "insects",
       "icon": "🪲",
-      "summary": "Slender wetland insect still mostly hidden in aquatic stages during early spring.",
-      "fact": "Damselflies spend much of their life underwater as nymphs, and most are not yet flying in early April.",
-      "activeFact": "This early in the season, damselflies are more tucked into pond margins than hovering above them."
+      "summary": "Slender wetland insect still mostly hidden in underwater form this early in the season.",
+      "fact": "Damselflies spend much of their lives as aquatic nymphs and are usually not widespread flyers yet in early April.",
+      "activeFact": "Right now, damselflies are more likely tucked into pond margins below the surface than hovering above them."
     },
     {
       "id": "firefly",
       "name": "Firefly",
       "category": "insects",
       "icon": "✨",
-      "summary": "Summer glow insect still dormant while spring keeps building.",
-      "fact": "Fireflies are not active in early spring, spending this time in immature stages hidden in soil and leaf litter.",
-      "activeFact": "Early April is still far too soon for blinking firefly nights, even if the woods feel more awake."
+      "summary": "Summer light-maker still dormant below the surface while spring lays groundwork.",
+      "fact": "Fireflies are not active yet in early spring, spending this season stage hidden in soil or leaf litter.",
+      "activeFact": "In early April, the woods may feel alive again, but firefly nights are still waiting farther down the trail."
     },
     {
       "id": "honeybee",
       "name": "Honeybee",
       "category": "insects",
       "icon": "🐝",
-      "summary": "Pollinator taking advantage of the first decent warm flights of spring.",
-      "fact": "Honeybees may fly on warm early April afternoons to cleanse, scout, and work the earliest blooms.",
-      "activeFact": "A sunny spring afternoon can bring honeybees buzzing out briefly even while mornings still start frosty."
+      "summary": "Early pollinator taking every decent warm window spring is willing to offer.",
+      "fact": "Honeybees may fly on mild spring afternoons to cleanse, scout, and work the first available blossoms.",
+      "activeFact": "Right now, sunny breaks can briefly put honeybees in the air even when mornings still start cold."
     },
     {
       "id": "bumblebee",
       "name": "Bumblebee",
       "category": "insects",
       "icon": "🐝",
-      "summary": "Cold-tolerant bee among the first bold pollinators to reappear each spring.",
-      "fact": "Queen bumblebees are often among the earliest large bees seen in spring because they can handle cooler conditions.",
-      "activeFact": "Early April can bring lone queen bumblebees out searching for flowers and future nesting spots."
+      "summary": "Cold-tough queen bee out early and searching for both flowers and a future nest site.",
+      "fact": "Queen bumblebees are often among the first large bees active in spring because they can function in cooler conditions.",
+      "activeFact": "In early April, a single large bumblebee drifting low across the ground is often a queen scouting the season."
     },
     {
       "id": "grasshopper",
       "name": "Grasshopper",
       "category": "insects",
       "icon": "🦗",
-      "summary": "Jumping insect still mostly absent from the early spring scene up north.",
-      "fact": "Grasshoppers are generally not active yet in northern Michigan, with visible movement arriving much later in warmer months.",
-      "activeFact": "This part of spring is still quiet for grasshoppers, with the season only setting the table for later activity."
+      "summary": "Still mostly absent from the scene while spring focuses on wetter and earlier risers.",
+      "fact": "Grasshoppers are generally not active yet in northern Michigan, with most visible movement arriving much later in warmer weather.",
+      "activeFact": "At this point in the year, spring is still building the stage long before grasshoppers start hopping through it."
     }
   ]
 }
