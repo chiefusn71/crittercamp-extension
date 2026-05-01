@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-01T14:55:49Z",
+  "lastUpdated": "2026-05-01T15:59:18Z",
   "critters": [
     {
       "id": "whitetail_deer",
@@ -7,7 +7,7 @@
       "category": "mammals",
       "icon": "🦌",
       "summary": "Spring-edge regulars now working fresh green lanes like they’ve got the property mapped better than we do.",
-      "fact": "White-tailed deer flash the white underside of their tails to signal danger to other deer nearby.",
+      "fact": "White-tailed deer can run up to 30 miles per hour to escape predators quickly.",
       "activeFact": "Right now, deer are showing up along trail edges, food lines, openings, and fresh-cut green spots where the newest growth is easiest to grab."
     },
     {
@@ -16,7 +16,7 @@
       "category": "mammals",
       "icon": "🐻",
       "summary": "Spring heavyweight now roaming harder and treating the woods like a slow-moving calorie treasure hunt.",
-      "fact": "Black bears have excellent memory, especially for locating food sources they've visited before.",
+      "fact": "Black bears can run up to 30 miles per hour, faster than the average human sprint.",
       "activeFact": "Right now, bear movement is more realistic around swamps, low ground, quiet timber, and natural feeding pockets where spring food stacks up."
     },
     {
@@ -25,7 +25,7 @@
       "category": "mammals",
       "icon": "🐕",
       "summary": "Lean edge-country operator cruising spring routes like it punched in before sunrise.",
-      "fact": "Coyotes can adapt to urban areas and often communicate using howls, yips, and barks.",
+      "fact": "Coyotes communicate using a variety of howls, yips, and barks to establish territory and social bonds.",
       "activeFact": "Right now, coyotes are most likely working low-light lanes, two-tracks, trail crossings, and open edges where movement is easy to track."
     },
     {
@@ -34,7 +34,7 @@
       "category": "mammals",
       "icon": "🦊",
       "summary": "Quick little field-edge hunter listening to the grass like it owes him money.",
-      "fact": "Red foxes use their bushy tails for balance and as warm blankets in cold weather.",
+      "fact": "Red foxes use their bushy tails for balance and as a warm cover in cold weather.",
       "activeFact": "Right now, red foxes may be slipping across openings, pausing in grass, and locking onto tiny movement around brushy edges."
     },
     {
@@ -43,7 +43,7 @@
       "category": "mammals",
       "icon": "🦊",
       "summary": "Brush-loving woodland ghost keeping things quiet while the louder critters embarrass themselves in public.",
-      "fact": "Gray foxes are unique among canids for their ability to climb trees to escape predators.",
+      "fact": "Gray foxes are excellent climbers, often seen resting or escaping predators in trees.",
       "activeFact": "Right now, gray foxes are more likely moving through thickets and wooded edges than strolling out where cameras get an easy look."
     },
     {
@@ -52,7 +52,7 @@
       "category": "mammals",
       "icon": "🐈",
       "summary": "Silent spring predator slipping through cover like the woods forgot to make noise around it.",
-      "fact": "Bobcats use scent marking to establish territory and communicate with other bobcats in their area.",
+      "fact": "Bobcats can jump up to 10 feet high, helping them catch prey and avoid predators efficiently.",
       "activeFact": "Right now, bobcats may be working transition zones where rabbits, squirrels, and ground birds are moving more often."
     },
     {
@@ -61,7 +61,7 @@
       "category": "mammals",
       "icon": "🦔",
       "summary": "Slow-moving bark goblin still browsing like time is fake and urgency is for squirrels.",
-      "fact": "Porcupines have sharp quills that detach easily to protect them from predators.",
+      "fact": "Porcupines have over 30,000 sharp quills they use for defense against predators.",
       "activeFact": "Right now, porcupines may still be found near woody browse, tree trunks, and quiet cover where nobody is asking them to hurry."
     },
     {
@@ -70,7 +70,7 @@
       "category": "mammals",
       "icon": "🦫",
       "summary": "Water engineer fully back on spring maintenance like the creek filed a work order.",
-      "fact": "Beavers have transparent eyelids that let them see underwater while protecting their eyes.",
+      "fact": "Beavers build dams that create wetlands, supporting diverse ecosystems and improving water quality.",
       "activeFact": "Right now, fresh chew marks, muddy slides, peeled sticks, and patched flow spots are good signs the beaver crew is active."
     },
     {
@@ -79,7 +79,7 @@
       "category": "mammals",
       "icon": "🦫",
       "summary": "Wetland commuter now easier to catch in the open as shoreline traffic picks up.",
-      "fact": "Muskrats build dome-shaped lodges from vegetation, providing shelter and protection in wetlands.",
+      "fact": "Muskrats build dome-shaped lodges from vegetation and mud, providing shelter and protection in wetlands.",
       "activeFact": "Right now, muskrats may be swimming shoreline routes, feeding near cattails, or popping through shallow water like tiny pond submarines."
     },
     {
@@ -88,7 +88,7 @@
       "category": "mammals",
       "icon": "🐾",
       "summary": "Sharp little creek-side menace checking every muddy edge for something foolish enough to move.",
-      "fact": "Minks have waterproof fur that keeps them warm and dry while swimming underwater.",
+      "fact": "Minks have waterproof fur that keeps them dry and warm while swimming in cold water.",
       "activeFact": "Right now, mink activity is most likely along creek banks, pond edges, muddy tracks, and narrow shoreline travel lanes."
     },
     {
@@ -97,7 +97,7 @@
       "category": "mammals",
       "icon": "🐾",
       "summary": "Deep-woods prowler moving through timber like it read the map and ate the compass.",
-      "fact": "Fishers are skilled climbers, often hunting squirrels and birds high in trees.",
+      "fact": "Fishers are skilled tree climbers that hunt squirrels and birds in dense North American forests.",
       "activeFact": "Right now, fishers may be moving unseen through heavier timber and forest edges where tracks or trail cams tell the story first."
     },
     {
@@ -106,7 +106,7 @@
       "category": "mammals",
       "icon": "🦦",
       "summary": "Water-loving troublemaker turning open channels and muddy banks into a personal playground.",
-      "fact": "River otters can close their ears and nostrils underwater to stay dry while swimming.",
+      "fact": "River otters can close their ears and nostrils to stay underwater while swimming and hunting.",
       "activeFact": "Right now, otters may be cruising channels, sliding banks, and working ponds or creeks where fish and frogs are waking up."
     },
     {
@@ -115,7 +115,7 @@
       "category": "mammals",
       "icon": "🐿️",
       "summary": "Treetop busybody juggling nest work, feeder raids, and branch drama before breakfast.",
-      "fact": "Eastern Gray Squirrels can find food buried beneath a foot of snow using spatial memory.",
+      "fact": "Eastern Gray Squirrels communicate using tail flicks to warn others of nearby danger or predators.",
       "activeFact": "Right now, gray squirrels are easy to spot racing branches, hauling material, raiding feeders, and acting personally offended by each other."
     },
     {
@@ -124,7 +124,7 @@
       "category": "mammals",
       "icon": "🐿️",
       "summary": "Tiny woodland alarm system screaming from the trees like it owns every cone, branch, and bad idea.",
-      "fact": "American Red Squirrels fiercely defend their territory year-round, often chasing away larger animals.",
+      "fact": "American Red Squirrels fiercely defend their food caches from intruders year-round.",
       "activeFact": "Right now, red squirrels are loud, twitchy, and fully prepared to yell at anything that crosses their imaginary property line."
     },
     {
@@ -133,7 +133,7 @@
       "category": "mammals",
       "icon": "🐿️",
       "summary": "Pocket-sized ground rocket back in full circulation and moving like spring came with espresso.",
-      "fact": "Chipmunks have cheek pouches to carry food back to their burrows for storage.",
+      "fact": "Chipmunks have cheek pouches that can expand to transport food to their burrows.",
       "activeFact": "Right now, chipmunks are darting around logs, rocks, burrows, wood piles, and trail edges like the woods installed tiny traffic lights."
     },
     {
@@ -142,7 +142,7 @@
       "category": "mammals",
       "icon": "🐇",
       "summary": "Northern hare stuck in spring’s awkward costume change while the forest background keeps shifting.",
-      "fact": "Snowshoe hares change fur color seasonally for camouflage, turning white in winter and brown in summer.",
+      "fact": "Snowshoe hares change fur color with seasons for camouflage: brown in summer, white in winter.",
       "activeFact": "Right now, snowshoe hares can be easier to notice where thinning cover and leftover pale fur do them no favors."
     },
     {
@@ -151,7 +151,7 @@
       "category": "mammals",
       "icon": "🐇",
       "summary": "Brush-edge hopper feeding hard but never straying far from an emergency exit.",
-      "fact": "Eastern Cottontails can run up to 18 mph to escape predators quickly.",
+      "fact": "Eastern Cottontails use their powerful hind legs to leap up to 10 feet to escape predators.",
       "activeFact": "Right now, cottontails are most likely along yard edges, trail borders, brush piles, and sunny openings with fresh growth."
     },
     {
@@ -160,7 +160,7 @@
       "category": "night",
       "icon": "🦝",
       "summary": "Night-shift bandit treating spring camp like somebody forgot to lock the snack cabinet.",
-      "fact": "Raccoons have incredibly dexterous front paws, allowing them to open jars, doors, and even locks.",
+      "fact": "Raccoons have highly sensitive front paws that help them identify objects by touch in the dark.",
       "activeFact": "Right now, raccoons may be hitting pond edges, creeks, feeders, campsites, and anything that smells remotely negotiable."
     },
     {
@@ -169,7 +169,7 @@
       "category": "night",
       "icon": "🐀",
       "summary": "Cold-sensitive night wanderer finally getting evenings that don’t feel like a personal attack.",
-      "fact": "Opossums are immune to many snake venoms, including rattlesnake and cottonmouth bites.",
+      "fact": "Opossums have more teeth than any other North American land mammal, totaling 50 teeth.",
       "activeFact": "Right now, opossums may be showing up around brush, sheds, wood piles, water edges, and camp margins after dark."
     },
     {
@@ -178,7 +178,7 @@
       "category": "night",
       "icon": "🦨",
       "summary": "Striped night forager roaming damp ground with one warning label and no need for backup.",
-      "fact": "Striped skunks spray a strong-smelling liquid to defend themselves from predators.",
+      "fact": "Striped skunks can spray a foul-smelling liquid up to 10 feet to deter predators.",
       "activeFact": "Right now, skunks may be working lawns, trails, roadsides, field edges, and soft soil where the digging is good."
     },
     {
@@ -187,7 +187,7 @@
       "category": "night",
       "icon": "🐿️",
       "summary": "After-hours glider running silent tree traffic while the daylight squirrels hog the drama.",
-      "fact": "Flying squirrels glide up to 150 feet using a special membrane called a patagium between their limbs.",
+      "fact": "Flying squirrels glide using a special membrane called a patagium stretched between their limbs.",
       "activeFact": "Right now, they’re mostly unseen unless feeders, nest boxes, cavities, or nighttime cameras catch the quiet little air raids."
     },
     {
@@ -196,7 +196,7 @@
       "category": "night",
       "icon": "🦇",
       "summary": "Small dusk hunter getting back to business whenever the bugs and temperature finally cooperate.",
-      "fact": "Little Brown Bats use echolocation to catch insects mid-flight, making them expert nighttime hunters.",
+      "fact": "Little Brown Bats use echolocation to catch insects, making them vital natural pest controllers.",
       "activeFact": "Right now, warm dusk windows may bring little brown bats over open lanes, ponds, and edges for quick feeding loops."
     },
     {
@@ -205,7 +205,7 @@
       "category": "night",
       "icon": "🦇",
       "summary": "Tougher early-season bat willing to clock in on evenings the smaller crowd might still complain about.",
-      "fact": "Big Brown Bats use echolocation clicks up to 50,000 times per second to catch insects in the dark.",
+      "fact": "Big Brown Bats use echolocation to catch insects mid-flight, helping control pest populations naturally.",
       "activeFact": "Right now, mild evenings near buildings, lights, tree lines, and sheltered openings can bring big brown bats into view."
     },
     {
@@ -214,7 +214,7 @@
       "category": "night",
       "icon": "🦉",
       "summary": "Deep-voiced woods boss still calling through spring nights like the timber belongs to him.",
-      "fact": "Barred Owls have no ear tufts, unlike many other owl species.",
+      "fact": "Barred Owls have distinctive hoots that sound like \"Who cooks for you? Who cooks for you-all?\"",
       "activeFact": "Right now, barred owl calls can carry clean through damp woods at dusk, dawn, and the quiet hours when everything else shuts up."
     },
     {
@@ -223,7 +223,7 @@
       "category": "night",
       "icon": "🦉",
       "summary": "Early-nesting powerhouse already deep into family duty while half the woods is still flirting.",
-      "fact": "Great Horned Owls have incredible night vision, allowing them to hunt effectively in complete darkness.",
+      "fact": "Great Horned Owls have ear tufts that help them blend into tree branches while hunting at night.",
       "activeFact": "Right now, great horned owls are likely focused on hunting, guarding nest areas, and feeding young instead of making much romance noise."
     },
     {
@@ -232,7 +232,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Loud blue security guard acting like every feeder, tree, and suspicious shadow reports directly to him.",
-      "fact": "Blue Jays can mimic hawk calls to scare away other birds from their territory.",
+      "fact": "Blue Jays can mimic hawk calls to scare away other birds from feeders.",
       "activeFact": "Right now, blue jays are loud, bossy, and quick to chase anything that lingers too long near their favorite trees."
     },
     {
@@ -241,7 +241,7 @@
       "category": "birds",
       "icon": "🐦‍⬛",
       "summary": "Red spring singer posted up like sunrise hired him as the morning announcer.",
-      "fact": "Northern Cardinals are known for their bright red feathers, which help males attract mates.",
+      "fact": "Northern Cardinals are known for their vibrant red color and distinct, melodious whistles throughout the year.",
       "activeFact": "Right now, cardinals are strong morning voices around brush, yards, feeders, and woodland edges where pairs are locked in."
     },
     {
@@ -250,7 +250,7 @@
       "category": "birds",
       "icon": "🐤",
       "summary": "Tiny feathered inspection crew checking cavities like the housing market just opened.",
-      "fact": "Black-capped Chickadees can remember hundreds of hiding spots for their food using spatial memory.",
+      "fact": "Black-capped Chickadees can remember hundreds of food hiding spots for weeks using spatial memory.",
       "activeFact": "Right now, chickadees may be bouncing between feeders, branches, and potential nest holes with very serious tiny-bird business."
     },
     {
@@ -259,7 +259,7 @@
       "category": "birds",
       "icon": "🐤",
       "summary": "Curious gray songbird yelling from the branches like it has updates nobody requested.",
-      "fact": "Tufted Titmice fluffed their crest to communicate excitement or alertness to others nearby.",
+      "fact": "Tufted Titmice use complex vocalizations to communicate and defend their territory from rivals.",
       "activeFact": "Right now, titmice may be calling from exposed branches, checking holes, and moving through edge trees with spring confidence."
     },
     {
@@ -268,7 +268,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Upside-down bark specialist running tree trunks like gravity is merely a suggestion.",
-      "fact": "White-breasted Nuthatches can climb down trees headfirst, unlike most birds that only go upward.",
+      "fact": "White-breasted Nuthatches can climb down trees headfirst, unlike most birds that only climb upwards.",
       "activeFact": "Right now, nuthatches are busy on mature trunks, calling sharply, slipping headfirst down bark, and working old trees hard."
     },
     {
@@ -277,7 +277,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Small drummer tapping out spring property claims one rapid burst at a time.",
-      "fact": "Downy Woodpeckers use their stiff tail feathers as a prop while climbing tree trunks.",
+      "fact": "Downy Woodpeckers use their stiff tail feathers to brace against tree trunks while pecking for insects.",
       "activeFact": "Right now, quick sharp tapping on limbs or trunks often means a downy is broadcasting that this section is taken."
     },
     {
@@ -304,7 +304,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Vocal woodland hammerhead turning spring competition into a full neighborhood argument.",
-      "fact": "Red-bellied Woodpeckers drum on trees to communicate and establish territory with loud, rhythmic beats.",
+      "fact": "Red-bellied Woodpeckers can store food by wedging insects into tree bark for later eating.",
       "activeFact": "Right now, they may spend as much time scolding, calling, and defending space as they do feeding."
     },
     {
@@ -313,7 +313,7 @@
       "category": "birds",
       "icon": "🕊️",
       "summary": "Soft-voiced nest minimalist proving once again that two twigs and optimism count as architecture.",
-      "fact": "Mourning Doves produce a distinctive, mournful cooing sound that inspired their name.",
+      "fact": "Mourning Doves are known for their soft, cooing calls that sound like a gentle, mournful whistle.",
       "activeFact": "Right now, paired doves may be cooing, chasing, landing awkwardly, and pretending their nest plan is structurally sound."
     },
     {
@@ -322,7 +322,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Late-brightening little seed fan slowly swapping winter dullness for summer swagger.",
-      "fact": "American Goldfinches molt twice a year, changing bright yellow summer feathers to duller winter plumage.",
+      "fact": "American Goldfinches molt twice a year, changing from bright yellow in summer to duller colors in winter.",
       "activeFact": "Right now, goldfinches may still look halfway changed but are increasingly lively around feeders, weeds, and open edges."
     },
     {
@@ -331,7 +331,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Cool-weather ground feeder still hanging around like it didn’t get spring’s eviction notice.",
-      "fact": "Dark-eyed Juncos change tail-flashing patterns to communicate and distract predators during flight.",
+      "fact": "Dark-eyed Juncos are often called \"snowbirds\" because they appear in large flocks during North American winters.",
       "activeFact": "Right now, juncos may still be picking under feeders, though their winter dominance is clearly fading from the scene."
     },
     {
@@ -340,7 +340,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Social little singer turning feeder visits into spring auditions.",
-      "fact": "House Finches are known for their cheerful, warbling songs and males display bright red feathers on their heads.",
+      "fact": "House Finches sing cheerful songs and adapt well to urban environments across North America.",
       "activeFact": "Right now, house finches are more vocal, more paired-up, and more obvious around feeders, brush, and nearby trees."
     },
     {
@@ -349,7 +349,7 @@
       "category": "birds",
       "icon": "🐦",
       "summary": "Rosy woodland visitor showing up in little waves like it enjoys keeping the schedule mysterious.",
-      "fact": "Male Purple Finches have raspberry-red feathers that help them attract mates during the breeding season.",
+      "fact": "Purple Finches have a sweet, warbling song often mistaken for a robin’s chirp.",
       "activeFact": "Right now, purple finches can appear briefly, feed hard, and vanish again before anyone gets too confident."
     },
     {
@@ -358,7 +358,7 @@
       "category": "birds",
       "icon": "🦃",
       "summary": "Full strut-season chaos machine turning every clearing into a stage and every hen into an audience.",
-      "fact": "Wild turkeys can run up to 25 miles per hour and fly short distances at 55 miles per hour.",
+      "fact": "Wild turkeys can fly at speeds up to 55 miles per hour for short distances.",
       "activeFact": "Right now, gobblers may be strutting in fields, trails, sunny openings, and woodland pockets like they’re charging admission."
     },
     {
@@ -367,7 +367,7 @@
       "category": "birds",
       "icon": "🐓",
       "summary": "Forest drummer thumping from hidden logs like the woods grew its own bass speaker.",
-      "fact": "Ruffed Grouse create a drumming sound by beating air with their wings to attract mates.",
+      "fact": "Ruffed Grouse are known for their unique drumming sound made by rapidly beating their wings.",
       "activeFact": "Right now, that low thumping rhythm may be rolling through thicker cover more often as late-April display peaks."
     },
     {
@@ -376,7 +376,7 @@
       "category": "birds",
       "icon": "🕊️",
       "summary": "Tall prehistoric-looking loudmouth bringing marsh drama with a voice that refuses to stay local.",
-      "fact": "Sandhill Cranes perform elaborate, synchronized dances to strengthen pair bonds and communicate with each other.",
+      "fact": "Sandhill Cranes perform synchronized group dances to strengthen social bonds and communicate during migration.",
       "activeFact": "Right now, their rattling calls and slow wingbeats are hard to miss across fields, wet spots, and open country."
     },
     {
@@ -385,7 +385,7 @@
       "category": "birds",
       "icon": "🐦‍⬛",
       "summary": "Black-feathered property auditor checking every field, branch, and questionable situation.",
-      "fact": "American Crows can recognize human faces and remember those who pose threats to them.",
+      "fact": "American Crows can recognize human faces and remember those who pose threats.",
       "activeFact": "Right now, crows are loud at sunrise, nosy all day, and quick to investigate anything dead, shiny, edible, or suspicious."
     },
     {
@@ -403,7 +403,7 @@
       "category": "birds",
       "icon": "🦅",
       "summary": "Big soaring raptor balancing nest duty with the cold stare of an airborne landlord.",
-      "fact": "Red-tailed Hawks use sharp eyesight to spot prey from over a mile away while soaring high.",
+      "fact": "Red-tailed Hawks use their sharp vision to spot prey from over a mile away while soaring high.",
       "activeFact": "Right now, red-tails may be circling, perching near nest sites, and watching open ground for careless movement."
     },
     {
@@ -412,7 +412,7 @@
       "category": "birds",
       "icon": "🦅",
       "summary": "Fast woodland chaser threading trees like the forest forgot to install speed limits.",
-      "fact": "Cooper’s Hawks are skilled hunters known for their agility in dense forests, catching birds mid-flight.",
+      "fact": "Cooper’s Hawks are skilled fliers, weaving through trees to catch birds mid-air with sharp, curved talons.",
       "activeFact": "Right now, sudden darting flights through trees may be a Cooper’s hawk patrolling its claim and rattling every songbird nearby."
     },
     {
@@ -421,7 +421,7 @@
       "category": "water",
       "icon": "🦆",
       "summary": "Classic spring duck making use of every puddle, pond, ditch, and wet corner with confidence.",
-      "fact": "Mallard ducks can recognize themselves in a mirror, showing advanced self-awareness skills among birds.",
+      "fact": "Male mallards have a distinctive glossy green head that helps them attract mates during breeding season.",
       "activeFact": "Right now, mallards may be loafing, feeding, or cruising shallow flooded spots that finally look useful after winter."
     },
     {
@@ -430,7 +430,7 @@
       "category": "water",
       "icon": "🦆",
       "summary": "Flashy backwater specialist slipping into quiet corners like it paid extra for privacy.",
-      "fact": "Wood Ducks nest in tree cavities and their ducklings can leap from high nests to follow parents.",
+      "fact": "Wood Ducks nest in tree cavities and have brightly colored iridescent feathers, making them standout swimmers.",
       "activeFact": "Right now, wood ducks may be tucked into sheltered bends, pond edges, flooded woods, and quiet pockets where they can vanish fast."
     },
     {
@@ -439,7 +439,7 @@
       "category": "water",
       "icon": "🪿",
       "summary": "Shoreline bodyguard fully convinced nesting season gives it legal authority over the pond.",
-      "fact": "Canada Geese mate for life and can fly thousands of miles during migration every year.",
+      "fact": "Canada Geese can migrate thousands of miles, flying in a distinctive V-formation to conserve energy.",
       "activeFact": "Right now, geese around ponds and fields may be loud, stubborn, and already judging whether you’re too close."
     },
     {
@@ -448,7 +448,7 @@
       "category": "water",
       "icon": "🦤",
       "summary": "Long-legged shoreline statue hunting with the patience of something that skipped coffee and still wins.",
-      "fact": "Great Blue Herons can catch fish with a lightning-fast strike of their sharp, spear-like beaks.",
+      "fact": "Great Blue Herons can stand still for long periods, patiently waiting to catch fish with their sharp beaks.",
       "activeFact": "Right now, a heron standing motionless near a pond, creek, or marsh edge is spring doing its quiet predator thing."
     },
     {
@@ -457,7 +457,7 @@
       "category": "water",
       "icon": "🐢",
       "summary": "Sun-powered pond regular stacking onto logs every time April offers a warm enough deal.",
-      "fact": "Painted Turtles can absorb oxygen through their skin while underwater, helping them stay submerged longer.",
+      "fact": "Painted turtles can absorb oxygen through their skin while underwater, allowing them to stay submerged longer.",
       "activeFact": "Right now, sunny logs, banks, and pond edges may start collecting turtles like little solar panels with legs."
     },
     {
@@ -466,7 +466,7 @@
       "category": "water",
       "icon": "🐢",
       "summary": "Heavy aquatic tank slowly coming back online as the water finally stops feeling rude.",
-      "fact": "Snapping turtles have powerful jaws that can snap shut with incredible force to catch prey.",
+      "fact": "Snapping turtles can snap their jaws shut with incredible speed and force to catch prey quickly.",
       "activeFact": "Right now, snapping turtles may be shifting through shallows, muddy bottoms, and warming edges with that old swamp-monster energy."
     },
     {
@@ -475,7 +475,7 @@
       "category": "water",
       "icon": "🐟",
       "summary": "Panfish edging toward shallow business like the pond calendar just flipped pages.",
-      "fact": "Bluegill can rapidly change color to communicate or blend with their surroundings.",
+      "fact": "Bluegill can change color to communicate aggression or attract mates during spawning season.",
       "activeFact": "Right now, bluegill may be holding near wood, weeds, dark-bottom shallows, and protected edges that warm faster."
     },
     {
@@ -484,7 +484,7 @@
       "category": "water",
       "icon": "🐟",
       "summary": "Shallow-water lurker staging with the patience of something waiting to ruin a minnow’s day.",
-      "fact": "Largemouth bass can swallow prey up to 50% of their body length in one gulp.",
+      "fact": "Largemouth bass can grow over 20 inches and use their large mouths to ambush prey quickly.",
       "activeFact": "Right now, bass may be sitting near weeds, wood, edges, and calmer shallows where the next seasonal move is brewing."
     },
     {
@@ -493,7 +493,7 @@
       "category": "water",
       "icon": "🐟",
       "summary": "Striped little school fish moving through spring water with more purpose than winter ever allowed.",
-      "fact": "Yellow Perch have bright yellow bodies with dark vertical stripes, making them easy to identify underwater.",
+      "fact": "Yellow Perch are popular sport fish known for their distinctive golden-yellow color and vertical dark stripes.",
       "activeFact": "Right now, perch may be moving in groups through nearshore water, weeds, and softer shallows where conditions are improving."
     },
     {
@@ -502,7 +502,7 @@
       "category": "water",
       "icon": "🐟",
       "summary": "Toothy spring missile built for flooded weeds, shallow ambush lanes, and bad news.",
-      "fact": "Northern Pike have sharp teeth and can strike prey with lightning-fast speed underwater.",
+      "fact": "Northern Pike can quickly burst through water to catch prey with razor-sharp teeth.",
       "activeFact": "Right now, pike may still be drawn to flooded edges, soft shallows, weeds, and slow water that looks harmless until it isn’t."
     },
     {
@@ -511,7 +511,7 @@
       "category": "amphib_reptile",
       "icon": "🐸",
       "summary": "Tiny frog with unreasonable volume turning wet nights into a full campground sound system.",
-      "fact": "Spring Peepers are tiny frogs known for their loud, high-pitched evening calls signaling early spring.",
+      "fact": "Spring Peepers are tiny frogs famous for their loud, high-pitched calls during early spring nights.",
       "activeFact": "Right now, warm wet nights can set off peeper choruses in marshes, ditches, low spots, and pond edges like somebody flipped a switch."
     },
     {
@@ -520,7 +520,7 @@
       "category": "amphib_reptile",
       "icon": "🐸",
       "summary": "Big pond bass drum still waiting for warmer water before adding his opinion to the night shift.",
-      "fact": "American Bullfrogs can produce loud, deep calls that can be heard over a mile away.",
+      "fact": "American Bullfrogs can produce loud, deep croaks audible over half a mile away.",
       "activeFact": "Right now, bullfrogs may still be quiet compared with peepers and leopard frogs, but warmer edges can start waking them."
     },
     {
@@ -529,7 +529,7 @@
       "category": "amphib_reptile",
       "icon": "🐸",
       "summary": "Shoreline frog easing back into pond life while the louder spring crew steals the headlines.",
-      "fact": "Green frogs communicate by croaking to establish territory and attract mates, often near ponds and wetlands.",
+      "fact": "Green Frogs can make a loud, banjo-like call that echoes across ponds and wetlands.",
       "activeFact": "Right now, green frogs may be appearing around calm shallows, sunny banks, wet pockets, and pond edges with decent warmth."
     },
     {
@@ -538,7 +538,7 @@
       "category": "amphib_reptile",
       "icon": "🐸",
       "summary": "Spotted spring jumper taking advantage of wet grass, shallow pools, and any warm patch that behaves.",
-      "fact": "Leopard frogs can leap over 20 times their body length to escape predators swiftly.",
+      "fact": "Leopard frogs can jump over 20 times their body length in a single leap.",
       "activeFact": "Right now, leopard frogs may show up near puddles, ditches, marsh edges, and wet grassy spots before the woods fully leaf out."
     },
     {
@@ -547,7 +547,7 @@
       "category": "amphib_reptile",
       "icon": "🐍",
       "summary": "Sun-chasing ribbon of muscle popping out wherever warmth finally wins the argument.",
-      "fact": "Garter snakes can swim and often hunt amphibians in water, showcasing their versatile hunting skills.",
+      "fact": "Garter snakes can live both on land and in water, making them excellent swimmers and hunters.",
       "activeFact": "Right now, garter snakes may be warming on trails, logs, rocks, leaf litter, garden edges, and sunny debris piles."
     },
     {
@@ -556,7 +556,7 @@
       "category": "amphib_reptile",
       "icon": "🐍",
       "summary": "Bank-side bruiser slowly returning to shoreline duty as the water warms enough to be worth it.",
-      "fact": "Water snakes can hold their breath underwater for up to 30 minutes while hunting or escaping predators.",
+      "fact": "Water snakes can hold their breath underwater for up to 30 minutes while hunting or hiding.",
       "activeFact": "Right now, sunny banks near calm water offer the best chance of seeing a water snake testing the late-April conditions."
     },
     {
@@ -565,7 +565,7 @@
       "category": "amphib_reptile",
       "icon": "🐍",
       "summary": "Secretive cover snake sliding back into the season like it prefers nobody announce it.",
-      "fact": "Eastern Milk Snakes mimic rattlesnakes by vibrating their tails to scare predators away.",
+      "fact": "Eastern Milk Snakes mimic venomous rattlesnakes with their tail vibration to deter predators.",
       "activeFact": "Right now, milk snakes may turn up near wood piles, old boards, barns, brushy edges, and sheltered cover on mild afternoons."
     },
     {
@@ -574,7 +574,7 @@
       "category": "insects",
       "icon": "🦋",
       "summary": "Northbound orange traveler still more rumor than regular in late-April northern Michigan.",
-      "fact": "Monarch butterflies migrate thousands of miles from North America to central Mexico for winter.",
+      "fact": "Monarch butterflies migrate up to 3,000 miles to spend winter in specific Mexican forests.",
       "activeFact": "Right now, monarchs are still more of an approaching-season sign than a daily local sight around camp."
     },
     {
@@ -583,7 +583,7 @@
       "category": "insects",
       "icon": "🦋",
       "summary": "Big-winged warm-weather showoff still waiting for spring to stop being moody.",
-      "fact": "Swallowtail butterflies use their tail-like wing extensions to confuse predators and avoid attacks.",
+      "fact": "Swallowtail butterflies can mimic toxic species to avoid predators, enhancing their survival in the wild.",
       "activeFact": "Right now, swallowtails are still likely sparse, with better activity coming as blooms and warm afternoons build."
     },
     {
@@ -592,7 +592,7 @@
       "category": "insects",
       "icon": "🪲",
       "summary": "Future sky hunter still mostly running the underwater level while April loads the next scene.",
-      "fact": "Dragonflies can fly up to 30 miles per hour, making them one of the fastest insects in the world.",
+      "fact": "Dragonflies can fly up to 30 miles per hour and easily catch prey mid-air with their legs.",
       "activeFact": "Right now, ponds may look quiet above the surface while young dragonflies are still growing below in the mud and vegetation."
     },
     {
@@ -601,7 +601,7 @@
       "category": "insects",
       "icon": "🪲",
       "summary": "Tiny wetland flyer still mostly hidden below the surface before the delicate summer patrol begins.",
-      "fact": "Damselflies can fold their wings along their body, unlike dragonflies that keep wings spread out.",
+      "fact": "Damselflies can fold their wings along their bodies, unlike dragonflies that hold them open.",
       "activeFact": "Right now, damselflies are more likely tucked into pond margins underwater than hovering over reeds and shoreline plants."
     },
     {
@@ -610,7 +610,7 @@
       "category": "insects",
       "icon": "✨",
       "summary": "Summer light crew still waiting backstage while spring handles the opening acts.",
-      "fact": "Fireflies produce light through a chemical reaction called bioluminescence to attract mates and ward off predators.",
+      "fact": "Fireflies produce light through a chemical reaction called bioluminescence to attract mates and deter predators.",
       "activeFact": "Right now, the woods may feel alive again, but firefly nights are still further down the trail."
     },
     {
@@ -619,7 +619,7 @@
       "category": "insects",
       "icon": "🐝",
       "summary": "Early pollinator taking every sunny break like management finally approved overtime.",
-      "fact": "Honeybees communicate by performing a \"waggle dance\" to share the location of flowers with their hive mates.",
+      "fact": "Honeybees communicate by performing a waggle dance to share the location of food sources.",
       "activeFact": "Right now, sunny windows may bring honeybees to early flowers, damp ground, and warm sheltered spots before they tuck back in."
     },
     {
@@ -628,7 +628,7 @@
       "category": "insects",
       "icon": "🐝",
       "summary": "Big fuzzy queen scout flying low like she’s shopping for flowers and a future empire.",
-      "fact": "Bumblebees can regulate their body temperature to fly in cold weather unlike many other insects.",
+      "fact": "Bumblebees have hairs on their eyes to collect pollen while they forage on flowers.",
       "activeFact": "Right now, large bumblebees drifting low over grass, leaves, and edges are often queens scouting food and nesting ground."
     },
     {
@@ -637,7 +637,7 @@
       "category": "insects",
       "icon": "🦗",
       "summary": "Still mostly benched while spring lets frogs, bees, and wetland bugs steal the show.",
-      "fact": "Grasshoppers have strong hind legs that can launch them up to 20 times their body length in a single jump.",
+      "fact": "Grasshoppers have powerful hind legs that allow them to jump over 20 times their body length.",
       "activeFact": "Right now, grasshoppers are still mostly waiting offstage while the season warms the ground and builds summer habitat."
     }
   ]
